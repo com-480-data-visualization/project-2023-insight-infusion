@@ -17,7 +17,7 @@ Please, fill the following sections about your project.
 
 *(max. 2000 characters per section)*
 
-**Milestone 1 report is available here : [Milestone 1](Milestone 1.pdf)**
+Milestone 1 report is available here : [Milestone 1](milestone1.pdf)
 
 ### Dataset
 
