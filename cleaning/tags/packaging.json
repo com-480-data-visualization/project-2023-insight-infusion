@@ -1,0 +1,39 @@
+{
+    "plastic": [
+        "plastique",
+        "plastik",
+        "film",
+        "film-en-plastique",
+        "film-plastique",
+        "sachet-plastique",
+        "sachet-en-plastique"
+    ],
+    "cardboard": [
+        "cartonetui-en-carton",
+        "boite-carton",
+        "brique-en-carton",
+        "etui-en-carton",
+        "composite-cartonetui-carton",
+        "boite-en-carton",
+        "composite-carton"
+    ],
+    "metal": [
+        "recyclable-metals",
+        "aluminium",
+        "canned",
+        "can",
+        "steel"
+    ],
+    "glass": [
+        "verre",
+        "vidrio"
+    ],
+    "paper": [
+        "papier"
+    ],
+    "polypropylene": [],
+    "polystyrene": [],
+    "tetra-pak": [
+        "tetra-brik"
+    ]
+}

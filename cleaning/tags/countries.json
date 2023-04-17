@@ -1,0 +1,910 @@
+{
+    "Afghanistan": [],
+    "Africa": [
+        "Afrique"
+    ],
+    "Alaska": [
+        "Golf von Alaska",
+        "Theragra chalcogramma"
+    ],
+    "Albania": [],
+    "Algeria": [
+        "Algérie",
+        "algerie",
+        "Algerien"
+    ],
+    "Andorra": [],
+    "Angola": [],
+    "Antigua and Barbuda": [],
+    "Argentina": [
+        "Argentina",
+        "Argentine",
+        "Buenos Aires",
+        "Argentyna"
+    ],
+    "Armenia": [],
+    "Australia": [
+        "Australie"
+    ],
+    "Austria": [
+        "Österreich",
+        "Autriche",
+        "Tirol",
+        "Österrike"
+    ],
+    "Azerbaijan": [],
+    "Bahamas": [],
+    "Bahrain": [
+        "Bharain"
+    ],
+    "Bangladesh": [],
+    "Barbados": [],
+    "Belarus": [],
+    "Belgium": [
+        "Belgiqu",
+        "België",
+        "Belgia",
+        "Lievegem",
+        "Belgien",
+        "Bélgica",
+        "belge",
+        "Bruxelles"
+    ],
+    "Belize": [],
+    "Benin": [],
+    "Bhutan": [],
+    "Bolivia": [
+        "Bolivia",
+        "Bolivie"
+    ],
+    "Bosnia and Herzegovina": [],
+    "Botswana": [],
+    "Brazil": [
+        "Brésil",
+        "Brasil",
+        "brazil",
+        "BRESIL"
+    ],
+    "Brunei": [],
+    "Bulgaria": [
+        "Bulgarie",
+        "България"
+    ],
+    "Burkina Faso": [],
+    "Burundi": [],
+    "Cabo Verde": [],
+    "Cambodia": [
+        "Cambodge"
+    ],
+    "Cameroon": [
+        "Cameroun"
+    ],
+    "Canada": [
+        "Canada",
+        "Montréal",
+        "Canadiens",
+        "canadiens",
+        "CANADA",
+        "Canadá",
+        "Kanada",
+        "Canadian",
+        "Ontario",
+        "canada",
+        "Québec",
+        "fr:quebec",
+        "Montérégie",
+        "Montreal Quebec"
+    ],
+    "Central African Republic": [],
+    "Chad": [],
+    "Chile": [
+        "Chili",
+        "chile",
+        "chili"
+    ],
+    "China": [
+        "Chine",
+        "Cina",
+        "CHINE",
+        "CHINA",
+        "chine",
+        "lidová republika"
+    ],
+    "Colombia": [
+        "Colombie",
+        "Kolumbien"
+    ],
+    "Comoros": [],
+    "Congo": [
+        "Brazzaville"
+    ],
+    "Costa Rica": [
+        "Costa Rica"
+    ],
+    "Croatia": [
+        "Hrvatska",
+        "Croazia",
+        "hrvatska",
+        "zagreb"
+    ],
+    "Cuba": [],
+    "Cyprus": [
+        "Zypern"
+    ],
+    "Czech Republic": [
+        "République tchèque",
+        "Praha",
+        "Česko",
+        "Cehia"
+    ],
+    "Democratic Republic of the Congo": [],
+    "Denmark": [
+        "Îles Feroe",
+        "Denemarken",
+        "Îles-Féroé",
+        "faroe-islands",
+        "Danmark",
+        "Dänemark",
+        "Danemark",
+        "Îles Féroé",
+        "Iles Féroé",
+        "Denmark"
+    ],
+    "Djibouti": [],
+    "Dominica": [],
+    "Dominican Republic": [
+        "République dominicaine",
+        "República Dominicana",
+        "République Dominicaine",
+        "saint-domingue"
+    ],
+    "Ecuador": [
+        "Équateur",
+        "Equateur"
+    ],
+    "Egypt": [
+        "Egipto",
+        "Ägypten",
+        "Égypte"
+    ],
+    "El Salvador": [],
+    "Equatorial Guinea": [],
+    "Eritrea": [],
+    "Estonia": [
+        "Estonia"
+    ],
+    "Eswatini": [
+        "Swaziland"
+    ],
+    "Ethiopia": [
+        "Éthiopie",
+        "Ethiopie"
+    ],
+    "Fiji": [],
+    "Finland": [
+        "Suomi",
+        "vehnä"
+    ],
+    "France": [
+        "Fançaise",
+        "Alsace Lorraine",
+        "Paris",
+        "Carnac",
+        "France",
+        "Cesson",
+        "Marolles-en-Brie",
+        "Drumettaz-Clarafond",
+        "Aubenas",
+        "je ne sais pas",
+        "thiverval-grignon",
+        "Etréchy",
+        "Brétigny-sur-Orge",
+        "Orléans",
+        "Muzillac",
+        "Estampes",
+        "Rennes",
+        "Aix les Bains",
+        "Marseille",
+        "Villecresnes",
+        "Breuillet",
+        "Mousseaux",
+        "malville",
+        "Poitou",
+        "Picardie",
+        "Alpen",
+        "Charentes",
+        "Caen",
+        "savoie",
+        "59553-cuincy",
+        "flandres",
+        "Mont Blanc",
+        "lait-de-la-ferme",
+        "lait-francais",
+        "Nuova Caledonia",
+        "Puy de Dôme",
+        "français",
+        "tarn",
+        "Midi-Pyrénées",
+        "mayenne",
+        "Lisieux",
+        "Haute-Provence",
+        "Beaujolais",
+        "Agen",
+        "Loire",
+        "Puy-de-Dôme",
+        "france",
+        "Dordogne",
+        "Rouen",
+        "Baie du Mont Saint-Michel",
+        "Aisne",
+        "Hérault",
+        "Bretagne",
+        "Morbihan",
+        "Le Petit Basque",
+        "le Mans",
+        "Ain",
+        "FRance",
+        "Française",
+        "Strasbourg",
+        "Canard à Foie Gras du Sud-Ouest IGP",
+        "Martinique",
+        "Reunion",
+        "Région Centre",
+        "Français",
+        "Nantes",
+        "Alsace",
+        "Marne-la-Vallée",
+        "St-Pair-sur-mer",
+        "Franche Comté",
+        "Réunion",
+        "Gers",
+        "Bordeaux",
+        "Alpes",
+        "FRANCE",
+        "Sud-Ouest",
+        "Normandie",
+        "cotentin",
+        "Drôme",
+        "Cantal",
+        "Noix de Saint-Jacques",
+        "Frankreich",
+        "Francia",
+        "Provence",
+        "Aveyron",
+        "Franche-Comté",
+        "Aquitaine",
+        "Savoie",
+        "Guérande",
+        "Ardèche",
+        "Guadeloupe",
+        "Jura",
+        "Poitou-Charentes",
+        "Vendée",
+        "Bourgogne",
+        "Normandy",
+        "Roquefort-sur-Soulzon",
+        "Frankrijk",
+        "Occitanie",
+        "Auvergne",
+        "NoirmoutierFrança",
+        "Collioure",
+        "Limousin",
+        "Périgord",
+        "Poitou-CharentesCamargue",
+        "França",
+        "Arbois",
+        "Doubs",
+        "Landes",
+        "IsignyDrôme",
+        "Grand Est",
+        "Salies-de-Béarn",
+        "Rhône-AlpesIsère",
+        "Camargue",
+        "Pyrénées-Atlantiques",
+        "Auvergne",
+        "Lozère",
+        "pupillin",
+        "Saint-Cyr-de-Valorges",
+        "Isère",
+        "Corse",
+        "yonne",
+        "lozere",
+        "lot",
+        "cher",
+        "lyon",
+        "Isigny",
+        "Lorainne",
+        "eure",
+        "Moselle",
+        "oise",
+        "correze",
+        "rhone",
+        "Francja",
+        "Dauphiné",
+        "Languedoc",
+        "Lons",
+        "Yonne",
+        "RhôneCantal",
+        "Drumettaz Clarafond",
+        "Massif central",
+        "Roquefort",
+        "normandie",
+        "Lorraine",
+        "Etampes",
+        "Velizy",
+        "Limeil-Brévannes",
+        "Roinville-sous-Dourdan",
+        "Le Plessis Robinson",
+        "LE MANS",
+        "PARIS",
+        "le mans",
+        "Cavaillon",
+        "Châlons-en-Champagne",
+        "draguignan",
+        "Sénart",
+        "Lyon",
+        "Vélizy",
+        "Vannes",
+        "Toulouse",
+        "Valence",
+        "Briey",
+        "Versailles"
+    ],
+    "Gabon": [],
+    "Gambia": [],
+    "Georgia": [],
+    "Germany": [
+        "Deutschland",
+        "Germania",
+        "Mecklenburg-Vorpommern",
+        "Germany",
+        "Berlin",
+        "Dresden",
+        "Alemanha",
+        "Allemagne",
+        "Stuttgart",
+        "Baden-Württemberg",
+        "germany",
+        "Alemania",
+        "Bayern",
+        "Tyskland",
+        "Münster",
+        "Köln",
+        "niemcy",
+        "köln",
+        "chorin",
+        "när",
+        "Niemcy",
+        "Allgäu"
+    ],
+    "Ghana": [
+        "Accra"
+    ],
+    "Greece": [
+        "Fera grecque",
+        "Greece",
+        "Grèce",
+        "Grecia",
+        "Griechenland",
+        "Ελλάδα,Αθήνα",
+        "grec",
+        "greece",
+        "Grčka"
+    ],
+    "Grenada": [],
+    "Guatemala": [],
+    "Guinea": [],
+    "Guinea-Bissau": [],
+    "Guyana": [],
+    "Haiti": [],
+    "Holy See": [],
+    "Honduras": [
+        "Honduras"
+    ],
+    "Hong Kong": [],
+    "Hungary": [
+        "Hongrie",
+        "Magyarország",
+        "Ungaria",
+        "Ungarn"
+    ],
+    "Iceland": [
+        "Islande"
+    ],
+    "India": [
+        "Inde",
+        "inde",
+        "karnataka",
+        "kashmir",
+        "Indien"
+    ],
+    "Indonesia": [
+        "Indonésie",
+        "Indonesien",
+        "Indonesia"
+    ],
+    "Iran": [],
+    "Iraq": [],
+    "Ireland": [
+        "Irlande",
+        "Killeigh",
+        "Irland"
+    ],
+    "Israel": [
+        "Israël"
+    ],
+    "Italy": [
+        "Sicile",
+        "italia",
+        "Italie",
+        "Lombardy",
+        "Sardegna",
+        "ITALIA",
+        "italiana",
+        "italie",
+        "Itálie",
+        "Italia",
+        "Matelica",
+        "Sicily",
+        "Modène",
+        "ITALIE",
+        "Italië",
+        "italy",
+        "Italija",
+        "Italy",
+        "italy"
+    ],
+    "Ivory Coast": [
+        "ivoire",
+        "Ivoire",
+        "Ivory coast"
+    ],
+    "Jamaica": [],
+    "Japan": [
+        "Japon",
+        "Japón"
+    ],
+    "Jordan": [],
+    "Kazakhstan": [],
+    "Kenya": [
+        "Kenya"
+    ],
+    "Kiribati": [],
+    "Kuwait": [],
+    "Kyrgyzstan": [],
+    "Laos": [],
+    "Latvia": [
+        "Lithuania",
+        "Lituanie",
+        "Latvija",
+        "Litauen"
+    ],
+    "Lebanon": [
+        "Liban"
+    ],
+    "Lesotho": [],
+    "Liberia": [],
+    "Libya": [],
+    "Liechtenstein": [],
+    "Lithuania": [],
+    "Luxembourg": [
+        "Luxembourg"
+    ],
+    "Madagascar": [
+        "Madagascar",
+        "MADAGASCAR"
+    ],
+    "Malawi": [],
+    "Malaysia": [
+        "Malaisie"
+    ],
+    "Maldives": [],
+    "Mali": [],
+    "Malta": [],
+    "Marshall Islands": [],
+    "Mauritania": [],
+    "Mauritius": [],
+    "Mexico": [
+        "Mexique",
+        "méxico",
+        "México",
+        "Mexiko",
+        "mexico",
+        "MÉXICO",
+        "MEXICO"
+    ],
+    "Micronesia": [],
+    "Moldova": [],
+    "Monaco": [],
+    "Mongolia": [],
+    "Montenegro": [],
+    "Morocco": [
+        "Maroc",
+        "Marokko"
+    ],
+    "Mozambique": [],
+    "Myanmar": [
+        "Burma"
+    ],
+    "Namibia": [
+        "Namíbia"
+    ],
+    "Nauru": [],
+    "Nepal": [
+        "Himalaya"
+    ],
+    "Netherlands": [
+        "Pays Bas",
+        "Nederland",
+        "Holland",
+        "Pays-Bas",
+        "Niederlande",
+        "Holand",
+        "Netherlands",
+        "HOLLAND",
+        "AMSTERDAM",
+        "Amsterdam",
+        "Nederländerna"
+    ],
+    "New Zealand": [
+        "New Zealand",
+        "Nouvelle Zélande",
+        "Nouvelle-Zélande",
+        "Newziland",
+        "nouvelle Zélande"
+    ],
+    "Nicaragua": [
+        "Nicaragua"
+    ],
+    "Niger": [],
+    "Nigeria": [],
+    "North Korea": [],
+    "North Macedonia": [],
+    "Norway": [
+        "Norvège",
+        "Nowegische See",
+        "norvégien",
+        "Norwegen",
+        "norvège",
+        "Norwegian",
+        "Norwegian Sea",
+        "Norwegische",
+        "Norvegia",
+        "Norge"
+    ],
+    "Oman": [],
+    "Pakistan": [],
+    "Palau": [],
+    "Palestine State": [],
+    "Panama": [
+        "Panamá"
+    ],
+    "Papua New Guinea": [],
+    "Paraguay": [],
+    "Peru": [
+        "Pérou",
+        "perou",
+        "Perú",
+        "peru",
+        "Perù"
+    ],
+    "Philipinnes": [
+        "Philippines",
+        "Philippinen"
+    ],
+    "Poland": [
+        "Polska",
+        "Pologne",
+        "POLONIA",
+        "Polonia",
+        "pologne",
+        "Ró",
+        "Polen",
+        "Poljska"
+    ],
+    "Portugal": [
+        "comarca",
+        "portugal"
+    ],
+    "Qatar": [],
+    "Romania": [
+        "România",
+        "Bucuresti",
+        "Románia",
+        "Roumanie",
+        "Rumänien"
+    ],
+    "Russia": [
+        "Russie"
+    ],
+    "Rwanda": [],
+    "Saint Kitts and Nevis": [],
+    "Saint Lucia": [],
+    "Saint Vincent and the Grenadines": [],
+    "Samoa": [],
+    "San Marino": [],
+    "Sao Tome and Principe": [],
+    "Saudi Arabia": [],
+    "Senegal": [
+        "Sénégal",
+        "senegal"
+    ],
+    "Serbia": [
+        "Serbia",
+        "Serbie"
+    ],
+    "Seychelles": [
+        "Seychelles"
+    ],
+    "Sierra Leone": [],
+    "Singapore": [
+        "Singapour"
+    ],
+    "Slovakia": [
+        "Slovaquie",
+        "Slovensko"
+    ],
+    "Slovenia": [
+        "Slovenia",
+        "Slovénie",
+        "Slovenija"
+    ],
+    "Solomon Islands": [],
+    "Somalia": [],
+    "South Africa": [
+        "afrique du sud",
+        "Afrique du Sud",
+        "Sudáfrica",
+        "Südafrika"
+    ],
+    "South America": [
+        "Amérique Latine",
+        "Südamerika",
+        "Amérique du Sud",
+        "América del Sur"
+    ],
+    "South Korea": [
+        "Südkorea",
+        "korea",
+        "Corée du Sud",
+        "Korea"
+    ],
+    "South Soudan": [],
+    "Spain": [
+        "España",
+        "Spanje",
+        "Espagne",
+        "Finestrat",
+        "Pamplona",
+        "Catalunya",
+        "Spanien",
+        "Guissona",
+        "Andalucía",
+        "spain",
+        "Espanya",
+        "www.virgenextra.com",
+        "Comunidad Valenciana",
+        "Madrid",
+        "Sevilla",
+        "Mutilva",
+        "GuissonaJaén",
+        "Altea",
+        "Zona amparada por la D",
+        "Valencia",
+        "Hiszpania",
+        "La Manchuela",
+        "lugo",
+        "españa",
+        "espagne",
+        "Navarra",
+        "Castilla-La Mancha",
+        "Jaén",
+        "ESPAÑA",
+        "ESPAGNE",
+        "Castilla",
+        "Espanha",
+        "Ciudad Real",
+        "Cataluña",
+        "Spagna",
+        "Espanja"
+    ],
+    "Sri Lanka": [
+        "Ceylan"
+    ],
+    "Sudan": [],
+    "Suriname": [],
+    "Sweden": [
+        "Sverige",
+        "Ruotsi",
+        "Suède"
+    ],
+    "Switzerland": [
+        "suisse",
+        "Schweiz",
+        "Suisse",
+        "switzerland",
+        "Genève",
+        "isviçre",
+        "Svizzera"
+    ],
+    "Syria": [],
+    "Tajikistan": [],
+    "Taiwan": [
+        "Taiwan",
+        "Taïwan"
+    ],
+    "Tanzania": [
+        "Tanzanie"
+    ],
+    "Thailand": [
+        "Thaïlande",
+        "Tailandia",
+        "thailande",
+        "THAILAND",
+        "Thai",
+        "Thailande",
+        "Thailand"
+    ],
+    "Timor-Leste": [],
+    "Togo": [
+        "togo"
+    ],
+    "Tonga": [],
+    "Trinidad and Tobago": [],
+    "Tunisia": [
+        "Tunisie",
+        "Tunesien",
+        "Túnez"
+    ],
+    "Turkey": [
+        "Turquie",
+        "Türkei",
+        "Turquía",
+        "Türkiye",
+        "Turecko",
+        "Turkije",
+        "turkey",
+        "turkiye",
+        "turkei",
+        "Turkey"
+    ],
+    "Turkmenistan": [],
+    "UE": [
+        "UE",
+        "Europese Unie",
+        "EU",
+        "Unión Europea",
+        "union européenne",
+        "Union Européenne",
+        "Union européenne",
+        "European Union",
+        "Union européenne",
+        "Europäische Union",
+        "Europe",
+        "Europeiska unionen",
+        "Unione europea",
+        "europe",
+        "Europska unija",
+        "Euroopan unioni",
+        "Europa",
+        "U.E.",
+        "Européenne",
+        "Európai Unió"
+    ],
+    "Tuvalu": [],
+    "Uganda": [],
+    "Ukraine": [
+        "Ukraine"
+    ],
+    "United Arab Emirates": [
+        "Émirats arabes unis",
+        "Dubaï",
+        "Uae"
+    ],
+    "United Kingdom": [
+        "Royaume-Uni",
+        "UK",
+        "Britain",
+        "Royaume Uni",
+        "Angleterre",
+        "london",
+        "Yorkshire",
+        "United kingdom",
+        "United Kingdom",
+        "Grande Bretagne",
+        "Wielka Brytania",
+        "Great Britain",
+        "É.-U.A.",
+        "England",
+        "united kingdom",
+        "Vereinigtes Königreich",
+        "Wales",
+        "Ecosse",
+        "Ouest Écosse",
+        "inglaterra",
+        "Écosse",
+        "Scotland",
+        "British",
+        "ecosse"
+    ],
+    "United States of America": [
+        "New York",
+        "Staaten von Amerika",
+        "Washington",
+        "ETATS UNIS",
+        "EE. UU",
+        "U.S.A.",
+        "NY",
+        "Kalifornien",
+        "Massachusetts",
+        "Calorina",
+        "Terra Bella CA",
+        "Bentonville AZ",
+        "États-Unis",
+        "Estados Unidos",
+        "California",
+        "USA",
+        "Plano TX",
+        "Iowa",
+        "ESTADOS UNIDOS",
+        "E.U.A",
+        "United States",
+        "Etats Unis",
+        "Stany Zjednoczone",
+        "Estados unidos",
+        "Stati Uniti d",
+        "Etats-Unis",
+        "Floride",
+        "Californie",
+        "usa",
+        "u.s.a",
+        "É-U.A.",
+        "U.S.A."
+    ],
+    "Uruguay": [
+        "Uruguay"
+    ],
+    "Uzbekistan": [],
+    "Vanuatu": [],
+    "Venezuela": [
+        "Venezuela",
+        "Vénézuela"
+    ],
+    "Vietnam": [
+        "Vietname",
+        "Vietnam",
+        "VIETNAM",
+        "Viêt Nam"
+    ],
+    "Yemen": [],
+    "Zambia": [],
+    "Zimbabwe": [],
+    "Asia": [
+        "asia",
+        "asie",
+        "fao-n-71"
+    ],
+    "America": [
+        "america",
+        "amerique"
+    ],
+    "Mediterranean Sea": [
+        "mediterranee"
+    ],
+    "Atlantic Ocean": [
+        "atlantique",
+        "atlantic",
+        "atlantik",
+        "mer-des-caraibes",
+        "caraibes",
+        "fao-n-27",
+        "fao-27"
+    ],
+    "Indian Ocean": [
+        "ocean-indien"
+    ],
+    "Pacific Ocean": [
+        "pacific",
+        "pacifique"
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "oat": [
+        "avoine",
+        "avena"
+    ],
+    "wheat": [
+        "Blé",
+        "blé d'épeautre"
+    ],
+    "gluten": [],
+    "eggs": [],
+    "fish": [
+        "listao",
+        "saumon atlantique",
+        "thon albacore",
+        "heringsﬁlets",
+        "esturgeon",
+        "Atún",
+        "Wildlachs",
+        "Forellenfilets"
+    ],
+    "soybeans": [
+        "sojowego",
+        "soja tamari"
+    ],
+    "nuts": [
+        "walnuss"
+    ],
+    "celery": [],
+    "sulphur-dioxide-and-sulphites": [
+        "natriumdisulfit"
+    ],
+    "mustard": [],
+    "crustaceans": [],
+    "molluscs": [],
+    "sesame-seeds": [],
+    "peanuts": [],
+    "milk": [
+        "śmietanka",
+        "Soro de leite",
+        "soro de leite",
+        "ferments",
+        "fermentos lácteos",
+        "nata",
+        "Lait",
+        "mlijeko",
+        "Mlijeko",
+        "Ferments",
+        "smetana",
+        "protéines lactiques",
+        "lait et produits laitiers (y compris lactose)",
+        "yogourt",
+        "lácticos",
+        "lactique laitier",
+        "Bergbauernmilch"
+    ]
+}
