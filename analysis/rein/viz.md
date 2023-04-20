@@ -1,0 +1,2 @@
+- Origin of food and color countries based on type of food (brown -> equal distribution)
+- Select big food companies and visualize where the food products originates
