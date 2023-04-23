@@ -17,6 +17,8 @@ whenDocumentLoaded(() => {
 			const foodList = Object.keys(raw_CO2).sort((a, b) => 0.5 - Math.random());
 			container = document.getElementById('slider-container');
 			loadList(container, foodList)
+			// we plot the first chart so there is something
+			plot_donut_chart(undefined, foodList[0])
 		})
 });
 
@@ -26,14 +28,12 @@ function CO2ToData(itemInfo) {
 		if (itemInfo[key] > 0 && key !== 'total') 
 			data.push({name: itemInfo[key] >= 0.05 ? key: '', value: itemInfo[key]})
 	});
-	console.log(data);
 	return data;
 }
 
-function plot_donut_chart(event) {
-	const id = event.target.id;
+function plot_donut_chart(event, name) {
+	const id = event ? event.target.id: name;
 	const itemInfo = JSON_RAW_CO2[id]
-	console.log(itemInfo);
 	data = CO2ToData(itemInfo)
 	const  container = document.getElementById('pie-chart');
 	container.innerHTML = "";
