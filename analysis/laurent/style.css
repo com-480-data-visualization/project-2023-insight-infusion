@@ -1,0 +1,34 @@
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slider-container {
+    display: flex;
+    transform: translateX(0%);
+    transition: transform 2s linear;
+    animation: slide 300s linear;
+}
+
+.slider-item {
+    margin-right: 30px;
+    font-size: large !important;
+}
+
+.slider-item:hover {
+    cursor: pointer;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-1000%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+#pie-chart {
+    margin-top: 4vh;
+    display: flex;
+}
