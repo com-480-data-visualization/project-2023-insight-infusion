@@ -25,8 +25,8 @@ whenDocumentLoaded(() => {
 function CO2ToData(itemInfo) {
 	const data = []
 	Object.keys(itemInfo).forEach((key) => {
-		if (itemInfo[key] > 0 && key !== 'total') 
-			data.push({name: itemInfo[key] >= 0.05 ? key: '', value: itemInfo[key]})
+		if (key !== 'total') 
+			data.push({name: key, value: itemInfo[key]})
 	});
 	return data;
 }
@@ -42,11 +42,14 @@ function plot_donut_chart(event, name) {
 	title.appendChild(document.createTextNode(`${id}`));
 	container.appendChild(title);
 
-	child = DonutChart(data, {
+	const BarChart = new ZoomBarChart(data, itemInfo);
+	const svg = BarChart.chart();
+	container.appendChild(svg) 
+	/*child = DonutChart(data, {
 		name: d => d.name,
 		value: d => d.value,
 	})
-	container.appendChild(child)
+	container.appendChild(child)*/
 
 	const facts = document.createElement('h3');
 	facts.appendChild(document.createTextNode(`Total: ${itemInfo['total']} Kg CO2/Kg`));
@@ -163,3 +166,73 @@ function DonutChart(data, {
   
 	return Object.assign(svg.node(), {scales: {color}});
   }
+
+
+class ZoomBarChart {
+	constructor (data, itemInfo) {
+		this.data = data;
+		this.margin = ({top: 20, right: 0, bottom: 30, left: 40})
+		this.itemInfo = itemInfo
+	}
+	data = this.data;
+
+	// function for the chart
+	chart = () => {
+		const height = 200
+		const width = 430
+		const margin = ({top: 20, right: 0, bottom: 30, left: 40})
+		const x = d3.scaleBand().domain(data.map(d => d.name)).range([margin.left, width - margin.right]).padding(0.1);
+		const y = d3.scaleLinear().domain([0, d3.max(data, d => d.value)]).nice().range([height - margin.bottom, margin.top])
+		const names = data.map(x => x.name);
+		// const colors = d3.quantize(t => d3.interpolateSpectral(t * 0.8 + 0.1), names.size);
+		// const color = d3.scaleOrdinal(names, colors);
+		// const N = d3.map(data, x => x.name);
+
+		const xAxis = g => g.attr("transform", `translate(0,${height - margin.bottom})`).call(d3.axisBottom(x).tickSizeOuter(0))
+
+		const yAxis = g => g.attr("transform", `translate(${margin.left},0)`).call(d3.axisLeft(y)).call(g => g.select(".domain").remove())
+		function zoom(svg) {
+			const extent = [[margin.left, margin.top], [width - margin.right, height - margin.top]];
+	
+			svg.call(d3.zoom()
+				.scaleExtent([1, 8])
+				.translateExtent(extent)
+				.extent(extent)
+				.on("zoom", zoomed));
+	
+			function zoomed(event) {
+				x.range([margin.left, width - margin.right].map(d => event.transform.applyX(d)));
+				svg.selectAll(".bars rect").attr("x", d => x(d.name)).attr("width", x.bandwidth());
+				svg.selectAll(".x-axis").call(xAxis);
+			}
+		}
+		const svg = d3.create("svg")
+			.attr("viewBox", [0, 0, width, height])
+			.call(zoom);
+	  
+		svg.append("g")
+			.attr("class", "bars")
+		  .selectAll("rect")
+		  .data(data)
+		  .join("rect")
+		    .attr("fill", d => {
+				if (data[d.name] < 0.3) return 'green';
+				else if (data[d.name] < 1) return 'orange';
+				else return 'red'
+			})
+			.attr("x", d => x(d.name))
+			.attr("y", d => y(d.value))
+			.attr("height", d => y(0) - y(d.value))
+			.attr("width", x.bandwidth());
+	  
+		svg.append("g")
+			.attr("class", "x-axis")
+			.call(xAxis);
+	  
+		svg.append("g")
+			.attr("class", "y-axis")
+			.call(yAxis);
+	  
+		return svg.node();
+	}
+}
