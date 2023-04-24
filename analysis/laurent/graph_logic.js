@@ -8,24 +8,61 @@ function whenDocumentLoaded(action) {
 }
 
 let JSON_RAW_CO2 = {}
-
+let JSON_HIERARCHY = {}
 whenDocumentLoaded(() => {
+	fetch("./hierarchy_CO2.json")
+		.then((response) => response.json())
+		.then((hierarchy_CO2) => {
+			JSON_HIERARCHY = hierarchy_CO2;
+			const data = hierarchy_to_data(hierarchy_CO2);
+			bubbleContainer2 = document.getElementById("bubbles-2");
+			const bubbles_CO2 = new CO2Bubbles(data)
+			const chart_CO2 = bubbles_CO2.chart() 
+			bubbleContainer2.appendChild(chart_CO2)
+		});
+	
 	fetch('./raw_CO2.json')
 		.then((response) => response.json())
 		.then((raw_CO2) => {
 			JSON_RAW_CO2 = raw_CO2;
 			const foodList = Object.keys(raw_CO2).sort((a, b) => 0.5 - Math.random());
 			
-			bubbleContainer = document.getElementById('bubbles');
-			const bubbles = new TopicBubbles()
-			const chart = bubbles.chart()
-			bubbleContainer.appendChild(chart)
 			container = document.getElementById('slider-container');
 			loadList(container, foodList)
 			// we plot the first chart so there is something
-			plot_donut_chart(undefined, foodList[0])
+			plot_bar_chart(undefined, foodList[0])
 		})
 });
+function addToDynamicInfo(group, score) {
+	const container = document.getElementById("dynamic-info");
+	container.innerHTML = "";
+	const newH3 = document.createElement('h3');
+	newH3.appendChild(document.createTextNode(`${group}: ${score} kg CO2 / kg`))
+	container.appendChild(newH3)
+}
+function removeDynamicInfo() {
+	const container = document.getElementById("dynamic-info");
+	container.innerHTML = "";
+	const newH3 = document.createElement('h3');
+	newH3.appendChild(document.createTextNode(`Hover on a CO2 bubble to get info`));
+	container.appendChild(newH3);
+}
+function hierarchy_to_data(d) {
+	const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
+	const xRange = [margin.left, 900 - margin.right]
+	const x = d3.scaleLinear().domain([0, 13]).range(xRange)
+	const centerY = (300 - margin.bottom + margin.top) / 2
+	const data = Object.keys(d).map((group) => {
+		return {
+			"group": group,
+			"count": d[group]["count"],
+			"score": d[group]["score"],
+			"x": x(d[group]["score"]),
+			"y": centerY
+		}
+	})
+	return data.sort((a, b) =>  a.score - b.score);
+}
 
 function CO2ToData(itemInfo) {
 	const data = []
@@ -36,7 +73,7 @@ function CO2ToData(itemInfo) {
 	return data;
 }
 
-function plot_donut_chart(event, name) {
+function plot_bar_chart(event, name) {
 	const id = event ? event.target.id: name;
 	const itemInfo = JSON_RAW_CO2[id]
 	data = CO2ToData(itemInfo)
@@ -72,7 +109,7 @@ function loadList(container_element, food_array) {
 		newDiv.appendChild(newFood);
 		newDiv.className = getClassName(e);
 		newDiv.id = e;
-		newDiv.addEventListener("click", plot_donut_chart, false);
+		newDiv.addEventListener("click", plot_bar_chart, false);
 		container_element.appendChild(newDiv)
 	});
 }
@@ -128,7 +165,7 @@ class ZoomBarChart {
 			.attr("y", d => y(d.value))
 			.attr("height", d => y(0) - y(d.value))
 			.attr("width", x.bandwidth());
-	  
+		
 		svg.append("g")
 			.attr("class", "x-axis")
 			.call(xAxis);
@@ -137,6 +174,110 @@ class ZoomBarChart {
 			.attr("class", "y-axis")
 			.call(yAxis);
 	  
+		return svg.node();
+	}
+}
+
+class CO2Bubbles {
+	constructor(data) {
+		this.data = data
+	}
+	
+	chart = () => {
+		const data = this.data
+		const width = 900
+		const height = 300
+		const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
+		const spacing = 4
+		const xRange = [margin.left, width - margin.right]
+		const x = d3.scaleLinear().domain([0, 13]).range(xRange)
+		const centerY = (height - margin.bottom + margin.top) / 2
+
+		const svg = d3.create('svg').attr('viewBox', [0, 0, width, height]);
+  
+		const tooltip = d3.select('body').append('div').attr('class', 'tooltip');
+
+		let foodGroups = data;
+		console.log(foodGroups)
+		
+		foodGroups.sort((a, b) => a.score - b.score);
+	
+		foodGroups.sort((a, b) => a.score - b.score);
+
+		let r = d3.scaleLinear().domain(d3.extent(foodGroups, d => d.count)).range([13, 80]);
+
+		let node = svg.selectAll('.node')
+			.data(foodGroups, d => d.id)
+			.enter()
+			.append('g')
+			.attr('class', 'node')
+			.on('mouseover', function (e, d) {
+				console.log(d.group, d.count);
+				d3.select(this)
+					.append('circle')
+					.attr('class', 'hover-circle')
+					.attr('r', d => r(d.count) + 3)
+					.style('fill', 'none')
+					.style('stroke', '#999')
+					.style('stroke-width', 0.5)
+					.attr('stroke-dasharray', 2);
+				tooltip.transition()
+					.duration(200)
+					.style("opacity", 0.9);
+				addToDynamicInfo(d.group, d.score.toFixed(2));
+			})
+			.on("mouseout", function (d) {
+				removeDynamicInfo()
+				d3.select('.hover-circle').remove();
+				tooltip.transition()
+					.duration(500)
+					.style("opacity", 0);
+				
+			});
+		
+		let circle = node.append('circle')
+			.attr('stroke', 'none')
+			.attr('fill', d => {
+			if (d.score <= 1.39) { 
+				return 'rgb(2, 211, 37)';
+			} else if (d.score < 1.77) { 
+				return 'rgb(123, 255, 0)';
+			} else if (d.score < 3.57) { 
+				return 'rgb(255, 238, 0)';
+			} else if (d.score < 7.2) { 
+				return 'rgb(255, 153, 0)';
+			} else {
+				return 'rgb(255, 51, 0)';
+			}
+			})
+			.attr('r', d => r(d.count))
+			.style('opacity', 1);
+
+		node.append("text")
+			.attr("dx", d => -(d.count/10))
+			.text(d => d.group.length > 12? d.group.slice(0, 12) + '...': d.group)
+			.style("font-size", d => `${d.count * 0.04 > 5? d.count * 0.04:5}`)
+			
+
+		let simulation = d3.forceSimulation(data)
+			.force('x', d3.forceX(d => x(d.score)))
+			.force('y', d3.forceY(centerY))
+			.force('collide', d3.forceCollide().radius(d => r(d.count) + spacing))
+			.on('tick', tickActions)
+			.stop();
+
+		for (let i = 0; i < 100; ++i) simulation.tick();
+
+		simulation.restart();
+	
+		function tickActions() {
+			node.attr('transform', d => {
+			let radius = r(d.count) + spacing;
+			d.x = Math.max(xRange[0] + radius, Math.min(xRange[1] - radius, d.x));
+			return `translate(${d.x}, ${d.y})`;
+			})
+		}
+	
 		return svg.node();
 	}
 }
@@ -2058,7 +2199,6 @@ class TopicBubbles {
 		topics.sort((a, b) => a.ratio - b.ratio);
 	
 		topics.sort((a, b) => a.ratio - b.ratio);
-
 		let r = d3.scaleLinear().domain(d3.extent(data, d => d.selectedCount)).range([13, 50]);
 
 		let node = svg.selectAll('.node')
@@ -2067,7 +2207,7 @@ class TopicBubbles {
 			.append('g')
 			.attr('class', 'node')
 			.on('mouseover', function (e, d) {
-				console.log(d.topic, d.count);
+				//console.log(d.topic, d.count);
 				d3.select(this)
 					.append('circle')
 					.attr('class', 'hover-circle')

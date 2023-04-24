@@ -37,3 +37,12 @@
 .bar-chart {
     height: 15vh;
 }
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#dynamic-info {
+    margin-left: 20vh;
+    margin-right: auto;
+}
