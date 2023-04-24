@@ -30,5 +30,10 @@
 
 #pie-chart {
     margin-top: 4vh;
-    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.bar-chart {
+    height: 15vh;
 }

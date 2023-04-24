@@ -1,0 +1,312 @@
+{
+    "culinary aids and miscellaneous ingredients": {
+        "count": 160,
+        "score": 3.1426250000000002,
+        "subgroups": {
+            "seaweed": {
+                "count": 16,
+                "score": 6.675
+            },
+            "herbs": {
+                "count": 24,
+                "score": 1.1704166666666667
+            },
+            "various ingredients": {
+                "count": 19,
+                "score": 2.508947368421053
+            },
+            "spices": {
+                "count": 23,
+                "score": 5.875217391304347
+            },
+            "cooking aids": {
+                "count": 3,
+                "score": 3.7300000000000004
+            },
+            "sauces": {
+                "count": 59,
+                "score": 2.579152542372881
+            },
+            "salts": {
+                "count": 5,
+                "score": 0.61
+            },
+            "condiments": {
+                "count": 7,
+                "score": 1.3542857142857143
+            },
+            "foodstuffs intended for particular nutritional uses": {
+                "count": 4,
+                "score": 2.31
+            }
+        }
+    },
+    "baby food": {
+        "count": 33,
+        "score": 2.403636363636364,
+        "subgroups": {
+            "infant cereals & cookies": {
+                "count": 3,
+                "score": 4.58
+            },
+            "infant milks & drinks": {
+                "count": 12,
+                "score": 3.739166666666667
+            },
+            "infant desserts": {
+                "count": 5,
+                "score": 1.21
+            },
+            "salted snacks & infant dishes": {
+                "count": 13,
+                "score": 1.1276923076923075
+            }
+        }
+    },
+    "beverages": {
+        "count": 228,
+        "score": 1.5277631578947368,
+        "subgroups": {
+            "alcoholic beverages": {
+                "count": 42,
+                "score": 1.137142857142857
+            },
+            "non-alcoholic beverages": {
+                "count": 102,
+                "score": 2.724411764705883
+            },
+            "water": {
+                "count": 84,
+                "score": 0.27
+            }
+        }
+    },
+    "starters and mixed dishes": {
+        "count": 292,
+        "score": 4.565993150684932,
+        "subgroups": {
+            "mixed dishes": {
+                "count": 122,
+                "score": 6.055245901639345
+            },
+            "puff pastry & other starters": {
+                "count": 22,
+                "score": 5.33681818181818
+            },
+            "soups": {
+                "count": 43,
+                "score": 1.4755813953488373
+            },
+            "vegetarian dishes": {
+                "count": 7,
+                "score": 1.7085714285714284
+            },
+            "sandwiches": {
+                "count": 40,
+                "score": 4.754
+            },
+            "pizzas, pies & savoury pancakes": {
+                "count": 45,
+                "score": 3.6806666666666668
+            },
+            "mixed salads & raw vegetables": {
+                "count": 13,
+                "score": 3.5323076923076924
+            }
+        }
+    },
+    "fruits, vegetables, legumes and oilseeds": {
+        "count": 426,
+        "score": 1.3868779342723003,
+        "subgroups": {
+            "fruits": {
+                "count": 98,
+                "score": 1.1585714285714288
+            },
+            "nuts & oil seeds": {
+                "count": 49,
+                "score": 3.514693877551021
+            },
+            "vegetables": {
+                "count": 197,
+                "score": 1.1244162436548224
+            },
+            "potatoes & other tubers": {
+                "count": 46,
+                "score": 1.2317391304347827
+            },
+            "pulses": {
+                "count": 36,
+                "score": 0.7466666666666666
+            }
+        }
+    },
+    "ice creams and sherbets": {
+        "count": 25,
+        "score": 1.7756000000000003,
+        "subgroups": {
+            "ice creams": {
+                "count": 10,
+                "score": 1.75
+            },
+            "frozen desserts": {
+                "count": 12,
+                "score": 1.9941666666666666
+            },
+            "sherbets": {
+                "count": 3,
+                "score": 0.9866666666666667
+            }
+        }
+    },
+    "milk and dairy products": {
+        "count": 223,
+        "score": 4.314529147982062,
+        "subgroups": {
+            "cheeses": {
+                "count": 121,
+                "score": 5.688264462809916
+            },
+            "fresh dairy products & similar": {
+                "count": 79,
+                "score": 2.420759493670886
+            },
+            "creams & cream specialities": {
+                "count": 6,
+                "score": 2.6583333333333337
+            },
+            "milks": {
+                "count": 17,
+                "score": 3.921764705882353
+            }
+        }
+    },
+    "fats": {
+        "count": 56,
+        "score": 3.9623214285714283,
+        "subgroups": {
+            "butters": {
+                "count": 10,
+                "score": 6.959999999999999
+            },
+            "vegetable oils & fats": {
+                "count": 19,
+                "score": 4.791052631578947
+            },
+            "other fats": {
+                "count": 6,
+                "score": 1.67
+            },
+            "fish oils": {
+                "count": 4,
+                "score": 1.6
+            },
+            "margarines": {
+                "count": 17,
+                "score": 2.637647058823529
+            }
+        }
+    },
+    "cereal products": {
+        "count": 376,
+        "score": 2.493404255319149,
+        "subgroups": {
+            "pasta, rice & cereals": {
+                "count": 62,
+                "score": 1.6190322580645162
+            },
+            "flours & pastries": {
+                "count": 40,
+                "score": 1.9107500000000002
+            },
+            "cakes & pastries": {
+                "count": 76,
+                "score": 3.1432894736842103
+            },
+            "breads & pastries": {
+                "count": 73,
+                "score": 1.7253424657534246
+            },
+            "breakfast cereals & cookies": {
+                "count": 125,
+                "score": 3.166959999999999
+            }
+        }
+    },
+    "sweetened products": {
+        "count": 53,
+        "score": 6.7032075471698125,
+        "subgroups": {
+            "chocolates & chocolate products": {
+                "count": 30,
+                "score": 10.783666666666672
+            },
+            "non-chocolate confectionery": {
+                "count": 9,
+                "score": 1.5577777777777777
+            },
+            "jams & similar": {
+                "count": 7,
+                "score": 1.5299999999999998
+            },
+            "sugars, honeys & similar": {
+                "count": 7,
+                "score": 1.0042857142857144
+            }
+        }
+    },
+    "meat, eggs, fish": {
+        "count": 645,
+        "score": 12.823813953488372,
+        "subgroups": {
+            "fish & seafood products": {
+                "count": 46,
+                "score": 6.477391304347826
+            },
+            "cooked meat": {
+                "count": 105,
+                "score": 24.93704761904762
+            },
+            "raw meat": {
+                "count": 136,
+                "score": 16.537279411764704
+            },
+            "raw fish": {
+                "count": 94,
+                "score": 7.656914893617022
+            },
+            "cold cuts": {
+                "count": 144,
+                "score": 9.334305555555554
+            },
+            "cooked fish": {
+                "count": 55,
+                "score": 8.994000000000002
+            },
+            "other meat products": {
+                "count": 15,
+                "score": 14.769999999999994
+            },
+            "meat substitutes": {
+                "count": 5,
+                "score": 1.202
+            },
+            "cooked shellfish": {
+                "count": 7,
+                "score": 15.447142857142856
+            },
+            "raw shellfish": {
+                "count": 14,
+                "score": 9.212857142857144
+            },
+            "eggs": {
+                "count": 21,
+                "score": 3.7333333333333334
+            },
+            "cold cut substitutes": {
+                "count": 3,
+                "score": 1.4366666666666668
+            }
+        }
+    }
+}
