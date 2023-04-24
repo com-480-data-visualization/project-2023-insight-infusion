@@ -9,16 +9,21 @@ function whenDocumentLoaded(action) {
 
 let JSON_RAW_CO2 = {}
 let JSON_HIERARCHY = {}
+let GROUP_DATA = {}
+let SUBGROUP_DATA = {}
 whenDocumentLoaded(() => {
 	fetch("./hierarchy_CO2.json")
 		.then((response) => response.json())
 		.then((hierarchy_CO2) => {
 			JSON_HIERARCHY = hierarchy_CO2;
-			const data = hierarchy_to_data(hierarchy_CO2);
-			bubbleContainer2 = document.getElementById("bubbles-2");
-			const bubbles_CO2 = new CO2Bubbles(data)
-			const chart_CO2 = bubbles_CO2.chart() 
-			bubbleContainer2.appendChild(chart_CO2)
+			GROUP_DATA = hierarchy_to_group_data(hierarchy_CO2);
+			SUBGROUP_DATA = hierarchy_to_subgroup_data(hierarchy_CO2)
+			subgroupButtonAction()
+			//newDiv.addEventListener("click", plot_bar_chart, false);
+			const groupButton = document.getElementById("group-button");
+			const subgroupButton = document.getElementById("subgroup-button");
+			groupButton.addEventListener("click", groupButtonAction, false);
+			subgroupButton.addEventListener("click", subgroupButtonAction, false);
 		});
 	
 	fetch('./raw_CO2.json')
@@ -33,6 +38,7 @@ whenDocumentLoaded(() => {
 			plot_bar_chart(undefined, foodList[0])
 		})
 });
+
 function addToDynamicInfo(group, score) {
 	const container = document.getElementById("dynamic-info");
 	container.innerHTML = "";
@@ -47,7 +53,8 @@ function removeDynamicInfo() {
 	newH3.appendChild(document.createTextNode(`Hover on a CO2 bubble to get info`));
 	container.appendChild(newH3);
 }
-function hierarchy_to_data(d) {
+
+function hierarchy_to_group_data(d) {
 	const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
 	const xRange = [margin.left, 900 - margin.right]
 	const x = d3.scaleLinear().domain([0, 13]).range(xRange)
@@ -62,6 +69,26 @@ function hierarchy_to_data(d) {
 		}
 	})
 	return data.sort((a, b) =>  a.score - b.score);
+}
+
+function hierarchy_to_subgroup_data (d) {
+	const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
+	const xRange = [margin.left, 900 - margin.right]
+	const x = d3.scaleLinear().domain([0, 25]).range(xRange)
+	const centerY = (300 - margin.bottom + margin.top) / 2
+	const data = []
+	Object.keys(d).forEach((group) => {
+		Object.keys(d[group]['subgroups']).forEach((subgroup) => {
+			data.push({
+				"group": subgroup,
+				"count": d[group]['subgroups'][subgroup].count,
+				"score": d[group]['subgroups'][subgroup].score,
+				"x": x(d[group]["subgroups"][subgroup].score),
+				"y": centerY
+			})
+		});
+	});
+	return data.sort((a, b) => a.score - b.score)
 }
 
 function CO2ToData(itemInfo) {
@@ -92,6 +119,20 @@ function plot_bar_chart(event, name) {
 	const plot = BarChart.chart();
 	plot.className = "bar-chart";
 	container.appendChild(plot) 
+}
+function groupButtonAction() {
+	container = document.getElementById("bubbles-2");
+	container.innerHTML= "";
+	const bubbles_CO2 = new CO2Bubbles(GROUP_DATA, 20, 90, 10, 0.05)
+	const chart_CO2 = bubbles_CO2.chart() 
+	container.appendChild(chart_CO2)
+}
+function subgroupButtonAction() {
+	container = document.getElementById("bubbles-2");
+	container.innerHTML= "";
+	const bubbles_CO2 = new CO2Bubbles(SUBGROUP_DATA, 5, 59, 4, 0.1)
+	const chart_CO2 = bubbles_CO2.chart() 
+	container.appendChild(chart_CO2)
 }
 
 function getClassName(id) {
@@ -179,8 +220,12 @@ class ZoomBarChart {
 }
 
 class CO2Bubbles {
-	constructor(data) {
+	constructor(data, rx, ry, placementNumber, policeNumber) {
 		this.data = data
+		this.rx = rx
+		this.ry = ry
+		this.placementNumber = placementNumber
+		this.policeNumber = policeNumber
 	}
 	
 	chart = () => {
@@ -204,7 +249,8 @@ class CO2Bubbles {
 	
 		foodGroups.sort((a, b) => a.score - b.score);
 
-		let r = d3.scaleLinear().domain(d3.extent(foodGroups, d => d.count)).range([13, 80]);
+		let r = d3.scaleLinear().domain(d3.extent(foodGroups, d => d.count)).range([this.rx, this.ry]);
+
 
 		let node = svg.selectAll('.node')
 			.data(foodGroups, d => d.id)
@@ -212,7 +258,6 @@ class CO2Bubbles {
 			.append('g')
 			.attr('class', 'node')
 			.on('mouseover', function (e, d) {
-				console.log(d.group, d.count);
 				d3.select(this)
 					.append('circle')
 					.attr('class', 'hover-circle')
@@ -254,9 +299,11 @@ class CO2Bubbles {
 			.style('opacity', 1);
 
 		node.append("text")
-			.attr("dx", d => -(d.count/10))
+			.attr("dx", d => -(d.count/this.placementNumber))
 			.text(d => d.group.length > 12? d.group.slice(0, 12) + '...': d.group)
-			.style("font-size", d => `${d.count * 0.04 > 5? d.count * 0.04:5}`)
+			.style("font-size", d => `${d.count * this.policeNumber > 5? d.count * d.policeNumber:5}`)
+			// .style("font-size", d => `${d.count * 0.04 > 5? d.count * 0.04:5}`)
+			// .attr("dx", d => -(d.count/10))
 			
 
 		let simulation = d3.forceSimulation(data)
