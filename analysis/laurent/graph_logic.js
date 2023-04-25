@@ -284,7 +284,7 @@ class CO2Bubbles {
 		let circle = node.append('circle')
 			.attr('stroke', 'none')
 			.attr('fill', d => {
-			if (d.score <= 1.39) { 
+			if (d.score <= 0.94) { 
 				return 'rgb(2, 211, 37)';
 			} else if (d.score < 1.77) { 
 				return 'rgb(123, 255, 0)';
