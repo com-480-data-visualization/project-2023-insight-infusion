@@ -34,7 +34,6 @@ whenDocumentLoaded(() => {
 			
 			container = document.getElementById('slider-container');
 			loadList(container, foodList)
-			// we plot the first chart so there is something
 			plot_bar_chart(undefined, foodList[0])
 		})
 });
@@ -120,17 +119,19 @@ function plot_bar_chart(event, name) {
 	plot.className = "bar-chart";
 	container.appendChild(plot) 
 }
+
 function groupButtonAction() {
 	container = document.getElementById("bubbles-2");
 	container.innerHTML= "";
-	const bubbles_CO2 = new CO2Bubbles(GROUP_DATA, 20, 90, 10, 0.05)
+	const bubbles_CO2 = new CO2Bubbles(GROUP_DATA, 20, 90, false)
 	const chart_CO2 = bubbles_CO2.chart() 
 	container.appendChild(chart_CO2)
 }
+
 function subgroupButtonAction() {
 	container = document.getElementById("bubbles-2");
 	container.innerHTML= "";
-	const bubbles_CO2 = new CO2Bubbles(SUBGROUP_DATA, 5, 59, 4, 0.1)
+	const bubbles_CO2 = new CO2Bubbles(SUBGROUP_DATA, 5, 59, true)
 	const chart_CO2 = bubbles_CO2.chart() 
 	container.appendChild(chart_CO2)
 }
@@ -153,6 +154,28 @@ function loadList(container_element, food_array) {
 		newDiv.addEventListener("click", plot_bar_chart, false);
 		container_element.appendChild(newDiv)
 	});
+}
+
+const plotSubs = (subgroup) =>  {
+	const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
+	const xRange = [margin.left, 900 - margin.right]
+	const x = d3.scaleLinear().domain([0, 25]).range(xRange)
+	const centerY = (300 - margin.bottom + margin.top) / 2
+	dict = JSON_HIERARCHY[subgroup].subgroups;
+	const data = Object.keys(dict).map((subgroup) => {
+		return {
+			group: subgroup,
+			score: dict[subgroup].score,
+			count: dict[subgroup].count,
+			x: x(dict[subgroup].score),
+			y: centerY
+		}
+	});
+	container = document.getElementById("bubbles-2");
+	container.innerHTML= "";
+	const bubbles_CO2 = new CO2Bubbles(data, 20, 50, false)
+	const chart_CO2 = bubbles_CO2.chart() 
+	container.appendChild(chart_CO2)
 }
 
 class ZoomBarChart {
@@ -221,12 +244,11 @@ class ZoomBarChart {
 
 // inspired by: https://observablehq.com/@tiffylou/topics-by-gender-in-the-smithsonian-api
 class CO2Bubbles {
-	constructor(data, rx, ry, placementNumber, policeNumber) {
+	constructor(data, rx, ry, isBySubgroup) {
 		this.data = data
 		this.rx = rx
 		this.ry = ry
-		this.placementNumber = placementNumber
-		this.policeNumber = policeNumber
+		this.isBySubgroup = isBySubgroup
 	}
 	
 	chart = () => {
@@ -262,7 +284,7 @@ class CO2Bubbles {
 				d3.select(this)
 					.append('circle')
 					.attr('class', 'hover-circle')
-					.attr('r', d => r(d.count) + 3) // qqchose a faire avec https://stackoverflow.com/questions/20913869/wrap-text-within-circle
+					.attr('r', d => r(d.count) + 3)
 					.style('fill', 'none')
 					.style('stroke', '#999')
 					.style('stroke-width', 0.5)
@@ -279,8 +301,11 @@ class CO2Bubbles {
 					.duration(500)
 					.style("opacity", 0);
 				
+			})
+			.on("click", (e, d) => {
+				if (!this.isBySubgroup) plotSubs(d.group);
 			});
-		
+
 		let circle = node.append('circle')
 			.attr('stroke', 'none')
 			.attr('fill', d => {
@@ -303,6 +328,8 @@ class CO2Bubbles {
 			circle.r = r(circle.count) + 3
 			circle.side = 2 * circle.r * Math.cos(Math.PI / 4)
 		}
+
+		// node.on('click', d => console.log(d))
 
 		node.append("foreignObject")
 			.attr('x', d => -d.side/2)
