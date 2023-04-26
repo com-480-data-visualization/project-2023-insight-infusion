@@ -359,7 +359,6 @@ class CO2Bubbles {
 			return `translate(${d.x}, ${d.y})`;
 			})
 		}
-	
 		return svg.node();
 	}
 }
