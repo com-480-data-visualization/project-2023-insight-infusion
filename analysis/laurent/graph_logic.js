@@ -333,24 +333,24 @@ class CO2Bubbles {
 				if (this.isBySubgroup && !this.isByProduct) plotProducts(d.group);
 				if (this.isByProduct) {
 					plot_bar_chart(undefined, d.group)
-					window.scrollBy(0, 900)
+					window.scrollTo(0, 1000)
 				}
 			});
 
 		let circle = node.append('circle')
 			.attr('stroke', 'none')
 			.attr('fill', d => {
-			if (d.score <= 0.94) { 
-				return 'rgb(2, 211, 37)';
-			} else if (d.score < 1.77) { 
-				return 'rgb(123, 255, 0)';
-			} else if (d.score < 3.57) { 
-				return 'rgb(255, 238, 0)';
-			} else if (d.score < 7.2) { 
-				return 'rgb(255, 153, 0)';
-			} else {
-				return 'rgb(255, 51, 0)';
-			}
+				if (d.score <= 0.94) { 
+					return '#1e8f4e';
+				} else if (d.score < 1.77) { 
+					return '#60ac0e';
+				} else if (d.score < 3.57) { 
+					return '#eeae0e';
+				} else if (d.score < 7.2) { 
+					return '#ff6f1e';
+				} else {
+					return '#df1f1f';
+				}
 			})
 			.attr('r', d => r(d.count))
 			.style('opacity', 1);

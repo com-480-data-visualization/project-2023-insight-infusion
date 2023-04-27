@@ -43,10 +43,19 @@ img {
     margin-right: auto;
 }
 #dynamic-info {
-    margin-left: 34vw;
+    text-align: center;
+}
+.title {
+    display: inline-block;
 }
 .buttons {
-    margin-left: 41vw;
+    display: flex !important;
+    justify-content: center;
+    color: rgb(230, 215, 0);
+}
+
+.btn {
+    display: block;
 }
 #bubbles-2{
     margin-bottom: 3vh;
@@ -56,4 +65,10 @@ img {
 }
 html {
     scroll-behavior: smooth;
-  }
+}
+.a-score{
+    background-color: '#1e8f4e' !important;
+}
+.label-success {
+    background-color: '#1e8f4e' !important;
+}
