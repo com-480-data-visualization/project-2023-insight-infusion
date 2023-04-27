@@ -19,7 +19,6 @@ whenDocumentLoaded(() => {
 			GROUP_DATA = hierarchy_to_group_data(hierarchy_CO2);
 			SUBGROUP_DATA = hierarchy_to_subgroup_data(hierarchy_CO2)
 			subgroupButtonAction()
-			//newDiv.addEventListener("click", plot_bar_chart, false);
 			const groupButton = document.getElementById("group-button");
 			const subgroupButton = document.getElementById("subgroup-button");
 			groupButton.addEventListener("click", groupButtonAction, false);
@@ -30,6 +29,7 @@ whenDocumentLoaded(() => {
 		.then((response) => response.json())
 		.then((raw_CO2) => {
 			JSON_RAW_CO2 = raw_CO2;
+			console.log(raw_CO2)
 			const foodList = Object.keys(raw_CO2).sort((a, b) => 0.5 - Math.random());
 			
 			container = document.getElementById('slider-container');
@@ -57,7 +57,7 @@ function hierarchy_to_group_data(d) {
 	const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
 	const xRange = [margin.left, 900 - margin.right]
 	const x = d3.scaleLinear().domain([0, 13]).range(xRange)
-	const centerY = (300 - margin.bottom + margin.top) / 2
+	const centerY = (375 - margin.bottom + margin.top) / 2
 	const data = Object.keys(d).map((group) => {
 		return {
 			"group": group,
@@ -74,7 +74,7 @@ function hierarchy_to_subgroup_data (d) {
 	const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
 	const xRange = [margin.left, 900 - margin.right]
 	const x = d3.scaleLinear().domain([0, 25]).range(xRange)
-	const centerY = (300 - margin.bottom + margin.top) / 2
+	const centerY = (375 - margin.bottom + margin.top) / 2
 	const data = []
 	Object.keys(d).forEach((group) => {
 		Object.keys(d[group]['subgroups']).forEach((subgroup) => {
@@ -93,7 +93,7 @@ function hierarchy_to_subgroup_data (d) {
 function CO2ToData(itemInfo) {
 	const data = []
 	Object.keys(itemInfo).forEach((key) => {
-		if (key !== 'total') 
+		if (key !== 'total' && key !== 'subgroup') 
 			data.push({name: key, value: itemInfo[key]})
 	});
 	return data;
@@ -131,7 +131,7 @@ function groupButtonAction() {
 function subgroupButtonAction() {
 	container = document.getElementById("bubbles-2");
 	container.innerHTML= "";
-	const bubbles_CO2 = new CO2Bubbles(SUBGROUP_DATA, 5, 59, true)
+	const bubbles_CO2 = new CO2Bubbles(SUBGROUP_DATA, 5, 55, true)
 	const chart_CO2 = bubbles_CO2.chart() 
 	container.appendChild(chart_CO2)
 }
@@ -160,7 +160,7 @@ const plotSubs = (subgroup) =>  {
 	const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
 	const xRange = [margin.left, 900 - margin.right]
 	const x = d3.scaleLinear().domain([0, 25]).range(xRange)
-	const centerY = (300 - margin.bottom + margin.top) / 2
+	const centerY = (375 - margin.bottom + margin.top) / 2
 	dict = JSON_HIERARCHY[subgroup].subgroups;
 	const data = Object.keys(dict).map((subgroup) => {
 		return {
@@ -173,7 +173,32 @@ const plotSubs = (subgroup) =>  {
 	});
 	container = document.getElementById("bubbles-2");
 	container.innerHTML= "";
-	const bubbles_CO2 = new CO2Bubbles(data, 20, 50, false)
+	const bubbles_CO2 = new CO2Bubbles(data, 20, 50, true)
+	const chart_CO2 = bubbles_CO2.chart() 
+	container.appendChild(chart_CO2)
+}
+
+const plotProducts = (subgroup) => {
+	const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
+	const xRange = [margin.left, 900 - margin.right]
+	const x = d3.scaleLinear().domain([0, 53]).range(xRange)
+	const centerY = (375 - margin.bottom + margin.top) / 2
+	let data = []
+	Object.keys(JSON_RAW_CO2).forEach((product) => {
+		if (JSON_RAW_CO2[product].subgroup === subgroup)
+			data.push({
+				group: product,
+				count: 1,
+				score: JSON_RAW_CO2[product].total,
+				x: x(JSON_RAW_CO2[product].total),
+				y: centerY
+			});
+	});
+	data = data.sort((a, b) => a.score - b.score)
+	container = document.getElementById("bubbles-2");
+	container.innerHTML= "";
+	const minSize = data.length / 100
+	const bubbles_CO2 = new CO2Bubbles(data, minSize, 20, false, true)
 	const chart_CO2 = bubbles_CO2.chart() 
 	container.appendChild(chart_CO2)
 }
@@ -244,21 +269,23 @@ class ZoomBarChart {
 
 // inspired by: https://observablehq.com/@tiffylou/topics-by-gender-in-the-smithsonian-api
 class CO2Bubbles {
-	constructor(data, rx, ry, isBySubgroup) {
+	constructor(data, rx, ry, isBySubgroup, isByProduct) {
 		this.data = data
 		this.rx = rx
 		this.ry = ry
 		this.isBySubgroup = isBySubgroup
+		this.isByProduct = isByProduct
 	}
 	
 	chart = () => {
 		const data = this.data
 		const width = 900
-		const height = 300
+		const height = 375
 		const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
 		const spacing = 4
 		const xRange = [margin.left, width - margin.right]
-		const x = d3.scaleLinear().domain([0, 13]).range(xRange)
+		const domainMax = this.isByProduct ? 53: data.slice(-1)[0].score
+		const x = d3.scaleLinear().domain([0, 25]).range(xRange)
 		const centerY = (height - margin.bottom + margin.top) / 2
 
 		const svg = d3.create('svg').attr('viewBox', [0, 0, width, height]);
@@ -266,7 +293,6 @@ class CO2Bubbles {
 		const tooltip = d3.select('body').append('div').attr('class', 'tooltip');
 
 		let foodGroups = data;
-		console.log(foodGroups)
 		
 		foodGroups.sort((a, b) => a.score - b.score);
 	
@@ -303,7 +329,12 @@ class CO2Bubbles {
 				
 			})
 			.on("click", (e, d) => {
-				if (!this.isBySubgroup) plotSubs(d.group);
+				if (!this.isBySubgroup && !this.isByProduct) plotSubs(d.group);
+				if (this.isBySubgroup && !this.isByProduct) plotProducts(d.group);
+				if (this.isByProduct) {
+					plot_bar_chart(undefined, d.group)
+					window.scrollBy(0, 900)
+				}
 			});
 
 		let circle = node.append('circle')
@@ -329,7 +360,7 @@ class CO2Bubbles {
 			circle.side = 2 * circle.r * Math.cos(Math.PI / 4)
 		}
 
-		// node.on('click', d => console.log(d))
+		node.attr('class', 'circles')
 
 		node.append("foreignObject")
 			.attr('x', d => -d.side/2)
@@ -337,7 +368,7 @@ class CO2Bubbles {
 			.attr('width', d => d.side)
 			.attr('height', d => d.side)
 			.append('xhtml:p')
-				.text(d => `${d.group}: \n ${d.count}`)
+				.text(d => `${d.group}: \n ${this.isByProduct ? '' : d.count}`)
 				.attr('style', d => `text-align:center;padding:2px;margin:2px;font-size:${d.r/3.5}px;`);
 			
 
@@ -354,9 +385,9 @@ class CO2Bubbles {
 	
 		function tickActions() {
 			node.attr('transform', d => {
-			let radius = r(d.count) + spacing;
-			d.x = Math.max(xRange[0] + radius, Math.min(xRange[1] - radius, d.x));
-			return `translate(${d.x}, ${d.y})`;
+				let radius = r(d.count) + spacing;
+				d.x = Math.max(xRange[0] + radius, Math.min(xRange[1] - radius, d.x));
+				return `translate(${d.x}, ${d.y})`;
 			})
 		}
 		return svg.node();

@@ -51,3 +51,9 @@ img {
 #bubbles-2{
     margin-bottom: 3vh;
 }
+.circles:hover{
+    cursor: pointer;
+}
+html {
+    scroll-behavior: smooth;
+  }
