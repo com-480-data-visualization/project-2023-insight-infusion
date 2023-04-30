@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#map-container {
+  width: 70%;
+  height: 800px;
+  float: left;
+}
+
+#item-list-container {
+  width: 30%;
+  float: left;
+  padding: 20px;
+}
