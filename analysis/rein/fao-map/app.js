@@ -1,12 +1,7 @@
-// Load GeoJSON data for the world map
-d3.json(
-  "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"
-).then((geoData) => {
-  // Load the FAO dataset (replace with the actual file path)
-  d3.csv("./datasets/FAO.csv").then((faoData) => {
-    createMap(geoData, faoData);
-  });
-});
+
+// config
+const food_color = "#EDAA51";
+const feed_color = "#87C0BF";
 
 // different country naming between the data
 const nameMapping = {
@@ -45,7 +40,15 @@ const nameMapping = {
   "West Bank": null
 };
 
-
+// Load GeoJSON data for the world map
+d3.json(
+  "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"
+).then((geoData) => {
+  // Load the FAO dataset (replace with the actual file path)
+  d3.csv("./datasets/FAO.csv").then((faoData) => {
+    createMap(geoData, faoData);
+  });
+});
 
 function createMap(geoData, faoData) {
   // Set dimensions and create SVG container for the map
@@ -57,53 +60,64 @@ function createMap(geoData, faoData) {
     .attr("width", "100%")
     .attr("height", height);
 
-  // Add the zoom behavior
-  const zoomBehavior = d3.zoom().on("zoom", (event) => {
-    const { transform } = event;
-    const mouseX = event.sourceEvent.clientX;
-    const mouseY = event.sourceEvent.clientY;
-
-    const svgRect = svg.node().getBoundingClientRect();
-    const offsetX = mouseX - svgRect.x;
-    const offsetY = mouseY - svgRect.y;
-
-    const prevTransform = d3.zoomTransform(mapGroup.node());
-    const prevScale = prevTransform.k;
-    const scaleFactor = transform.k / prevScale;
-
-    const newX = prevTransform.x - (offsetX - prevTransform.x) * (scaleFactor - 1);
-    const newY = prevTransform.y - (offsetY - prevTransform.y) * (scaleFactor - 1);
-
-    const newTransform = d3.zoomIdentity.translate(newX, newY).scale(transform.k);
-
-    mapGroup.attr("transform", newTransform);
-  });
-
-  svg.call(zoomBehavior);
-
   // Create map and gradient bar groups
   const mapGroup = svg.append("g");
   const gradientBarGroup = svg.append("g");
 
-  let ratioData = {}
-  let selectedItem = "Wheat and products"
-
+  // Create a path generator
   // Create a geographical projection and path generator
-  const projection = d3.geoNaturalEarth1().fitSize([width, height], geoData);
+  const projection = d3.geoOrthographic()
+    .scale((width - 1) / 2 / Math.PI)
+    .translate([width / 2, height / 2])
+    .precision(0.1);
   const pathGenerator = d3.geoPath().projection(projection);
 
+
+  // Add the zoom behavior
+  const zoomBehavior = d3.zoom()
+    .scaleExtent([1, 10])
+    .on("zoom", (event) => {
+      projection.scale(event.transform.k * (width - 1) / 2 / Math.PI);
+      mapGroup.selectAll("path").attr("d", pathGenerator);
+  });
+
+  svg.call(zoomBehavior);
+
+  const dragBehavior = d3.drag()
+    .on("start", dragStart)
+    .on("drag", dragged);
+
+  mapGroup.call(dragBehavior);
+
+  function dragStart(event) {
+    event.sourceEvent.preventDefault();
+    this.startPos = [event.x, event.y];
+    this.startRotation = projection.rotate();
+  }
+
+  function dragged(event) {
+    const newPos = [event.x, event.y];
+    const diff = [newPos[0] - this.startPos[0], newPos[1] - this.startPos[1]];
+    const rotation = [this.startRotation[0] + diff[0] / 4, this.startRotation[1] - diff[1] / 4, this.startRotation[2]];
+    projection.rotate(rotation);
+    mapGroup.selectAll("path").attr("d", pathGenerator);
+  }
+
+  let ratioData = {}
+  let selectedItem = "Wheat and products"
+  
   // Render the map
-  mapGroup // Update this line
-    .selectAll("path")
-    .data(geoData.features)
-    .enter()
-    .append("path")
-    .attr("d", pathGenerator)
-    .attr("fill", "#ccc")
-    .attr("stroke", "#333")
-    .attr("class", "country")
-    .on("mouseover", (event, d) => handleMouseOver(event, d, ratioData, selectedItem))
-    .on("mouseout", handleMouseOut);
+  mapGroup
+  .selectAll("path")
+  .data(geoData.features)
+  .enter()
+  .append("path")
+  .attr("d", pathGenerator)
+  .attr("fill", "#ccc")
+  .attr("stroke", "#333")
+  .attr("class", "country")
+  .on("mouseover", (event, d) => handleMouseOver(event, d, ratioData, selectedItem))
+  .on("mouseout", handleMouseOut);
 
 
   // Populate the item select list
@@ -125,14 +139,12 @@ function createMap(geoData, faoData) {
   });
 
   updateMap(selectedItem);
-  
 
   function updateMap(selectedItem) {
     // Filter the FAO data for the selected item and calculate the feed/food ratio
     const filteredData = faoData.filter((d) => d.Item === selectedItem);
     ratioData = {}; // Use an object to store the ratio data for each country
     filteredData.forEach((d) => {
-      // console.log(d)
       const key = d.Area;
       if (!(key in ratioData)) {
         ratioData[key] = { food: 0, feed: 0 };
@@ -152,9 +164,8 @@ function createMap(geoData, faoData) {
     const colorGradient = d3
       .scaleLinear()
       .domain([0, 1])
-      .range(["#66bb6a", "#1e88e5"]);
+      .range([food_color, feed_color]);
   
-    console.log(Object.keys(ratioData))
     // Update the map colors
     svg
       .selectAll(".country")
@@ -176,10 +187,10 @@ function createMap(geoData, faoData) {
             return baseColor;
           } else {
             console.log(country + " not handled");
-            return "#ccc";
+            return "#D8CEC1";
           }
         } else {
-          return "#ccc";
+          return "#D8CEC1";
         }
       });
   }
@@ -208,13 +219,13 @@ function createMap(geoData, faoData) {
     gradient
       .append("stop")
       .attr("offset", "0%")
-      .attr("stop-color", "#66bb6a")
+      .attr("stop-color", food_color)
       .attr("stop-opacity", 1);
   
     gradient
       .append("stop")
       .attr("offset", "100%")
-      .attr("stop-color", "#1e88e5")
+      .attr("stop-color", feed_color)
       .attr("stop-opacity", 1);
   
     gradientBar
