@@ -8,15 +8,82 @@ d3.json(
   });
 });
 
+// different country naming between the data
+const nameMapping = {
+  "Russia": "Russian Federation",
+  "Antarctica": null,
+  "French Southern and Antarctic Lands": null,
+  "Burundi": "Burundi",
+  "Bhutan": "Bhutan",
+  "China": "China, mainland",
+  "Republic of the Congo": "Congo",
+  "Northern Cyprus": null,
+  "Eritrea": "Eritrea",
+  "Falkland Islands": null,
+  "England": "United Kingdom",
+  "Equatorial Guinea": "Equatorial Guinea",
+  "Greenland": null,
+  "Iran": "Iran (Islamic Republic of)",
+  "South Korea": "Republic of Korea",
+  "Kosovo": null,
+  "Libya": null,
+  "Moldova": "Republic of Moldova",
+  "Macedonia": "The former Yugoslav Republic of Macedonia",
+  "Papua New Guinea": null,
+  "Puerto Rico": null,
+  "North Korea": "Democratic People's Republic of Korea",
+  "Qatar": null,
+  "Western Sahara": null,
+  "South Sudan": null,
+  "Somaliland": null,
+  "Somalia": "Somalia",
+  "Syria": null,
+  "Taiwan": "China, Taiwan Province of",
+  "USA": "United States of America",
+  "Venezuela": "Venezuela (Bolivarian Republic of)",
+  "Vietnam": "Viet Nam",
+  "West Bank": null
+};
+
+
+
 function createMap(geoData, faoData) {
   // Set dimensions and create SVG container for the map
   const width = document.getElementById("map-container").clientWidth;
-  const height = 800;
+  const height = 1000;
   const svg = d3
     .select("#map-container")
     .append("svg")
-    .attr("width", width)
+    .attr("width", "100%")
     .attr("height", height);
+
+  // Add the zoom behavior
+  const zoomBehavior = d3.zoom().on("zoom", (event) => {
+    const { transform } = event;
+    const mouseX = event.sourceEvent.clientX;
+    const mouseY = event.sourceEvent.clientY;
+
+    const svgRect = svg.node().getBoundingClientRect();
+    const offsetX = mouseX - svgRect.x;
+    const offsetY = mouseY - svgRect.y;
+
+    const prevTransform = d3.zoomTransform(mapGroup.node());
+    const prevScale = prevTransform.k;
+    const scaleFactor = transform.k / prevScale;
+
+    const newX = prevTransform.x - (offsetX - prevTransform.x) * (scaleFactor - 1);
+    const newY = prevTransform.y - (offsetY - prevTransform.y) * (scaleFactor - 1);
+
+    const newTransform = d3.zoomIdentity.translate(newX, newY).scale(transform.k);
+
+    mapGroup.attr("transform", newTransform);
+  });
+
+  svg.call(zoomBehavior);
+
+  // Create map and gradient bar groups
+  const mapGroup = svg.append("g");
+  const gradientBarGroup = svg.append("g");
 
   let ratioData = {}
   let selectedItem = "Wheat and products"
@@ -26,7 +93,7 @@ function createMap(geoData, faoData) {
   const pathGenerator = d3.geoPath().projection(projection);
 
   // Render the map
-  svg
+  mapGroup // Update this line
     .selectAll("path")
     .data(geoData.features)
     .enter()
@@ -35,8 +102,9 @@ function createMap(geoData, faoData) {
     .attr("fill", "#ccc")
     .attr("stroke", "#333")
     .attr("class", "country")
-    .on("mouseover", (d) => handleMouseOver(d, ratioData, selectedItem)) // Pass ratioData and selectedItem as arguments
+    .on("mouseover", (event, d) => handleMouseOver(event, d, ratioData, selectedItem))
     .on("mouseout", handleMouseOut);
+
 
   // Populate the item select list
   const items = Array.from(new Set(faoData.map((d) => d.Item)));
@@ -86,25 +154,28 @@ function createMap(geoData, faoData) {
       .domain([0, 1])
       .range(["#66bb6a", "#1e88e5"]);
   
+    console.log(Object.keys(ratioData))
     // Update the map colors
     svg
-      .selectAll(".country") // Change this line to select only paths with the 'country' class
+      .selectAll(".country")
       .transition()
       .duration(1000)
       .attr("fill", (d) => {
         const country = d.properties ? d.properties.name : null;
-        if (country && country in ratioData) {
+        const mappedCountry = nameMapping[country] ? nameMapping[country] : country;
+
+        if (country && mappedCountry in ratioData) {
           const totalProduction =
-            ratioData[country].food + ratioData[country].feed;
-          const feedRatio = ratioData[country].feed / totalProduction;
+            ratioData[mappedCountry].food + ratioData[mappedCountry].feed;
+          const feedRatio = ratioData[mappedCountry].feed / totalProduction;
           const intensity = colorIntensity(totalProduction);
           const baseColor = d3.color(colorGradient(feedRatio));
+
           if (baseColor) {
-            const r = Math.min(Math.floor(baseColor.r * intensity), 255);
-            const g = Math.min(Math.floor(baseColor.g * intensity), 255);
-            const b = Math.min(Math.floor(baseColor.b * intensity), 255);
-            return d3.rgb(r, g, b);
+            baseColor.opacity = intensity;
+            return baseColor;
           } else {
+            console.log(country + " not handled");
             return "#ccc";
           }
         } else {
@@ -115,7 +186,7 @@ function createMap(geoData, faoData) {
   function createGradientBar() {
     const gradientWidth = 300;
     const gradientHeight = 20;
-    const gradientBar = svg
+    const gradientBar = gradientBarGroup
       .append("g")
       .attr(
         "transform",
@@ -184,29 +255,30 @@ function createMap(geoData, faoData) {
   }
 
   // Add mouseover event handler function
-  function handleMouseOver(d, ratioData, selectedItem) {
+  function handleMouseOver(event, d, ratioData, selectedItem) {
     const country = d.properties ? d.properties.name : null;
-    console.log(d)
-    if (country && country in ratioData) {
+    const mappedCountry = nameMapping[country] ? nameMapping[country] : country;
+    if (mappedCountry && mappedCountry in ratioData) {
       const totalProduction =
-        ratioData[country].food + ratioData[country].feed;
-      const foodRatio = ratioData[country].food / totalProduction;
-      const feedRatio = ratioData[country].feed / totalProduction;
-      const tooltipText = `${country} uses ${(
+        ratioData[mappedCountry].food + ratioData[mappedCountry].feed;
+      const foodRatio = ratioData[mappedCountry].food / totalProduction;
+      const feedRatio = ratioData[mappedCountry].feed / totalProduction;
+      const tooltipText = `${mappedCountry} uses ${(
         foodRatio * 100
-      ).toFixed(2)}% of ${selectedItem} as food and ${(
+      ).toFixed(2)}% of its ${selectedItem} as food and ${(
         feedRatio * 100
       ).toFixed(2)}% as feed`;
-
+  
       const tooltip = d3.select("#tooltip");
       tooltip
         .html(tooltipText)
-        .style("left", d3.event.pageX + 10 + "px")
-        .style("top", d3.event.pageY - 25 + "px")
+        .style("left", event.pageX + 10 + "px")
+        .style("top", event.pageY - 25 + "px")
         .style("display", "block");
     }
   }
-
+  
+  
   // Add mouseout event handler function
   function handleMouseOut(d) {
     d3.select("#tooltip").style("display", "none");
