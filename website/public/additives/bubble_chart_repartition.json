@@ -1,0 +1,1928 @@
+[
+    {
+        "additive":"E250 - Sodium nitrite",
+        "count":2905,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E330 - Citric acid",
+        "count":2027,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E14XX - Modified Starch",
+        "count":1784,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E301 - Sodium ascorbate",
+        "count":1625,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E300 - Ascorbic acid",
+        "count":1301,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E407 - Carrageenan",
+        "count":1184,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E316 - Sodium erythorbate",
+        "count":1023,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E415 - Xanthan gum",
+        "count":990,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E322 - Lecithins",
+        "count":958,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E450 - Diphosphates",
+        "count":900,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E412 - Guar gum",
+        "count":862,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E500 - Sodium carbonates",
+        "count":831,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E202 - Potassium sorbate",
+        "count":797,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E440 - Pectins",
+        "count":770,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E322i - Lecithin",
+        "count":752,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E331 - Sodium citrates",
+        "count":718,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E471 - Mono- and diglycerides of fatty acids",
+        "count":691,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E252 - Potassium nitrate",
+        "count":622,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E262 - Sodium acetates",
+        "count":549,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E451 - Triphosphates",
+        "count":527,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E428 - Gelatine",
+        "count":444,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E160c - Paprika extract",
+        "count":439,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E326 - Potassium lactate",
+        "count":390,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E120 - Cochineal",
+        "count":339,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E150a - Plain caramel",
+        "count":332,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E270 - Lactic acid",
+        "count":309,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E452 - Polyphosphates",
+        "count":309,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E500ii - Sodium hydrogen carbonate",
+        "count":308,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E621 - Monosodium glutamate",
+        "count":307,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E503 - Ammonium carbonates",
+        "count":292,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E160a - Carotene",
+        "count":285,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E160b - Annatto",
+        "count":246,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E223 - Sodium metabisulphite",
+        "count":220,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E262i - Sodium acetate",
+        "count":206,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E450i - Disodium diphosphate",
+        "count":196,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E392 - Extracts of rosemary",
+        "count":176,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E950 - Acesulfame k",
+        "count":161,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E325 - Sodium lactate",
+        "count":161,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E282 - Calcium propionate",
+        "count":158,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E100 - Curcumin",
+        "count":158,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E422 - Glycerol",
+        "count":155,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E160 - Carotenoids",
+        "count":150,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E211 - Sodium benzoate",
+        "count":149,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E401 - Sodium alginate",
+        "count":142,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E420 - Sorbitol",
+        "count":132,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E955 - Sucralose",
+        "count":126,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E235 - Natamycin",
+        "count":124,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E224 - Potassium metabisulphite",
+        "count":123,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E410 - Locust bean gum",
+        "count":116,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E160ai - Beta-carotene",
+        "count":111,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E260 - Acetic acid",
+        "count":108,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E509 - Calcium chloride",
+        "count":107,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E407a - Processed eucheuma seaweed",
+        "count":107,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E466 - Sodium carboxy methyl cellulose",
+        "count":100,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E200 - Sorbic acid",
+        "count":92,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E220 - Sulphur dioxide",
+        "count":92,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E418 - Gellan gum",
+        "count":89,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E150d - Sulphite ammonia caramel",
+        "count":88,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E460 - Cellulose",
+        "count":83,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E472e - Mono- and diacetyltartaric acid esters of mono- and diglycerides of fatty acids",
+        "count":83,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E503ii - Ammonium hydrogen carbonate",
+        "count":82,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E339 - Sodium phosphates",
+        "count":80,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E341 - Calcium phosphates",
+        "count":79,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E461 - Methyl cellulose",
+        "count":79,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E251 - Sodium nitrate",
+        "count":78,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E472b - Lactic acid esters of mono- and diglycerides of fatty acids",
+        "count":78,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E1105 - Lysozyme",
+        "count":75,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E150 - Caramel",
+        "count":73,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E296 - Malic acid",
+        "count":71,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E951 - Aspartame",
+        "count":71,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E101 - Riboflavin",
+        "count":71,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E406 - Agar",
+        "count":69,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E150c - Ammonia caramel",
+        "count":66,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E1400 - Dextrin",
+        "count":62,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E153 - Vegetable carbon",
+        "count":61,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E331iii - Trisodium citrate",
+        "count":61,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E414 - Acacia gum",
+        "count":60,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E306 - Tocopherol-rich extract",
+        "count":58,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E161b - Lutein",
+        "count":56,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E476 - Polyglycerol polyricinoleate",
+        "count":53,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E960 - Steviol glycosides",
+        "count":53,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E524 - Sodium hydroxide",
+        "count":51,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E222 - Sodium bisulphite",
+        "count":51,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E334 - L(+)-tartaric acid",
+        "count":50,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E163 - Anthocyanins",
+        "count":50,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E101i - Riboflavin",
+        "count":49,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E631 - Disodium inosinate",
+        "count":48,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E327 - Calcium lactate",
+        "count":46,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E102 - Tartrazine",
+        "count":46,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E575 - Glucono-delta-lactone",
+        "count":45,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E162 - Beetroot red",
+        "count":45,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E451i - Pentasodium triphosphate",
+        "count":44,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E627 - Disodium guanylate",
+        "count":43,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E500i - Sodium carbonate",
+        "count":42,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E333 - Calcium citrates",
+        "count":41,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E170 - Calcium carbonates",
+        "count":41,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E340 - Potassium phosphates",
+        "count":38,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E141 - Copper complexes of chlorophylls and chlorophyllins",
+        "count":36,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E1442 - Hydroxypropyl distarch phosphate",
+        "count":36,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E261 - Potassium acetate",
+        "count":35,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E579 - Iron gluconate",
+        "count":35,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E501 - Potassium carbonates",
+        "count":34,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E1510 - Ethanol",
+        "count":34,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E551 - Silicon dioxide",
+        "count":32,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E290 - Carbon dioxide",
+        "count":32,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E417 - Tara gum",
+        "count":32,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E170i - Calcium carbonate",
+        "count":31,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E110 - Sunset yellow FCF",
+        "count":30,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E481 - Sodium stearoyl-2-lactylate",
+        "count":30,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E338 - Phosphoric acid",
+        "count":29,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E452i - Sodium polyphosphate",
+        "count":28,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E903 - Carnauba wax",
+        "count":28,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E133 - Brilliant blue FCF",
+        "count":27,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E336 - Potassium tartrates",
+        "count":27,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E304 - Fatty acid esters of ascorbic acid",
+        "count":26,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E920 - L-cysteine",
+        "count":26,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E385 - Calcium disodium ethylenediaminetetraacetate",
+        "count":26,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E635 - Disodium 5'-ribonucleotide",
+        "count":25,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E262ii - Sodium diacetate",
+        "count":25,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E954 - Saccharin and its salts",
+        "count":24,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E535 - Sodium ferrocyanide",
+        "count":24,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E464 - Hydroxypropyl methyl cellulose",
+        "count":23,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E904 - Shellac",
+        "count":23,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E150b - Caustic sulphite caramel",
+        "count":22,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E508 - Potassium chloride",
+        "count":22,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E341i - Monocalcium phosphate",
+        "count":22,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E1422 - Acetylated distarch adipate",
+        "count":22,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E171 - Titanium dioxide",
+        "count":22,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E965 - Maltitol",
+        "count":22,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E129 - Allura red",
+        "count":21,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E1200 - Polydextrose",
+        "count":20,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E263 - Calcium acetate",
+        "count":20,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E503i - Ammonium carbonate",
+        "count":19,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E339ii - Disodium phosphate",
+        "count":19,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E941 - Nitrogen",
+        "count":18,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E124 - Ponceau 4r",
+        "count":17,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E164 - Saffron",
+        "count":17,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E502 - Carbonates",
+        "count":17,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E953 - Isomalt",
+        "count":16,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E320 - Butylated hydroxyanisole (bha)",
+        "count":15,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E131 - Patent blue v",
+        "count":15,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E332 - Potassium citrates",
+        "count":15,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E442 - Ammonium phosphatides",
+        "count":15,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E315 - Erythorbic acid",
+        "count":15,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E516 - Calcium sulphate",
+        "count":14,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E304i - Ascorbyl palmitate",
+        "count":14,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E501i - Potassium carbonate",
+        "count":14,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E475 - Polyglycerol esters of fatty acids",
+        "count":13,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E472c - Citric acid esters of mono- and diglycerides of fatty acids",
+        "count":13,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E450iii - Tetrasodium diphosphate",
+        "count":13,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E952 - Cyclamic acid and its Na and Ca salts",
+        "count":13,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E570 - Fatty acids",
+        "count":13,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E160e - Beta-apo-8\u2032-carotenal (c30)",
+        "count":12,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E140 - Chlorophylls and Chlorophyllins",
+        "count":12,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E1103 - Invertase",
+        "count":12,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E307 - Alpha-tocopherol",
+        "count":12,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E553 - Magnesium silicates",
+        "count":11,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E553b - Talc",
+        "count":11,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E525 - Potassium hydroxide",
+        "count":11,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E141ii - Copper complexes of chlorophyllins",
+        "count":11,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E440a - Pectin",
+        "count":11,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E141i - Copper complexes of chlorophylls",
+        "count":10,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E901 - White and yellow beeswax",
+        "count":10,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E445 - Glycerol esters of wood rosin",
+        "count":10,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E221 - Sodium sulphite",
+        "count":10,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E340ii - Dipotassium phosphate",
+        "count":9,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E140i - Chlorophylls",
+        "count":9,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E460i - Microcrystalline cellulose",
+        "count":9,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E1101 - Protease",
+        "count":9,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E1100 - Alpha-Amylase",
+        "count":9,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E473 - Sucrose esters of fatty acids",
+        "count":9,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E900 - Dimethylpolysiloxane and Methylphenylpolysiloxane",
+        "count":9,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E234 - Nisin",
+        "count":9,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E492 - Sorbitan tristearate",
+        "count":9,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E319 - Tertiary-butylhydroquinone (tbhq)",
+        "count":9,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E451ii - Pentapotassium triphosphate",
+        "count":9,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E132 - Indigotine",
+        "count":8,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E172 - Iron oxides and iron hydroxides",
+        "count":8,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E249 - Potassium nitrite",
+        "count":8,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E281 - Sodium propionate",
+        "count":8,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E203 - Calcium sorbate",
+        "count":8,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E285 - Sodium tetraborate (borax)",
+        "count":8,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E942 - Nitrous oxide",
+        "count":8,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E504 - Magnesium carbonates",
+        "count":8,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E122 - Azorubine",
+        "count":8,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E1420 - Acetylated starch",
+        "count":7,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E331i - Monosodium citrate",
+        "count":7,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E420ii - Sorbitol syrup",
+        "count":7,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E450v - Tetrapotassium diphosphate",
+        "count":7,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E440ii - Amidated pectin",
+        "count":7,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E123 - Amaranth",
+        "count":7,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E127 - Erythrosine",
+        "count":7,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E576 - Sodium gluconate",
+        "count":6,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E297 - Fumaric acid",
+        "count":6,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E1412 - Distarch phosphate",
+        "count":6,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E470b - Magnesium salts of fatty acids",
+        "count":6,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E1421 - Acetylated starch",
+        "count":6,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E151 - Brilliant black bn",
+        "count":6,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E210 - Benzoic acid",
+        "count":6,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E321 - Butylated hydroxytoluene",
+        "count":6,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E433 - Polyoxyethylene sorbitan monooleate",
+        "count":5,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E160d - Lycopene",
+        "count":5,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E967 - Xylitol",
+        "count":5,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E350 - Sodium malates",
+        "count":5,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E477 - Propane-1\u201a2-diol esters of fatty acids",
+        "count":5,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E336i - Monopotassium tartrate",
+        "count":5,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E340i - Monopotassium phosphate",
+        "count":5,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E640 - Glycine and its sodium salt",
+        "count":5,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E511 - Magnesium chloride",
+        "count":5,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E421 - Mannitol",
+        "count":4,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E900a - Dimethyl polysiloxane",
+        "count":4,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E959 - Neohesperidine dihydrochalcone",
+        "count":4,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E1450 - Starch sodium octenyl succinate",
+        "count":4,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E510 - Ammonium chloride",
+        "count":4,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E1505 - Triethyl citrate",
+        "count":4,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E965ii - Maltitol syrup",
+        "count":4,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E339i - Monosodium phosphate",
+        "count":4,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E140ii - Chlorophyllins",
+        "count":4,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E160aii - Plant carotenes",
+        "count":4,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E914 - Oxidised polyethylene wax",
+        "count":4,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E341ii - Dicalcium phosphate",
+        "count":4,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E968 - Erythritol",
+        "count":4,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E450ii - Trisodium diphosphate",
+        "count":4,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E228 - Potassium bisulphite",
+        "count":4,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E339iii - Trisodium phosphate",
+        "count":3,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E332ii - Tripotassium citrate",
+        "count":3,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E640i - Glycine",
+        "count":3,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E444 - Sucrose acetate isobutyrate",
+        "count":3,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E435 - Polyoxyethylene sorbitan monostearate",
+        "count":3,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E541 - Sodium aluminium phosphate",
+        "count":3,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E641 - Leucine",
+        "count":3,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E1404 - Oxidised starch",
+        "count":3,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E335 - Sodium tartrates",
+        "count":3,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E472a - Acetic acid esters of mono- and diglycerides of fatty acids",
+        "count":3,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E350ii - Sodium hydrogen malate",
+        "count":3,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E1520 - Propylene Glycol",
+        "count":3,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E413 - Tragacanth",
+        "count":3,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E425 - Konjac",
+        "count":3,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E341iii - Tricalcium phosphate",
+        "count":3,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E482 - Calcium stearoyl-2-lactylate",
+        "count":3,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E404 - Calcium alginate",
+        "count":3,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E452ii - Potassium polyphosphate",
+        "count":2,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E507 - Hydrochloric acid",
+        "count":2,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E425i - Konjac gum",
+        "count":2,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E155 - Brown ht",
+        "count":2,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E541i - Acid sodium aluminium phosphate",
+        "count":2,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E121 - Citrus Red 2",
+        "count":2,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E505 - Ferrous carbonate",
+        "count":2,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E104 - Quinoline yellow",
+        "count":2,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E1201 - Polyvinylpyrrolidone",
+        "count":2,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E572 - Magnesium stearate",
+        "count":2,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E536 - Potassium ferrocyanide",
+        "count":2,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E386 - E386 food additive",
+        "count":2,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E1519 - Benzyl alcohol",
+        "count":2,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E333iii - Tricalcium citrate",
+        "count":2,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E468 - Cross-linked sodium carboxymethylcellulose",
+        "count":2,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E961 - Neotame",
+        "count":2,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E514 - Sodium sulphates",
+        "count":2,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E585 - Ferrous lactate",
+        "count":2,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E420i - D-sorbitol",
+        "count":2,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E550 - Sodium silicate",
+        "count":2,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E343 - Magnesium phosphates",
+        "count":2,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E504i - Magnesium carbonate",
+        "count":2,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E160aiii - Beta-carotene from blakeslea trispora",
+        "count":2,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E243 - Ethyl lauroyl arginate",
+        "count":2,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E125 - Scarlet GN",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E142 - Green s",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E375 - Nicotinic acid",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E212 - Potassium benzoate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E152 - Black 7984",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E1104 - Lipase",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E143 - Fast Green FCF",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E930 - Calcium peroxide",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E1521 - Polyethylene glycol",
+        "count":1,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E500iii - Sodium sesquicarbonate",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E927 - Azodicarbonamide and Carbamide",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E405 - Propane-1\u201a2-diol alginate",
+        "count":1,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"Isomaltose",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E957 - Thaumatin",
+        "count":1,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E463 - Hydroxypropyl cellulose",
+        "count":1,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E233 - Thiabendazole",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E966 - Lactitol",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E460ii - Powdered cellulose",
+        "count":1,
+        "dangerosity":1,
+        "group":1
+    },
+    {
+        "additive":"E340iii - Tripotassium phosphate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E440i - Non-amidated pectines",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E363 - Succinic acid",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E520 - Aluminium sulphate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E402 - Potassium alginate",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E521 - Aluminium sodium sulphate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E400 - Alginic acid",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E526 - Calcium hydroxide",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E1414 - Acetylated distarch phosphate",
+        "count":1,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E514ii - Sodium hydrogen sulphate",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E554 - Sodium aluminium silicate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E310 - Propyl gallate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E491 - Sorbitan monostearate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E313 - Ethyl gallate",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E101ii - Riboflavin-5\u2032-phosphate",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E530 - Magnesium oxide",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E1503 - Castor oil",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E216 - Propyl para-hydroxybenzoate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E218 - Methyl p-hydroxybenzoate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E905 - Synthetic wax",
+        "count":1,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E905a - Mineral oil",
+        "count":1,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E160aiv - Algal carotenes",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E490 - Propylene glycol",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E501ii - Potassium hydrogen carbonate",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E1001 - Choline salt",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E452vi - Sodium tripolyphosphate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E331ii - Disodium citrate",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E215 - Sodium ethyl p-hydroxybenzoate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E219 - Sodium methyl p-hydroxybenzoate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E1405 - Enzyme treated starch",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E472 - Acid esters of mono- and diglycerides of fatty acids",
+        "count":1,
+        "dangerosity":2,
+        "group":1
+    },
+    {
+        "additive":"E329 - Magnesium lactate",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E350i - Sodium malate",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E528 - Magnesium hydroxide",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E343i - Monomagnesium phosphate",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"E474 - Sucroglycerides",
+        "count":1,
+        "dangerosity":3,
+        "group":1
+    },
+    {
+        "additive":"Potassium iodide",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    },
+    {
+        "additive":"E307b - Concentrated tocopherol",
+        "count":1,
+        "dangerosity":0,
+        "group":1
+    }
+]
