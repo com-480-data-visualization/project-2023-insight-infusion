@@ -1,0 +1,37 @@
+[
+    {
+        "nutriscore_fr":"A",
+        "additives_0_count":0.3239301936,
+        "additives_1_count":0.0296437963,
+        "additives_2_count":0.0841501315,
+        "additives_3_count":0.0951470237
+    },
+    {
+        "nutriscore_fr":"B",
+        "additives_0_count":0.6481241915,
+        "additives_1_count":0.0380336352,
+        "additives_2_count":0.1575679172,
+        "additives_3_count":0.1686934023
+    },
+    {
+        "nutriscore_fr":"C",
+        "additives_0_count":1.0085526316,
+        "additives_1_count":0.0515350877,
+        "additives_2_count":0.2539473684,
+        "additives_3_count":0.3208333333
+    },
+    {
+        "nutriscore_fr":"D",
+        "additives_0_count":0.8694288544,
+        "additives_1_count":0.0907890393,
+        "additives_2_count":0.2063387257,
+        "additives_3_count":0.3735556289
+    },
+    {
+        "nutriscore_fr":"E",
+        "additives_0_count":1.1603641457,
+        "additives_1_count":0.0889355742,
+        "additives_2_count":0.162464986,
+        "additives_3_count":0.6698179272
+    }
+]

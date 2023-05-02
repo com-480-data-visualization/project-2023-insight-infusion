@@ -1,0 +1,4052 @@
+[
+    {
+        "categories":"alcoholic beverages",
+        "dangerosity":0.1048020332,
+        "count":178,
+        "group":1
+    },
+    {
+        "categories":"aliments et boissons a base de vegetaux",
+        "dangerosity":0.3086419753,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"almond milks",
+        "dangerosity":0.1895833333,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"almonds",
+        "dangerosity":0.0769230769,
+        "count":52,
+        "group":1
+    },
+    {
+        "categories":"animal fats",
+        "dangerosity":0.0688538933,
+        "count":381,
+        "group":1
+    },
+    {
+        "categories":"aoc cheeses",
+        "dangerosity":0.1016949153,
+        "count":118,
+        "group":1
+    },
+    {
+        "categories":"appetizers",
+        "dangerosity":0.3764129062,
+        "count":368,
+        "group":1
+    },
+    {
+        "categories":"apple compotes",
+        "dangerosity":0.0,
+        "count":101,
+        "group":1
+    },
+    {
+        "categories":"apple juices",
+        "dangerosity":0.0,
+        "count":65,
+        "group":1
+    },
+    {
+        "categories":"aromatic herbs",
+        "dangerosity":0.0760869565,
+        "count":46,
+        "group":1
+    },
+    {
+        "categories":"aromatic plants",
+        "dangerosity":0.068627451,
+        "count":51,
+        "group":1
+    },
+    {
+        "categories":"aromatic rices",
+        "dangerosity":0.0,
+        "count":54,
+        "group":1
+    },
+    {
+        "categories":"artificially sweetened beverages",
+        "dangerosity":1.8185556867,
+        "count":66,
+        "group":1
+    },
+    {
+        "categories":"artisan products",
+        "dangerosity":0.3369272237,
+        "count":53,
+        "group":1
+    },
+    {
+        "categories":"asparagus",
+        "dangerosity":0.0,
+        "count":30,
+        "group":1
+    },
+    {
+        "categories":"baby dishes",
+        "dangerosity":0.0,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"baby foods",
+        "dangerosity":0.0291970803,
+        "count":137,
+        "group":1
+    },
+    {
+        "categories":"bacon",
+        "dangerosity":1.5820921986,
+        "count":94,
+        "group":1
+    },
+    {
+        "categories":"barn chicken eggs",
+        "dangerosity":0.1567307692,
+        "count":52,
+        "group":1
+    },
+    {
+        "categories":"bars",
+        "dangerosity":0.3724255952,
+        "count":80,
+        "group":1
+    },
+    {
+        "categories":"basmati rices",
+        "dangerosity":0.0,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"bean dishes",
+        "dangerosity":0.9728650138,
+        "count":44,
+        "group":1
+    },
+    {
+        "categories":"bee products",
+        "dangerosity":0.0,
+        "count":109,
+        "group":1
+    },
+    {
+        "categories":"beef",
+        "dangerosity":0.2384423676,
+        "count":535,
+        "group":1
+    },
+    {
+        "categories":"beef and its products",
+        "dangerosity":0.2387667888,
+        "count":546,
+        "group":1
+    },
+    {
+        "categories":"beef dishes",
+        "dangerosity":0.4783745896,
+        "count":298,
+        "group":1
+    },
+    {
+        "categories":"beef preparations",
+        "dangerosity":0.6452217873,
+        "count":146,
+        "group":1
+    },
+    {
+        "categories":"beef ravioli",
+        "dangerosity":0.0975609756,
+        "count":41,
+        "group":1
+    },
+    {
+        "categories":"beef steaks",
+        "dangerosity":0.0236966825,
+        "count":211,
+        "group":1
+    },
+    {
+        "categories":"beers",
+        "dangerosity":0.0846560847,
+        "count":54,
+        "group":1
+    },
+    {
+        "categories":"beverages",
+        "dangerosity":0.3358953765,
+        "count":1714,
+        "group":1
+    },
+    {
+        "categories":"bifidus yogurts",
+        "dangerosity":0.181498829,
+        "count":61,
+        "group":1
+    },
+    {
+        "categories":"biscuits",
+        "dangerosity":0.303821876,
+        "count":402,
+        "group":1
+    },
+    {
+        "categories":"biscuits and cakes",
+        "dangerosity":0.4387063845,
+        "count":717,
+        "group":1
+    },
+    {
+        "categories":"black olives",
+        "dangerosity":0.037037037,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"black pudding",
+        "dangerosity":0.2426470588,
+        "count":68,
+        "group":1
+    },
+    {
+        "categories":"black teas",
+        "dangerosity":0.1935483871,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"block of foie gras",
+        "dangerosity":1.425,
+        "count":60,
+        "group":1
+    },
+    {
+        "categories":"blue veined cheeses",
+        "dangerosity":0.046728972,
+        "count":107,
+        "group":1
+    },
+    {
+        "categories":"blueberry yogurts",
+        "dangerosity":0.253968254,
+        "count":35,
+        "group":1
+    },
+    {
+        "categories":"bodybuilding supplements",
+        "dangerosity":0.872755102,
+        "count":35,
+        "group":1
+    },
+    {
+        "categories":"bolognese lasagne",
+        "dangerosity":0.1338797814,
+        "count":61,
+        "group":1
+    },
+    {
+        "categories":"bolognese sauces",
+        "dangerosity":0.0588235294,
+        "count":34,
+        "group":1
+    },
+    {
+        "categories":"bonbons",
+        "dangerosity":0.1575926908,
+        "count":49,
+        "group":1
+    },
+    {
+        "categories":"breaded chicken",
+        "dangerosity":0.7925405268,
+        "count":94,
+        "group":1
+    },
+    {
+        "categories":"breaded fish",
+        "dangerosity":0.2451524495,
+        "count":139,
+        "group":1
+    },
+    {
+        "categories":"breaded hake fish",
+        "dangerosity":0.1887755102,
+        "count":49,
+        "group":1
+    },
+    {
+        "categories":"breaded products",
+        "dangerosity":0.5850751347,
+        "count":376,
+        "group":1
+    },
+    {
+        "categories":"breads",
+        "dangerosity":0.4428220635,
+        "count":301,
+        "group":1
+    },
+    {
+        "categories":"breakfast cereals",
+        "dangerosity":0.1111666667,
+        "count":200,
+        "group":1
+    },
+    {
+        "categories":"breakfasts",
+        "dangerosity":0.1281632884,
+        "count":491,
+        "group":1
+    },
+    {
+        "categories":"bries",
+        "dangerosity":0.0,
+        "count":40,
+        "group":1
+    },
+    {
+        "categories":"brioches",
+        "dangerosity":0.6343283582,
+        "count":67,
+        "group":1
+    },
+    {
+        "categories":"broths",
+        "dangerosity":0.3142857143,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"buffalo cheeses",
+        "dangerosity":0.0,
+        "count":54,
+        "group":1
+    },
+    {
+        "categories":"buffalo mozzarella",
+        "dangerosity":0.0,
+        "count":44,
+        "group":1
+    },
+    {
+        "categories":"butters",
+        "dangerosity":0.0340336134,
+        "count":357,
+        "group":1
+    },
+    {
+        "categories":"cage chicken eggs",
+        "dangerosity":0.0,
+        "count":50,
+        "group":1
+    },
+    {
+        "categories":"cakes",
+        "dangerosity":0.5867077807,
+        "count":243,
+        "group":1
+    },
+    {
+        "categories":"camemberts",
+        "dangerosity":0.0,
+        "count":115,
+        "group":1
+    },
+    {
+        "categories":"camemberts de normandie",
+        "dangerosity":0.0,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"camemberts from pasteurized cow milk",
+        "dangerosity":0.0,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"camemberts from raw cow milk",
+        "dangerosity":0.0,
+        "count":39,
+        "group":1
+    },
+    {
+        "categories":"candies",
+        "dangerosity":0.5185894028,
+        "count":57,
+        "group":1
+    },
+    {
+        "categories":"canned cereals",
+        "dangerosity":0.0,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"canned common beans",
+        "dangerosity":0.1888888889,
+        "count":45,
+        "group":1
+    },
+    {
+        "categories":"canned corn",
+        "dangerosity":0.0,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"canned fishes",
+        "dangerosity":0.0579281184,
+        "count":473,
+        "group":1
+    },
+    {
+        "categories":"canned foods",
+        "dangerosity":0.2210052077,
+        "count":1271,
+        "group":1
+    },
+    {
+        "categories":"canned fruits",
+        "dangerosity":0.0375,
+        "count":40,
+        "group":1
+    },
+    {
+        "categories":"canned green beans",
+        "dangerosity":0.0,
+        "count":42,
+        "group":1
+    },
+    {
+        "categories":"canned herrings",
+        "dangerosity":0.1470588235,
+        "count":51,
+        "group":1
+    },
+    {
+        "categories":"canned legumes",
+        "dangerosity":0.0875,
+        "count":160,
+        "group":1
+    },
+    {
+        "categories":"canned meals",
+        "dangerosity":0.6255269321,
+        "count":244,
+        "group":1
+    },
+    {
+        "categories":"canned peas",
+        "dangerosity":0.0,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"canned plant based foods",
+        "dangerosity":0.0952380952,
+        "count":448,
+        "group":1
+    },
+    {
+        "categories":"canned raviolis",
+        "dangerosity":0.1707317073,
+        "count":41,
+        "group":1
+    },
+    {
+        "categories":"canned sardines",
+        "dangerosity":0.0044444444,
+        "count":135,
+        "group":1
+    },
+    {
+        "categories":"canned sweet corn",
+        "dangerosity":0.0,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"canned tomatoes",
+        "dangerosity":0.0,
+        "count":38,
+        "group":1
+    },
+    {
+        "categories":"canned tunas",
+        "dangerosity":0.0,
+        "count":139,
+        "group":1
+    },
+    {
+        "categories":"canned vegetables",
+        "dangerosity":0.0720294427,
+        "count":317,
+        "group":1
+    },
+    {
+        "categories":"carbonated drinks",
+        "dangerosity":1.0133948177,
+        "count":138,
+        "group":1
+    },
+    {
+        "categories":"carbonated waters",
+        "dangerosity":0.0567375887,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"carrots",
+        "dangerosity":0.0,
+        "count":30,
+        "group":1
+    },
+    {
+        "categories":"cassoulets",
+        "dangerosity":1.08261563,
+        "count":38,
+        "group":1
+    },
+    {
+        "categories":"cereal bars",
+        "dangerosity":0.3357142857,
+        "count":46,
+        "group":1
+    },
+    {
+        "categories":"cereal flakes",
+        "dangerosity":0.0972222222,
+        "count":72,
+        "group":1
+    },
+    {
+        "categories":"cereal flours",
+        "dangerosity":0.026119403,
+        "count":67,
+        "group":1
+    },
+    {
+        "categories":"cereal grains",
+        "dangerosity":0.0228571429,
+        "count":280,
+        "group":1
+    },
+    {
+        "categories":"cereal milks",
+        "dangerosity":0.2613888889,
+        "count":120,
+        "group":1
+    },
+    {
+        "categories":"cereal pastas",
+        "dangerosity":0.034965035,
+        "count":143,
+        "group":1
+    },
+    {
+        "categories":"cereal semolinas",
+        "dangerosity":0.025,
+        "count":40,
+        "group":1
+    },
+    {
+        "categories":"cereals and potatoes",
+        "dangerosity":0.1905973692,
+        "count":1786,
+        "group":1
+    },
+    {
+        "categories":"cereals and their products",
+        "dangerosity":0.1309590145,
+        "count":1278,
+        "group":1
+    },
+    {
+        "categories":"cereals with fruits",
+        "dangerosity":0.1805555556,
+        "count":36,
+        "group":1
+    },
+    {
+        "categories":"champignon mushrooms",
+        "dangerosity":0.0294117647,
+        "count":34,
+        "group":1
+    },
+    {
+        "categories":"cheddar cheese",
+        "dangerosity":0.1973684211,
+        "count":38,
+        "group":1
+    },
+    {
+        "categories":"cheese pizzas",
+        "dangerosity":0.3645833333,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"cheese spreads",
+        "dangerosity":0.5142602496,
+        "count":187,
+        "group":1
+    },
+    {
+        "categories":"cheeses",
+        "dangerosity":0.2681562105,
+        "count":2713,
+        "group":1
+    },
+    {
+        "categories":"cheeses from england",
+        "dangerosity":0.1888888889,
+        "count":45,
+        "group":1
+    },
+    {
+        "categories":"cheeses from the united kingdom",
+        "dangerosity":0.1888888889,
+        "count":45,
+        "group":1
+    },
+    {
+        "categories":"cheeses of the netherlands",
+        "dangerosity":0.6370716511,
+        "count":107,
+        "group":1
+    },
+    {
+        "categories":"chicken and its products",
+        "dangerosity":0.4857927703,
+        "count":520,
+        "group":1
+    },
+    {
+        "categories":"chicken breasts",
+        "dangerosity":0.3557405165,
+        "count":118,
+        "group":1
+    },
+    {
+        "categories":"chicken eggs",
+        "dangerosity":0.0236918605,
+        "count":344,
+        "group":1
+    },
+    {
+        "categories":"chicken nuggets",
+        "dangerosity":0.8245484401,
+        "count":58,
+        "group":1
+    },
+    {
+        "categories":"chicken preparations",
+        "dangerosity":0.8681097426,
+        "count":149,
+        "group":1
+    },
+    {
+        "categories":"chicken thighs",
+        "dangerosity":0.0137931034,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"chickens",
+        "dangerosity":0.454645275,
+        "count":488,
+        "group":1
+    },
+    {
+        "categories":"chickpeas",
+        "dangerosity":0.064516129,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"chipolatas",
+        "dangerosity":0.3996681097,
+        "count":55,
+        "group":1
+    },
+    {
+        "categories":"chips and fries",
+        "dangerosity":0.1833478513,
+        "count":164,
+        "group":1
+    },
+    {
+        "categories":"chocolate biscuits",
+        "dangerosity":0.3072538184,
+        "count":143,
+        "group":1
+    },
+    {
+        "categories":"chocolate cakes",
+        "dangerosity":0.5184730797,
+        "count":61,
+        "group":1
+    },
+    {
+        "categories":"chocolate candies",
+        "dangerosity":0.2476602102,
+        "count":78,
+        "group":1
+    },
+    {
+        "categories":"chocolate creamy puddings",
+        "dangerosity":0.8734030197,
+        "count":41,
+        "group":1
+    },
+    {
+        "categories":"chocolate desserts",
+        "dangerosity":0.7108225108,
+        "count":152,
+        "group":1
+    },
+    {
+        "categories":"chocolate milks",
+        "dangerosity":1.3333333333,
+        "count":53,
+        "group":1
+    },
+    {
+        "categories":"chocolate mousses",
+        "dangerosity":0.3770050125,
+        "count":38,
+        "group":1
+    },
+    {
+        "categories":"chocolates",
+        "dangerosity":0.0694153776,
+        "count":314,
+        "group":1
+    },
+    {
+        "categories":"chorizo",
+        "dangerosity":1.6739984883,
+        "count":84,
+        "group":1
+    },
+    {
+        "categories":"christmas foods and drinks",
+        "dangerosity":0.4486177843,
+        "count":42,
+        "group":1
+    },
+    {
+        "categories":"cocoa and chocolate powders",
+        "dangerosity":0.121031746,
+        "count":42,
+        "group":1
+    },
+    {
+        "categories":"cocoa and its products",
+        "dangerosity":0.1006628255,
+        "count":423,
+        "group":1
+    },
+    {
+        "categories":"cocoa powders",
+        "dangerosity":0.0192307692,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"cod fillets",
+        "dangerosity":0.1351351351,
+        "count":37,
+        "group":1
+    },
+    {
+        "categories":"cods",
+        "dangerosity":0.0897959184,
+        "count":70,
+        "group":1
+    },
+    {
+        "categories":"coffee desserts",
+        "dangerosity":1.1443349754,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"coffees",
+        "dangerosity":0.1143617021,
+        "count":94,
+        "group":1
+    },
+    {
+        "categories":"colas",
+        "dangerosity":2.2549261084,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"cold starters",
+        "dangerosity":0.4033885655,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"common beans",
+        "dangerosity":0.0454545455,
+        "count":44,
+        "group":1
+    },
+    {
+        "categories":"compotes",
+        "dangerosity":0.0,
+        "count":125,
+        "group":1
+    },
+    {
+        "categories":"compotes to drink",
+        "dangerosity":0.0,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"comte",
+        "dangerosity":0.0576923077,
+        "count":52,
+        "group":1
+    },
+    {
+        "categories":"condiments",
+        "dangerosity":0.2466972682,
+        "count":638,
+        "group":1
+    },
+    {
+        "categories":"confectioneries",
+        "dangerosity":0.3956130738,
+        "count":220,
+        "group":1
+    },
+    {
+        "categories":"cooked chicken",
+        "dangerosity":0.7573412698,
+        "count":132,
+        "group":1
+    },
+    {
+        "categories":"cooked chicken breast slices",
+        "dangerosity":1.2795339412,
+        "count":94,
+        "group":1
+    },
+    {
+        "categories":"cooked poultries",
+        "dangerosity":0.6968724778,
+        "count":177,
+        "group":1
+    },
+    {
+        "categories":"cooked poultry breast slices",
+        "dangerosity":1.2437600644,
+        "count":138,
+        "group":1
+    },
+    {
+        "categories":"cooked pressed cheeses",
+        "dangerosity":0.0414433726,
+        "count":311,
+        "group":1
+    },
+    {
+        "categories":"cooked turkey breast slices",
+        "dangerosity":1.2192621193,
+        "count":37,
+        "group":1
+    },
+    {
+        "categories":"cooking helpers",
+        "dangerosity":0.3866261398,
+        "count":94,
+        "group":1
+    },
+    {
+        "categories":"cottage cheeses",
+        "dangerosity":0.7647058824,
+        "count":34,
+        "group":1
+    },
+    {
+        "categories":"country style pates",
+        "dangerosity":1.0419642857,
+        "count":56,
+        "group":1
+    },
+    {
+        "categories":"country terrines",
+        "dangerosity":0.9119269619,
+        "count":39,
+        "group":1
+    },
+    {
+        "categories":"cow camemberts",
+        "dangerosity":0.0,
+        "count":90,
+        "group":1
+    },
+    {
+        "categories":"cow cheeses",
+        "dangerosity":0.2084711926,
+        "count":1137,
+        "group":1
+    },
+    {
+        "categories":"cow milk yogurts",
+        "dangerosity":0.238030888,
+        "count":74,
+        "group":1
+    },
+    {
+        "categories":"cow milks",
+        "dangerosity":0.2788461538,
+        "count":104,
+        "group":1
+    },
+    {
+        "categories":"crackers",
+        "dangerosity":0.3158730159,
+        "count":84,
+        "group":1
+    },
+    {
+        "categories":"cream cheeses",
+        "dangerosity":0.2655345912,
+        "count":265,
+        "group":1
+    },
+    {
+        "categories":"cream of vegetable soups",
+        "dangerosity":0.1440677966,
+        "count":59,
+        "group":1
+    },
+    {
+        "categories":"cream soups",
+        "dangerosity":0.1640625,
+        "count":64,
+        "group":1
+    },
+    {
+        "categories":"creams",
+        "dangerosity":0.734992284,
+        "count":216,
+        "group":1
+    },
+    {
+        "categories":"creamy puddings",
+        "dangerosity":0.9026155718,
+        "count":137,
+        "group":1
+    },
+    {
+        "categories":"crepes",
+        "dangerosity":0.269363167,
+        "count":83,
+        "group":1
+    },
+    {
+        "categories":"crepes and galettes",
+        "dangerosity":0.4433599527,
+        "count":161,
+        "group":1
+    },
+    {
+        "categories":"crisps",
+        "dangerosity":0.1217739004,
+        "count":131,
+        "group":1
+    },
+    {
+        "categories":"crustaceans",
+        "dangerosity":0.7062962963,
+        "count":165,
+        "group":1
+    },
+    {
+        "categories":"culinary plants",
+        "dangerosity":0.0882978723,
+        "count":94,
+        "group":1
+    },
+    {
+        "categories":"cured ham",
+        "dangerosity":1.8035201149,
+        "count":232,
+        "group":1
+    },
+    {
+        "categories":"cured sausages",
+        "dangerosity":1.9817169957,
+        "count":410,
+        "group":1
+    },
+    {
+        "categories":"custard puddings",
+        "dangerosity":0.4290697674,
+        "count":43,
+        "group":1
+    },
+    {
+        "categories":"cut",
+        "dangerosity":1.3743243243,
+        "count":37,
+        "group":1
+    },
+    {
+        "categories":"dairies",
+        "dangerosity":0.2874084398,
+        "count":6066,
+        "group":1
+    },
+    {
+        "categories":"dairy chocolate desserts",
+        "dangerosity":0.9357638889,
+        "count":48,
+        "group":1
+    },
+    {
+        "categories":"dairy desserts",
+        "dangerosity":0.3190483343,
+        "count":2068,
+        "group":1
+    },
+    {
+        "categories":"dairy drinks",
+        "dangerosity":0.5264678687,
+        "count":309,
+        "group":1
+    },
+    {
+        "categories":"dairy spread",
+        "dangerosity":0.0373499538,
+        "count":361,
+        "group":1
+    },
+    {
+        "categories":"dairy substitutes",
+        "dangerosity":0.3463880862,
+        "count":409,
+        "group":1
+    },
+    {
+        "categories":"dark chocolates",
+        "dangerosity":0.0301858304,
+        "count":205,
+        "group":1
+    },
+    {
+        "categories":"dates",
+        "dangerosity":0.7380952381,
+        "count":35,
+        "group":1
+    },
+    {
+        "categories":"dehydrated soups",
+        "dangerosity":0.7662050368,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"desserts",
+        "dangerosity":0.3440703666,
+        "count":2790,
+        "group":1
+    },
+    {
+        "categories":"diced ham",
+        "dangerosity":1.2961538462,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"dietary supplements",
+        "dangerosity":0.8989156978,
+        "count":69,
+        "group":1
+    },
+    {
+        "categories":"dips",
+        "dangerosity":0.5923076923,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"dishes with scallops",
+        "dangerosity":0.3179012346,
+        "count":36,
+        "group":1
+    },
+    {
+        "categories":"dried fruits",
+        "dangerosity":0.5200520833,
+        "count":192,
+        "group":1
+    },
+    {
+        "categories":"dried hams",
+        "dangerosity":1.7508152174,
+        "count":184,
+        "group":1
+    },
+    {
+        "categories":"dried meals",
+        "dangerosity":0.7788964698,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"dried meats",
+        "dangerosity":1.6882716049,
+        "count":54,
+        "group":1
+    },
+    {
+        "categories":"dried plant based foods",
+        "dangerosity":0.4336627141,
+        "count":253,
+        "group":1
+    },
+    {
+        "categories":"dried products",
+        "dangerosity":0.4789602827,
+        "count":353,
+        "group":1
+    },
+    {
+        "categories":"dried products to be rehydrated",
+        "dangerosity":0.5769463503,
+        "count":106,
+        "group":1
+    },
+    {
+        "categories":"drinkable yogurts",
+        "dangerosity":0.1926439232,
+        "count":134,
+        "group":1
+    },
+    {
+        "categories":"dry biscuits",
+        "dangerosity":0.3681277056,
+        "count":60,
+        "group":1
+    },
+    {
+        "categories":"dry pastas",
+        "dangerosity":0.0524861878,
+        "count":181,
+        "group":1
+    },
+    {
+        "categories":"duck breasts",
+        "dangerosity":0.9583333333,
+        "count":36,
+        "group":1
+    },
+    {
+        "categories":"duck dishes",
+        "dangerosity":0.6923007246,
+        "count":92,
+        "group":1
+    },
+    {
+        "categories":"ducks",
+        "dangerosity":0.6333333333,
+        "count":83,
+        "group":1
+    },
+    {
+        "categories":"durum wheat pasta",
+        "dangerosity":0.0217391304,
+        "count":138,
+        "group":1
+    },
+    {
+        "categories":"egg pastas",
+        "dangerosity":0.0357142857,
+        "count":56,
+        "group":1
+    },
+    {
+        "categories":"eggs",
+        "dangerosity":0.0267886179,
+        "count":410,
+        "group":1
+    },
+    {
+        "categories":"emmentaler",
+        "dangerosity":0.0260570305,
+        "count":226,
+        "group":1
+    },
+    {
+        "categories":"esl milks",
+        "dangerosity":0.1785714286,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"evaporated milks",
+        "dangerosity":0.9351851852,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"evening meals for babies",
+        "dangerosity":0.0,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"extra virgin olive oils",
+        "dangerosity":0.0,
+        "count":121,
+        "group":1
+    },
+    {
+        "categories":"farmed trouts",
+        "dangerosity":0.0,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"farming products",
+        "dangerosity":0.0206453634,
+        "count":532,
+        "group":1
+    },
+    {
+        "categories":"fats",
+        "dangerosity":0.0769982238,
+        "count":563,
+        "group":1
+    },
+    {
+        "categories":"fatty fishes",
+        "dangerosity":0.0408176101,
+        "count":1060,
+        "group":1
+    },
+    {
+        "categories":"fermented creams",
+        "dangerosity":0.144265233,
+        "count":93,
+        "group":1
+    },
+    {
+        "categories":"fermented dairy desserts",
+        "dangerosity":0.2158995042,
+        "count":1588,
+        "group":1
+    },
+    {
+        "categories":"fermented dairy desserts with fruits",
+        "dangerosity":0.3448549535,
+        "count":464,
+        "group":1
+    },
+    {
+        "categories":"fermented drinks",
+        "dangerosity":0.1883180859,
+        "count":203,
+        "group":1
+    },
+    {
+        "categories":"fermented foods",
+        "dangerosity":0.2461993966,
+        "count":4442,
+        "group":1
+    },
+    {
+        "categories":"fermented milk drinks",
+        "dangerosity":0.192103374,
+        "count":199,
+        "group":1
+    },
+    {
+        "categories":"fermented milk products",
+        "dangerosity":0.2482971988,
+        "count":4368,
+        "group":1
+    },
+    {
+        "categories":"festive foods",
+        "dangerosity":0.5555084329,
+        "count":53,
+        "group":1
+    },
+    {
+        "categories":"feta",
+        "dangerosity":0.0,
+        "count":43,
+        "group":1
+    },
+    {
+        "categories":"filled biscuits",
+        "dangerosity":0.3734811166,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"fish and meat and eggs",
+        "dangerosity":0.8749366768,
+        "count":376,
+        "group":1
+    },
+    {
+        "categories":"fish eggs",
+        "dangerosity":1.4646962233,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"fish fillets",
+        "dangerosity":0.0892041748,
+        "count":365,
+        "group":1
+    },
+    {
+        "categories":"fish fingers",
+        "dangerosity":0.0986842105,
+        "count":57,
+        "group":1
+    },
+    {
+        "categories":"fish preparations",
+        "dangerosity":0.3212791961,
+        "count":263,
+        "group":1
+    },
+    {
+        "categories":"fish rillettes",
+        "dangerosity":0.4519230769,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"fishes",
+        "dangerosity":0.108733455,
+        "count":1565,
+        "group":1
+    },
+    {
+        "categories":"flakes",
+        "dangerosity":0.0909090909,
+        "count":77,
+        "group":1
+    },
+    {
+        "categories":"flatbreads",
+        "dangerosity":0.8031252273,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"flavoured milks",
+        "dangerosity":1.2347058824,
+        "count":85,
+        "group":1
+    },
+    {
+        "categories":"flavoured potato crisps",
+        "dangerosity":0.0844854071,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"flavoured syrups",
+        "dangerosity":0.7593537415,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"flavoured yogurts",
+        "dangerosity":0.2975558365,
+        "count":113,
+        "group":1
+    },
+    {
+        "categories":"flours",
+        "dangerosity":0.061827957,
+        "count":93,
+        "group":1
+    },
+    {
+        "categories":"flower honeys",
+        "dangerosity":0.0,
+        "count":52,
+        "group":1
+    },
+    {
+        "categories":"foies gras",
+        "dangerosity":1.3370786517,
+        "count":178,
+        "group":1
+    },
+    {
+        "categories":"foies gras from ducks",
+        "dangerosity":1.3596491228,
+        "count":171,
+        "group":1
+    },
+    {
+        "categories":"free range chicken eggs",
+        "dangerosity":0.0,
+        "count":201,
+        "group":1
+    },
+    {
+        "categories":"french blue veined cheeses",
+        "dangerosity":0.0253164557,
+        "count":79,
+        "group":1
+    },
+    {
+        "categories":"french cheeses",
+        "dangerosity":0.1740714949,
+        "count":718,
+        "group":1
+    },
+    {
+        "categories":"french emmentaler",
+        "dangerosity":0.0,
+        "count":112,
+        "group":1
+    },
+    {
+        "categories":"french sausages",
+        "dangerosity":1.0436236934,
+        "count":205,
+        "group":1
+    },
+    {
+        "categories":"fresh cheeses",
+        "dangerosity":0.5633608815,
+        "count":121,
+        "group":1
+    },
+    {
+        "categories":"fresh eggs",
+        "dangerosity":0.0,
+        "count":125,
+        "group":1
+    },
+    {
+        "categories":"fresh foods",
+        "dangerosity":0.4228242303,
+        "count":1524,
+        "group":1
+    },
+    {
+        "categories":"fresh fruits",
+        "dangerosity":0.0495495495,
+        "count":37,
+        "group":1
+    },
+    {
+        "categories":"fresh ground beef preparations",
+        "dangerosity":0.1008333333,
+        "count":40,
+        "group":1
+    },
+    {
+        "categories":"fresh ground beef steaks",
+        "dangerosity":0.0188679245,
+        "count":106,
+        "group":1
+    },
+    {
+        "categories":"fresh ground meat preparations",
+        "dangerosity":0.1092395167,
+        "count":67,
+        "group":1
+    },
+    {
+        "categories":"fresh ground steaks",
+        "dangerosity":0.0183486239,
+        "count":109,
+        "group":1
+    },
+    {
+        "categories":"fresh meals",
+        "dangerosity":0.3918578159,
+        "count":298,
+        "group":1
+    },
+    {
+        "categories":"fresh meat preparations",
+        "dangerosity":0.1844322344,
+        "count":78,
+        "group":1
+    },
+    {
+        "categories":"fresh meats",
+        "dangerosity":0.0911774299,
+        "count":365,
+        "group":1
+    },
+    {
+        "categories":"fresh milks",
+        "dangerosity":0.0405405405,
+        "count":74,
+        "group":1
+    },
+    {
+        "categories":"fresh mushrooms",
+        "dangerosity":0.0,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"fresh pasta",
+        "dangerosity":0.1904761905,
+        "count":105,
+        "group":1
+    },
+    {
+        "categories":"fresh plant based foods",
+        "dangerosity":0.0,
+        "count":241,
+        "group":1
+    },
+    {
+        "categories":"fresh ravioli",
+        "dangerosity":0.4137931034,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"fresh vegetables",
+        "dangerosity":0.0,
+        "count":181,
+        "group":1
+    },
+    {
+        "categories":"from 12 months old",
+        "dangerosity":0.0,
+        "count":33,
+        "group":1
+    },
+    {
+        "categories":"from 6 months",
+        "dangerosity":0.0,
+        "count":36,
+        "group":1
+    },
+    {
+        "categories":"frozen cakes and pastries",
+        "dangerosity":0.4621588828,
+        "count":40,
+        "group":1
+    },
+    {
+        "categories":"frozen desserts",
+        "dangerosity":0.6200870506,
+        "count":230,
+        "group":1
+    },
+    {
+        "categories":"frozen fishes",
+        "dangerosity":0.1652910053,
+        "count":135,
+        "group":1
+    },
+    {
+        "categories":"frozen foods",
+        "dangerosity":0.3805618986,
+        "count":1830,
+        "group":1
+    },
+    {
+        "categories":"frozen fried potatoes",
+        "dangerosity":0.6466666667,
+        "count":40,
+        "group":1
+    },
+    {
+        "categories":"frozen ground beef preparations",
+        "dangerosity":0.1982758621,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"frozen ground beef steaks",
+        "dangerosity":0.0212765957,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"frozen ground meat preparations",
+        "dangerosity":0.2263888889,
+        "count":36,
+        "group":1
+    },
+    {
+        "categories":"frozen ground steaks",
+        "dangerosity":0.0204081633,
+        "count":49,
+        "group":1
+    },
+    {
+        "categories":"frozen legumes",
+        "dangerosity":0.0609756098,
+        "count":41,
+        "group":1
+    },
+    {
+        "categories":"frozen meat preparations",
+        "dangerosity":0.3641843972,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"frozen meats",
+        "dangerosity":0.1881642512,
+        "count":138,
+        "group":1
+    },
+    {
+        "categories":"frozen pies",
+        "dangerosity":0.8330357143,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"frozen pizzas",
+        "dangerosity":0.6906442577,
+        "count":85,
+        "group":1
+    },
+    {
+        "categories":"frozen pizzas and pies",
+        "dangerosity":0.733303067,
+        "count":118,
+        "group":1
+    },
+    {
+        "categories":"frozen plant based foods",
+        "dangerosity":0.0364583333,
+        "count":216,
+        "group":1
+    },
+    {
+        "categories":"frozen plant based foods mixes",
+        "dangerosity":0.0404411765,
+        "count":34,
+        "group":1
+    },
+    {
+        "categories":"frozen ready made meals",
+        "dangerosity":0.3833979746,
+        "count":442,
+        "group":1
+    },
+    {
+        "categories":"frozen seafood",
+        "dangerosity":0.17002997,
+        "count":143,
+        "group":1
+    },
+    {
+        "categories":"frozen steaks",
+        "dangerosity":0.02,
+        "count":50,
+        "group":1
+    },
+    {
+        "categories":"frozen vegetables",
+        "dangerosity":0.0175304878,
+        "count":164,
+        "group":1
+    },
+    {
+        "categories":"fruit and vegetable preserves",
+        "dangerosity":0.1442043896,
+        "count":81,
+        "group":1
+    },
+    {
+        "categories":"fruit based beverages",
+        "dangerosity":0.1306787491,
+        "count":335,
+        "group":1
+    },
+    {
+        "categories":"fruit juices",
+        "dangerosity":0.0659946237,
+        "count":248,
+        "group":1
+    },
+    {
+        "categories":"fruit juices from concentrate",
+        "dangerosity":0.0802469136,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"fruit nectars",
+        "dangerosity":0.158974359,
+        "count":39,
+        "group":1
+    },
+    {
+        "categories":"fruit soy yogurts",
+        "dangerosity":0.2333333333,
+        "count":30,
+        "group":1
+    },
+    {
+        "categories":"fruit stirred yogurts",
+        "dangerosity":0.2946327684,
+        "count":59,
+        "group":1
+    },
+    {
+        "categories":"fruit yogurts",
+        "dangerosity":0.3300979916,
+        "count":392,
+        "group":1
+    },
+    {
+        "categories":"fruit yogurts with fruit chunks",
+        "dangerosity":0.4358585859,
+        "count":33,
+        "group":1
+    },
+    {
+        "categories":"fruits",
+        "dangerosity":0.2181547619,
+        "count":224,
+        "group":1
+    },
+    {
+        "categories":"fruits and vegetables based foods",
+        "dangerosity":0.1188434975,
+        "count":1703,
+        "group":1
+    },
+    {
+        "categories":"fruits based foods",
+        "dangerosity":0.2252494536,
+        "count":552,
+        "group":1
+    },
+    {
+        "categories":"fruits in syrup",
+        "dangerosity":0.0535714286,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"galettes",
+        "dangerosity":0.6930803571,
+        "count":64,
+        "group":1
+    },
+    {
+        "categories":"german sausages",
+        "dangerosity":1.4216873706,
+        "count":46,
+        "group":1
+    },
+    {
+        "categories":"goat cheeses",
+        "dangerosity":0.1367845118,
+        "count":198,
+        "group":1
+    },
+    {
+        "categories":"goat milk yogurts",
+        "dangerosity":0.0462962963,
+        "count":36,
+        "group":1
+    },
+    {
+        "categories":"gouda",
+        "dangerosity":0.8568627451,
+        "count":85,
+        "group":1
+    },
+    {
+        "categories":"grana padano",
+        "dangerosity":0.7037037037,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"grated cheese",
+        "dangerosity":0.079029734,
+        "count":213,
+        "group":1
+    },
+    {
+        "categories":"grated emmentaler",
+        "dangerosity":0.0149253731,
+        "count":134,
+        "group":1
+    },
+    {
+        "categories":"gratins",
+        "dangerosity":0.6219426407,
+        "count":88,
+        "group":1
+    },
+    {
+        "categories":"greek cheeses",
+        "dangerosity":0.0,
+        "count":45,
+        "group":1
+    },
+    {
+        "categories":"greek style yogurts",
+        "dangerosity":0.0523364486,
+        "count":107,
+        "group":1
+    },
+    {
+        "categories":"green beans",
+        "dangerosity":0.0230769231,
+        "count":65,
+        "group":1
+    },
+    {
+        "categories":"green lentils",
+        "dangerosity":0.0,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"green olives",
+        "dangerosity":0.3236042693,
+        "count":58,
+        "group":1
+    },
+    {
+        "categories":"green peas",
+        "dangerosity":0.0,
+        "count":43,
+        "group":1
+    },
+    {
+        "categories":"groceries",
+        "dangerosity":0.2150463891,
+        "count":548,
+        "group":1
+    },
+    {
+        "categories":"ground beef preparations",
+        "dangerosity":0.1270562771,
+        "count":77,
+        "group":1
+    },
+    {
+        "categories":"ground beef steaks",
+        "dangerosity":0.0268817204,
+        "count":186,
+        "group":1
+    },
+    {
+        "categories":"ground coffees",
+        "dangerosity":0.0,
+        "count":41,
+        "group":1
+    },
+    {
+        "categories":"ground meat preparations",
+        "dangerosity":0.1570910973,
+        "count":138,
+        "group":1
+    },
+    {
+        "categories":"ground steaks",
+        "dangerosity":0.0264550265,
+        "count":189,
+        "group":1
+    },
+    {
+        "categories":"half salted butter",
+        "dangerosity":0.0261682243,
+        "count":107,
+        "group":1
+    },
+    {
+        "categories":"ham sandwiches",
+        "dangerosity":1.3904348856,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"hamburgers",
+        "dangerosity":0.7433407433,
+        "count":37,
+        "group":1
+    },
+    {
+        "categories":"hams",
+        "dangerosity":1.5179793607,
+        "count":990,
+        "group":1
+    },
+    {
+        "categories":"herbal teas",
+        "dangerosity":0.0131761442,
+        "count":103,
+        "group":1
+    },
+    {
+        "categories":"herring",
+        "dangerosity":0.2162121212,
+        "count":110,
+        "group":1
+    },
+    {
+        "categories":"herring fillets",
+        "dangerosity":0.1336956522,
+        "count":46,
+        "group":1
+    },
+    {
+        "categories":"homogenized milks",
+        "dangerosity":0.1364661654,
+        "count":399,
+        "group":1
+    },
+    {
+        "categories":"honeys",
+        "dangerosity":0.0,
+        "count":103,
+        "group":1
+    },
+    {
+        "categories":"hot beverages",
+        "dangerosity":0.0457601222,
+        "count":187,
+        "group":1
+    },
+    {
+        "categories":"ice cream tubs",
+        "dangerosity":0.7769844989,
+        "count":97,
+        "group":1
+    },
+    {
+        "categories":"ice creams",
+        "dangerosity":0.7041909518,
+        "count":179,
+        "group":1
+    },
+    {
+        "categories":"ice creams and sorbets",
+        "dangerosity":0.6336317875,
+        "count":216,
+        "group":1
+    },
+    {
+        "categories":"indica rices",
+        "dangerosity":0.0,
+        "count":52,
+        "group":1
+    },
+    {
+        "categories":"industrial cheese",
+        "dangerosity":0.3117559524,
+        "count":208,
+        "group":1
+    },
+    {
+        "categories":"industrial knacks",
+        "dangerosity":1.1165188298,
+        "count":51,
+        "group":1
+    },
+    {
+        "categories":"instant beverages",
+        "dangerosity":0.3163580247,
+        "count":54,
+        "group":1
+    },
+    {
+        "categories":"italian cheeses",
+        "dangerosity":0.0865421456,
+        "count":348,
+        "group":1
+    },
+    {
+        "categories":"italian meat products",
+        "dangerosity":1.1228070175,
+        "count":57,
+        "group":1
+    },
+    {
+        "categories":"jams",
+        "dangerosity":0.1444160998,
+        "count":70,
+        "group":1
+    },
+    {
+        "categories":"juices and nectars",
+        "dangerosity":0.0675338506,
+        "count":313,
+        "group":1
+    },
+    {
+        "categories":"kefir",
+        "dangerosity":0.0344827586,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"labeled cheeses",
+        "dangerosity":0.1201550388,
+        "count":129,
+        "group":1
+    },
+    {
+        "categories":"lactose free milk",
+        "dangerosity":0.1034482759,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"lamb meat",
+        "dangerosity":0.0,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"lardons",
+        "dangerosity":0.9781818182,
+        "count":165,
+        "group":1
+    },
+    {
+        "categories":"leaf salads",
+        "dangerosity":0.0,
+        "count":53,
+        "group":1
+    },
+    {
+        "categories":"leaf vegetables",
+        "dangerosity":0.0111972438,
+        "count":129,
+        "group":1
+    },
+    {
+        "categories":"lean fishes",
+        "dangerosity":0.1,
+        "count":125,
+        "group":1
+    },
+    {
+        "categories":"legume milks",
+        "dangerosity":0.5736486486,
+        "count":74,
+        "group":1
+    },
+    {
+        "categories":"legume seeds",
+        "dangerosity":0.06020558,
+        "count":227,
+        "group":1
+    },
+    {
+        "categories":"legumes",
+        "dangerosity":0.0699924414,
+        "count":441,
+        "group":1
+    },
+    {
+        "categories":"legumes and their products",
+        "dangerosity":0.1267259978,
+        "count":618,
+        "group":1
+    },
+    {
+        "categories":"lentil dishes",
+        "dangerosity":0.7992248062,
+        "count":43,
+        "group":1
+    },
+    {
+        "categories":"lentils",
+        "dangerosity":0.0119047619,
+        "count":84,
+        "group":1
+    },
+    {
+        "categories":"liver pates",
+        "dangerosity":1.7517241379,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"long grain rices",
+        "dangerosity":0.0,
+        "count":85,
+        "group":1
+    },
+    {
+        "categories":"low fat prepared meals",
+        "dangerosity":0.1875,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"low fat yogurts",
+        "dangerosity":0.3755555556,
+        "count":55,
+        "group":1
+    },
+    {
+        "categories":"mackerel fillets",
+        "dangerosity":0.0673076923,
+        "count":104,
+        "group":1
+    },
+    {
+        "categories":"mackerels",
+        "dangerosity":0.0625,
+        "count":112,
+        "group":1
+    },
+    {
+        "categories":"main meals for babies",
+        "dangerosity":0.0188679245,
+        "count":106,
+        "group":1
+    },
+    {
+        "categories":"mashed potatoes",
+        "dangerosity":0.6968864469,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"mashed vegetables",
+        "dangerosity":0.1607142857,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"meals",
+        "dangerosity":0.486660188,
+        "count":3117,
+        "group":1
+    },
+    {
+        "categories":"meals with chicken",
+        "dangerosity":0.3612645709,
+        "count":256,
+        "group":1
+    },
+    {
+        "categories":"meals with fish",
+        "dangerosity":0.2871679343,
+        "count":288,
+        "group":1
+    },
+    {
+        "categories":"meals with meat",
+        "dangerosity":0.6205247383,
+        "count":1152,
+        "group":1
+    },
+    {
+        "categories":"meals with salmon",
+        "dangerosity":0.2228228228,
+        "count":37,
+        "group":1
+    },
+    {
+        "categories":"meals with shellfish",
+        "dangerosity":0.3727668845,
+        "count":51,
+        "group":1
+    },
+    {
+        "categories":"meat alternatives",
+        "dangerosity":0.160035035,
+        "count":222,
+        "group":1
+    },
+    {
+        "categories":"meat analogues",
+        "dangerosity":0.1668776371,
+        "count":158,
+        "group":1
+    },
+    {
+        "categories":"meat balls",
+        "dangerosity":0.2757936508,
+        "count":42,
+        "group":1
+    },
+    {
+        "categories":"meat based pasta sauces",
+        "dangerosity":0.1142857143,
+        "count":35,
+        "group":1
+    },
+    {
+        "categories":"meat based sauces",
+        "dangerosity":0.1136363636,
+        "count":44,
+        "group":1
+    },
+    {
+        "categories":"meat patties",
+        "dangerosity":0.0,
+        "count":49,
+        "group":1
+    },
+    {
+        "categories":"meat preparations",
+        "dangerosity":0.6288334849,
+        "count":497,
+        "group":1
+    },
+    {
+        "categories":"meat ravioli",
+        "dangerosity":0.2021276596,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"meats",
+        "dangerosity":0.9882530004,
+        "count":4614,
+        "group":1
+    },
+    {
+        "categories":"meats and their products",
+        "dangerosity":0.9292357222,
+        "count":5796,
+        "group":1
+    },
+    {
+        "categories":"melted cheese",
+        "dangerosity":1.4678388278,
+        "count":40,
+        "group":1
+    },
+    {
+        "categories":"microwave meals",
+        "dangerosity":0.4972927934,
+        "count":754,
+        "group":1
+    },
+    {
+        "categories":"milk chocolate biscuits",
+        "dangerosity":0.3256446678,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"milk chocolates",
+        "dangerosity":0.0983838384,
+        "count":75,
+        "group":1
+    },
+    {
+        "categories":"milk substitutes",
+        "dangerosity":0.3555768208,
+        "count":285,
+        "group":1
+    },
+    {
+        "categories":"milkfat",
+        "dangerosity":0.0408172635,
+        "count":363,
+        "group":1
+    },
+    {
+        "categories":"milks",
+        "dangerosity":0.1487488829,
+        "count":746,
+        "group":1
+    },
+    {
+        "categories":"mineral waters",
+        "dangerosity":0.0055555556,
+        "count":90,
+        "group":1
+    },
+    {
+        "categories":"mixed vegetables",
+        "dangerosity":0.01171875,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"molded butters",
+        "dangerosity":0.0,
+        "count":48,
+        "group":1
+    },
+    {
+        "categories":"mollusc",
+        "dangerosity":0.2120614035,
+        "count":114,
+        "group":1
+    },
+    {
+        "categories":"mountain cheeses",
+        "dangerosity":0.3902777778,
+        "count":48,
+        "group":1
+    },
+    {
+        "categories":"mountain products",
+        "dangerosity":0.3297777778,
+        "count":75,
+        "group":1
+    },
+    {
+        "categories":"mozzarella",
+        "dangerosity":0.0267676768,
+        "count":165,
+        "group":1
+    },
+    {
+        "categories":"mozzarella di bufala campana",
+        "dangerosity":0.0,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"mueslis",
+        "dangerosity":0.1091666667,
+        "count":80,
+        "group":1
+    },
+    {
+        "categories":"mueslis with fruits",
+        "dangerosity":0.171875,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"multifruit juices",
+        "dangerosity":0.0801587302,
+        "count":42,
+        "group":1
+    },
+    {
+        "categories":"mushrooms",
+        "dangerosity":0.0266666667,
+        "count":75,
+        "group":1
+    },
+    {
+        "categories":"mushrooms and their products",
+        "dangerosity":0.023255814,
+        "count":86,
+        "group":1
+    },
+    {
+        "categories":"mussels",
+        "dangerosity":0.0762711864,
+        "count":59,
+        "group":1
+    },
+    {
+        "categories":"natural mineral waters",
+        "dangerosity":0.0,
+        "count":61,
+        "group":1
+    },
+    {
+        "categories":"nems",
+        "dangerosity":0.5796296296,
+        "count":36,
+        "group":1
+    },
+    {
+        "categories":"non alcoholic beverages",
+        "dangerosity":0.7185073806,
+        "count":122,
+        "group":1
+    },
+    {
+        "categories":"non dairy desserts",
+        "dangerosity":0.3723723724,
+        "count":111,
+        "group":1
+    },
+    {
+        "categories":"non dairy fermented foods",
+        "dangerosity":0.1147540984,
+        "count":61,
+        "group":1
+    },
+    {
+        "categories":"non dairy yogurts",
+        "dangerosity":0.1166666667,
+        "count":60,
+        "group":1
+    },
+    {
+        "categories":"noodles",
+        "dangerosity":0.5087822671,
+        "count":63,
+        "group":1
+    },
+    {
+        "categories":"nut milks",
+        "dangerosity":0.1378787879,
+        "count":44,
+        "group":1
+    },
+    {
+        "categories":"nuts",
+        "dangerosity":0.0549295775,
+        "count":213,
+        "group":1
+    },
+    {
+        "categories":"nuts and their products",
+        "dangerosity":0.10796565,
+        "count":307,
+        "group":1
+    },
+    {
+        "categories":"oat milks",
+        "dangerosity":0.3648888889,
+        "count":75,
+        "group":1
+    },
+    {
+        "categories":"offals",
+        "dangerosity":0.3604651163,
+        "count":129,
+        "group":1
+    },
+    {
+        "categories":"olive oils",
+        "dangerosity":0.0,
+        "count":127,
+        "group":1
+    },
+    {
+        "categories":"olive tree products",
+        "dangerosity":0.1086031746,
+        "count":225,
+        "group":1
+    },
+    {
+        "categories":"olives",
+        "dangerosity":0.2438664596,
+        "count":92,
+        "group":1
+    },
+    {
+        "categories":"onions and their products",
+        "dangerosity":0.1481481481,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"orange juices",
+        "dangerosity":0.0,
+        "count":67,
+        "group":1
+    },
+    {
+        "categories":"organic semi skimmed milks",
+        "dangerosity":0.0,
+        "count":45,
+        "group":1
+    },
+    {
+        "categories":"paella",
+        "dangerosity":0.6301463294,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"parmigiano reggiano",
+        "dangerosity":0.0227272727,
+        "count":44,
+        "group":1
+    },
+    {
+        "categories":"pasta dishes",
+        "dangerosity":0.3070081003,
+        "count":533,
+        "group":1
+    },
+    {
+        "categories":"pasta salads",
+        "dangerosity":0.8356074481,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"pasta sauces",
+        "dangerosity":0.0807291667,
+        "count":64,
+        "group":1
+    },
+    {
+        "categories":"pasta stuffed with cheese",
+        "dangerosity":0.1789321789,
+        "count":33,
+        "group":1
+    },
+    {
+        "categories":"pasta stuffed with meat",
+        "dangerosity":0.1696428571,
+        "count":56,
+        "group":1
+    },
+    {
+        "categories":"pasta stuffed with vegetables",
+        "dangerosity":0.0384615385,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"pastas",
+        "dangerosity":0.1822703414,
+        "count":502,
+        "group":1
+    },
+    {
+        "categories":"pasteurised milks",
+        "dangerosity":0.0365853659,
+        "count":82,
+        "group":1
+    },
+    {
+        "categories":"pasteurized butters",
+        "dangerosity":0.0,
+        "count":62,
+        "group":1
+    },
+    {
+        "categories":"pasteurized cheeses",
+        "dangerosity":0.2712440295,
+        "count":658,
+        "group":1
+    },
+    {
+        "categories":"pastries",
+        "dangerosity":0.5740735997,
+        "count":117,
+        "group":1
+    },
+    {
+        "categories":"pastry helpers",
+        "dangerosity":0.3416666667,
+        "count":40,
+        "group":1
+    },
+    {
+        "categories":"pate",
+        "dangerosity":1.0554694229,
+        "count":129,
+        "group":1
+    },
+    {
+        "categories":"peanuts",
+        "dangerosity":0.1,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"penne",
+        "dangerosity":0.0,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"peppers",
+        "dangerosity":0.3939393939,
+        "count":33,
+        "group":1
+    },
+    {
+        "categories":"petit beurre",
+        "dangerosity":0.31,
+        "count":30,
+        "group":1
+    },
+    {
+        "categories":"petits suisses",
+        "dangerosity":1.2035460993,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"pickles",
+        "dangerosity":0.3709047619,
+        "count":150,
+        "group":1
+    },
+    {
+        "categories":"pie dough",
+        "dangerosity":0.2371794872,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"pies",
+        "dangerosity":0.6593418521,
+        "count":114,
+        "group":1
+    },
+    {
+        "categories":"pitted olives",
+        "dangerosity":0.200617284,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"pizzas",
+        "dangerosity":0.7281862965,
+        "count":145,
+        "group":1
+    },
+    {
+        "categories":"pizzas pies and quiches",
+        "dangerosity":0.758164932,
+        "count":235,
+        "group":1
+    },
+    {
+        "categories":"plain buckwheat crepes",
+        "dangerosity":0.6922731357,
+        "count":53,
+        "group":1
+    },
+    {
+        "categories":"plain fermented dairy desserts",
+        "dangerosity":0.2620689655,
+        "count":145,
+        "group":1
+    },
+    {
+        "categories":"plain petit suisse",
+        "dangerosity":1.3076923077,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"plain stirred yogurts",
+        "dangerosity":0.0,
+        "count":49,
+        "group":1
+    },
+    {
+        "categories":"plain yogurts",
+        "dangerosity":0.0,
+        "count":255,
+        "group":1
+    },
+    {
+        "categories":"plant based beverages",
+        "dangerosity":0.1933589997,
+        "count":802,
+        "group":1
+    },
+    {
+        "categories":"plant based foods",
+        "dangerosity":0.1651207698,
+        "count":5126,
+        "group":1
+    },
+    {
+        "categories":"plant based foods and beverages",
+        "dangerosity":0.167555727,
+        "count":5736,
+        "group":1
+    },
+    {
+        "categories":"plant based meals",
+        "dangerosity":0.2061728395,
+        "count":108,
+        "group":1
+    },
+    {
+        "categories":"plant based pates",
+        "dangerosity":0.162962963,
+        "count":45,
+        "group":1
+    },
+    {
+        "categories":"plant based pickles",
+        "dangerosity":0.3733940556,
+        "count":149,
+        "group":1
+    },
+    {
+        "categories":"plant based spreads",
+        "dangerosity":0.2029375615,
+        "count":226,
+        "group":1
+    },
+    {
+        "categories":"plant milks",
+        "dangerosity":0.3547835498,
+        "count":280,
+        "group":1
+    },
+    {
+        "categories":"pollocks",
+        "dangerosity":0.1139817629,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"pork",
+        "dangerosity":1.080503936,
+        "count":615,
+        "group":1
+    },
+    {
+        "categories":"pork and its products",
+        "dangerosity":0.9752136752,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"pork belly",
+        "dangerosity":1.0032467532,
+        "count":77,
+        "group":1
+    },
+    {
+        "categories":"pork meals",
+        "dangerosity":0.9590790624,
+        "count":236,
+        "group":1
+    },
+    {
+        "categories":"pork pates",
+        "dangerosity":0.9607142857,
+        "count":84,
+        "group":1
+    },
+    {
+        "categories":"pork rillettes",
+        "dangerosity":0.2222222222,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"pork roasts",
+        "dangerosity":1.1078544061,
+        "count":58,
+        "group":1
+    },
+    {
+        "categories":"pork sausages",
+        "dangerosity":1.4283730159,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"potato crisps",
+        "dangerosity":0.0342752486,
+        "count":91,
+        "group":1
+    },
+    {
+        "categories":"potato crisps in sunflower oil",
+        "dangerosity":0.0196078431,
+        "count":68,
+        "group":1
+    },
+    {
+        "categories":"potato gratin",
+        "dangerosity":0.6298319328,
+        "count":34,
+        "group":1
+    },
+    {
+        "categories":"potato preparations",
+        "dangerosity":0.7269585253,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"potatoes",
+        "dangerosity":0.2083333333,
+        "count":40,
+        "group":1
+    },
+    {
+        "categories":"potted meats",
+        "dangerosity":0.25,
+        "count":60,
+        "group":1
+    },
+    {
+        "categories":"poultries",
+        "dangerosity":0.4958431544,
+        "count":767,
+        "group":1
+    },
+    {
+        "categories":"poultry meals",
+        "dangerosity":0.4643380534,
+        "count":417,
+        "group":1
+    },
+    {
+        "categories":"poultry nuggets",
+        "dangerosity":0.8753720238,
+        "count":64,
+        "group":1
+    },
+    {
+        "categories":"poultry rillettes",
+        "dangerosity":0.28125,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"poultry sausages",
+        "dangerosity":1.1883394383,
+        "count":39,
+        "group":1
+    },
+    {
+        "categories":"prawns",
+        "dangerosity":0.7244186047,
+        "count":43,
+        "group":1
+    },
+    {
+        "categories":"preparations made from fish meat",
+        "dangerosity":0.5331845238,
+        "count":48,
+        "group":1
+    },
+    {
+        "categories":"prepared couscous",
+        "dangerosity":0.5903225806,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"prepared lasagne",
+        "dangerosity":0.1383928571,
+        "count":96,
+        "group":1
+    },
+    {
+        "categories":"prepared meats",
+        "dangerosity":1.3398002075,
+        "count":2936,
+        "group":1
+    },
+    {
+        "categories":"prepared meats with less salt",
+        "dangerosity":1.3156342183,
+        "count":113,
+        "group":1
+    },
+    {
+        "categories":"prepared salads",
+        "dangerosity":0.5612691389,
+        "count":113,
+        "group":1
+    },
+    {
+        "categories":"prepared vegetables",
+        "dangerosity":0.1464539007,
+        "count":141,
+        "group":1
+    },
+    {
+        "categories":"processed cheese",
+        "dangerosity":1.6477832512,
+        "count":58,
+        "group":1
+    },
+    {
+        "categories":"products for specific diets",
+        "dangerosity":0.9214593928,
+        "count":206,
+        "group":1
+    },
+    {
+        "categories":"products with reduced salt",
+        "dangerosity":1.2037634409,
+        "count":124,
+        "group":1
+    },
+    {
+        "categories":"products without gluten",
+        "dangerosity":0.530860096,
+        "count":86,
+        "group":1
+    },
+    {
+        "categories":"produits laitiers",
+        "dangerosity":0.6085714286,
+        "count":35,
+        "group":1
+    },
+    {
+        "categories":"puddings",
+        "dangerosity":0.760719205,
+        "count":55,
+        "group":1
+    },
+    {
+        "categories":"puff pastry meals",
+        "dangerosity":0.9243283903,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"puffed cereal cakes",
+        "dangerosity":0.1111111111,
+        "count":36,
+        "group":1
+    },
+    {
+        "categories":"pulses",
+        "dangerosity":0.0312989045,
+        "count":213,
+        "group":1
+    },
+    {
+        "categories":"pure butter brioche",
+        "dangerosity":0.4956790123,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"purees",
+        "dangerosity":0.4072249589,
+        "count":58,
+        "group":1
+    },
+    {
+        "categories":"quarks",
+        "dangerosity":0.3778735632,
+        "count":116,
+        "group":1
+    },
+    {
+        "categories":"quiches",
+        "dangerosity":1.00078125,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"quinoa",
+        "dangerosity":0.0,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"rabbit meat",
+        "dangerosity":0.2318181818,
+        "count":55,
+        "group":1
+    },
+    {
+        "categories":"raclette",
+        "dangerosity":0.7112135177,
+        "count":62,
+        "group":1
+    },
+    {
+        "categories":"ravioli",
+        "dangerosity":0.2539506173,
+        "count":135,
+        "group":1
+    },
+    {
+        "categories":"raw cured ham",
+        "dangerosity":1.848241206,
+        "count":199,
+        "group":1
+    },
+    {
+        "categories":"red wines",
+        "dangerosity":0.0681818182,
+        "count":44,
+        "group":1
+    },
+    {
+        "categories":"refrigerated chocolate creamy puddings",
+        "dangerosity":0.8498168498,
+        "count":39,
+        "group":1
+    },
+    {
+        "categories":"refrigerated creamy puddings",
+        "dangerosity":0.8650675195,
+        "count":67,
+        "group":1
+    },
+    {
+        "categories":"refrigerated foods",
+        "dangerosity":0.6177132186,
+        "count":395,
+        "group":1
+    },
+    {
+        "categories":"refrigerated meals",
+        "dangerosity":0.7010077106,
+        "count":285,
+        "group":1
+    },
+    {
+        "categories":"reheatable soups",
+        "dangerosity":0.0833333333,
+        "count":36,
+        "group":1
+    },
+    {
+        "categories":"rice dishes",
+        "dangerosity":0.415479798,
+        "count":170,
+        "group":1
+    },
+    {
+        "categories":"rice milks",
+        "dangerosity":0.0,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"rice puddings",
+        "dangerosity":0.3990196078,
+        "count":34,
+        "group":1
+    },
+    {
+        "categories":"rices",
+        "dangerosity":0.0,
+        "count":137,
+        "group":1
+    },
+    {
+        "categories":"rillettes",
+        "dangerosity":0.3359106529,
+        "count":97,
+        "group":1
+    },
+    {
+        "categories":"risottos",
+        "dangerosity":0.3967452301,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"roasted nuts",
+        "dangerosity":0.0166666667,
+        "count":30,
+        "group":1
+    },
+    {
+        "categories":"rolled flakes",
+        "dangerosity":0.0,
+        "count":51,
+        "group":1
+    },
+    {
+        "categories":"rolled oats",
+        "dangerosity":0.0,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"roquefort cheeses",
+        "dangerosity":0.0,
+        "count":36,
+        "group":1
+    },
+    {
+        "categories":"rosette dry sausage",
+        "dangerosity":2.0765765766,
+        "count":37,
+        "group":1
+    },
+    {
+        "categories":"rusks",
+        "dangerosity":0.2124542125,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"salads",
+        "dangerosity":0.3580929209,
+        "count":137,
+        "group":1
+    },
+    {
+        "categories":"salads with fish",
+        "dangerosity":0.2057823129,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"salami",
+        "dangerosity":1.7157687991,
+        "count":99,
+        "group":1
+    },
+    {
+        "categories":"salmon fillets",
+        "dangerosity":0.0546875,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"salmon steaks",
+        "dangerosity":0.0,
+        "count":35,
+        "group":1
+    },
+    {
+        "categories":"salmons",
+        "dangerosity":0.0083529412,
+        "count":425,
+        "group":1
+    },
+    {
+        "categories":"salmons from farming",
+        "dangerosity":0.0,
+        "count":48,
+        "group":1
+    },
+    {
+        "categories":"salted pies",
+        "dangerosity":0.7419744088,
+        "count":49,
+        "group":1
+    },
+    {
+        "categories":"salted spreads",
+        "dangerosity":0.599431189,
+        "count":473,
+        "group":1
+    },
+    {
+        "categories":"salts",
+        "dangerosity":0.3305084746,
+        "count":59,
+        "group":1
+    },
+    {
+        "categories":"salty snacks",
+        "dangerosity":0.3696873497,
+        "count":435,
+        "group":1
+    },
+    {
+        "categories":"sandwiches",
+        "dangerosity":0.9586577087,
+        "count":148,
+        "group":1
+    },
+    {
+        "categories":"sandwiches filled with cold cuts",
+        "dangerosity":1.2945652832,
+        "count":33,
+        "group":1
+    },
+    {
+        "categories":"sardines",
+        "dangerosity":0.004379562,
+        "count":137,
+        "group":1
+    },
+    {
+        "categories":"sardines in oil",
+        "dangerosity":0.0057142857,
+        "count":105,
+        "group":1
+    },
+    {
+        "categories":"sardines in olive oil",
+        "dangerosity":0.0083333333,
+        "count":72,
+        "group":1
+    },
+    {
+        "categories":"sauces",
+        "dangerosity":0.301122449,
+        "count":350,
+        "group":1
+    },
+    {
+        "categories":"sauerkrauts",
+        "dangerosity":1.0057668209,
+        "count":38,
+        "group":1
+    },
+    {
+        "categories":"sausages",
+        "dangerosity":1.1883941952,
+        "count":519,
+        "group":1
+    },
+    {
+        "categories":"sauteed black pudding",
+        "dangerosity":0.2578125,
+        "count":64,
+        "group":1
+    },
+    {
+        "categories":"savory mousses",
+        "dangerosity":1.216573296,
+        "count":51,
+        "group":1
+    },
+    {
+        "categories":"savory semolina dishes",
+        "dangerosity":0.5418604651,
+        "count":43,
+        "group":1
+    },
+    {
+        "categories":"seafood",
+        "dangerosity":0.1823463414,
+        "count":1917,
+        "group":1
+    },
+    {
+        "categories":"seeds",
+        "dangerosity":0.052072686,
+        "count":587,
+        "group":1
+    },
+    {
+        "categories":"semi skimmed milk uht",
+        "dangerosity":0.4,
+        "count":30,
+        "group":1
+    },
+    {
+        "categories":"semi skimmed milks",
+        "dangerosity":0.0912052117,
+        "count":307,
+        "group":1
+    },
+    {
+        "categories":"serrano ham",
+        "dangerosity":1.82125,
+        "count":40,
+        "group":1
+    },
+    {
+        "categories":"sheep milk yogurts",
+        "dangerosity":0.0298507463,
+        "count":67,
+        "group":1
+    },
+    {
+        "categories":"sheep s milk cheeses",
+        "dangerosity":0.2055220884,
+        "count":166,
+        "group":1
+    },
+    {
+        "categories":"shelled nuts",
+        "dangerosity":0.1276595745,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"shortbread cookies",
+        "dangerosity":0.3202978056,
+        "count":58,
+        "group":1
+    },
+    {
+        "categories":"shrimps",
+        "dangerosity":0.7302756245,
+        "count":129,
+        "group":1
+    },
+    {
+        "categories":"simple syrups",
+        "dangerosity":0.0673076923,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"skewers",
+        "dangerosity":0.2673326673,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"skimmed milks",
+        "dangerosity":0.0895522388,
+        "count":67,
+        "group":1
+    },
+    {
+        "categories":"skyrs",
+        "dangerosity":0.2,
+        "count":50,
+        "group":1
+    },
+    {
+        "categories":"sliced bacon",
+        "dangerosity":1.4475609756,
+        "count":41,
+        "group":1
+    },
+    {
+        "categories":"sliced breads",
+        "dangerosity":0.5982407407,
+        "count":90,
+        "group":1
+    },
+    {
+        "categories":"sliced cheeses",
+        "dangerosity":0.4245736343,
+        "count":186,
+        "group":1
+    },
+    {
+        "categories":"smoked bacon",
+        "dangerosity":1.4936363636,
+        "count":55,
+        "group":1
+    },
+    {
+        "categories":"smoked cured ham",
+        "dangerosity":2.2990196078,
+        "count":34,
+        "group":1
+    },
+    {
+        "categories":"smoked fishes",
+        "dangerosity":0.0183371298,
+        "count":439,
+        "group":1
+    },
+    {
+        "categories":"smoked herrings",
+        "dangerosity":0.05,
+        "count":35,
+        "group":1
+    },
+    {
+        "categories":"smoked lardons",
+        "dangerosity":0.9404040404,
+        "count":99,
+        "group":1
+    },
+    {
+        "categories":"smoked salmons",
+        "dangerosity":0.0027027027,
+        "count":296,
+        "group":1
+    },
+    {
+        "categories":"smoked salmons from farming",
+        "dangerosity":0.0,
+        "count":190,
+        "group":1
+    },
+    {
+        "categories":"smoked sausages",
+        "dangerosity":1.7554054054,
+        "count":37,
+        "group":1
+    },
+    {
+        "categories":"smoked trouts",
+        "dangerosity":0.0,
+        "count":66,
+        "group":1
+    },
+    {
+        "categories":"snacks",
+        "dangerosity":0.3775395663,
+        "count":1846,
+        "group":1
+    },
+    {
+        "categories":"sodas",
+        "dangerosity":1.5887999897,
+        "count":84,
+        "group":1
+    },
+    {
+        "categories":"soft cheese with a natural rind",
+        "dangerosity":0.0,
+        "count":44,
+        "group":1
+    },
+    {
+        "categories":"soft cheeses with bloomy rind",
+        "dangerosity":0.0033333333,
+        "count":300,
+        "group":1
+    },
+    {
+        "categories":"soft cheeses with washed rind",
+        "dangerosity":0.1929824561,
+        "count":57,
+        "group":1
+    },
+    {
+        "categories":"sorbets",
+        "dangerosity":0.2327468231,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"soups",
+        "dangerosity":0.2636292396,
+        "count":196,
+        "group":1
+    },
+    {
+        "categories":"sour creams",
+        "dangerosity":0.3395061728,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"soy desserts",
+        "dangerosity":0.609929078,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"soy milk yogurts",
+        "dangerosity":0.1428571429,
+        "count":49,
+        "group":1
+    },
+    {
+        "categories":"soy milks",
+        "dangerosity":0.5736486486,
+        "count":74,
+        "group":1
+    },
+    {
+        "categories":"spaghetti",
+        "dangerosity":0.0900900901,
+        "count":37,
+        "group":1
+    },
+    {
+        "categories":"spanish meat products",
+        "dangerosity":1.8,
+        "count":42,
+        "group":1
+    },
+    {
+        "categories":"special breads",
+        "dangerosity":0.6489795918,
+        "count":49,
+        "group":1
+    },
+    {
+        "categories":"specific products",
+        "dangerosity":0.9170078982,
+        "count":207,
+        "group":1
+    },
+    {
+        "categories":"spices",
+        "dangerosity":0.2149122807,
+        "count":114,
+        "group":1
+    },
+    {
+        "categories":"spinachs",
+        "dangerosity":0.0,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"spreadable fats",
+        "dangerosity":0.0576856649,
+        "count":386,
+        "group":1
+    },
+    {
+        "categories":"spreads",
+        "dangerosity":0.2908950617,
+        "count":1170,
+        "group":1
+    },
+    {
+        "categories":"spring waters",
+        "dangerosity":0.0047169811,
+        "count":106,
+        "group":1
+    },
+    {
+        "categories":"squeezed apple juices",
+        "dangerosity":0.0,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"squeezed juices",
+        "dangerosity":0.0135135135,
+        "count":148,
+        "group":1
+    },
+    {
+        "categories":"squeezed orange juices",
+        "dangerosity":0.0,
+        "count":45,
+        "group":1
+    },
+    {
+        "categories":"steaks",
+        "dangerosity":0.0223214286,
+        "count":224,
+        "group":1
+    },
+    {
+        "categories":"stirred yogurts",
+        "dangerosity":0.1706709957,
+        "count":154,
+        "group":1
+    },
+    {
+        "categories":"strasbourg sausages",
+        "dangerosity":1.1508054963,
+        "count":67,
+        "group":1
+    },
+    {
+        "categories":"strawberry yogurts",
+        "dangerosity":0.3819444444,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"stretched curd cheeses",
+        "dangerosity":0.0396613191,
+        "count":187,
+        "group":1
+    },
+    {
+        "categories":"stuffed pastas",
+        "dangerosity":0.231694496,
+        "count":231,
+        "group":1
+    },
+    {
+        "categories":"sugars",
+        "dangerosity":0.0857142857,
+        "count":35,
+        "group":1
+    },
+    {
+        "categories":"sunflower seeds and their products",
+        "dangerosity":0.328125,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"surimi",
+        "dangerosity":0.1267361111,
+        "count":48,
+        "group":1
+    },
+    {
+        "categories":"sweet cream butters",
+        "dangerosity":0.0152671756,
+        "count":131,
+        "group":1
+    },
+    {
+        "categories":"sweet mousses",
+        "dangerosity":0.7874042624,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"sweet pies",
+        "dangerosity":0.5787672645,
+        "count":42,
+        "group":1
+    },
+    {
+        "categories":"sweet snacks",
+        "dangerosity":0.3738485183,
+        "count":1361,
+        "group":1
+    },
+    {
+        "categories":"sweet spreads",
+        "dangerosity":0.0728490659,
+        "count":226,
+        "group":1
+    },
+    {
+        "categories":"sweetened beverages",
+        "dangerosity":0.8193419913,
+        "count":225,
+        "group":1
+    },
+    {
+        "categories":"sweetened yogurts",
+        "dangerosity":0.1770975057,
+        "count":147,
+        "group":1
+    },
+    {
+        "categories":"sweeteners",
+        "dangerosity":0.0434131737,
+        "count":167,
+        "group":1
+    },
+    {
+        "categories":"syrups",
+        "dangerosity":0.5367965368,
+        "count":66,
+        "group":1
+    },
+    {
+        "categories":"tagliatelle",
+        "dangerosity":0.0,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"teas",
+        "dangerosity":0.0756097561,
+        "count":82,
+        "group":1
+    },
+    {
+        "categories":"terrines",
+        "dangerosity":0.5783878788,
+        "count":125,
+        "group":1
+    },
+    {
+        "categories":"thermised milk cheeses",
+        "dangerosity":0.0625,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"tinned mackerels",
+        "dangerosity":0.0844155844,
+        "count":77,
+        "group":1
+    },
+    {
+        "categories":"toasts",
+        "dangerosity":0.2051282051,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"tofu",
+        "dangerosity":0.03125,
+        "count":48,
+        "group":1
+    },
+    {
+        "categories":"tomato sauces",
+        "dangerosity":0.1590375587,
+        "count":142,
+        "group":1
+    },
+    {
+        "categories":"tomatoes",
+        "dangerosity":0.0,
+        "count":61,
+        "group":1
+    },
+    {
+        "categories":"tomatoes and their products",
+        "dangerosity":0.0194805195,
+        "count":154,
+        "group":1
+    },
+    {
+        "categories":"tomme cheese from cow s milk",
+        "dangerosity":0.481547619,
+        "count":28,
+        "group":1
+    },
+    {
+        "categories":"tortellini",
+        "dangerosity":0.1416666667,
+        "count":50,
+        "group":1
+    },
+    {
+        "categories":"toulouse sausages",
+        "dangerosity":0.2221198157,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"tripe dishes",
+        "dangerosity":0.1842105263,
+        "count":95,
+        "group":1
+    },
+    {
+        "categories":"tropical fruits",
+        "dangerosity":0.0727272727,
+        "count":44,
+        "group":1
+    },
+    {
+        "categories":"tropical tunas",
+        "dangerosity":0.0,
+        "count":41,
+        "group":1
+    },
+    {
+        "categories":"trouts",
+        "dangerosity":0.0,
+        "count":79,
+        "group":1
+    },
+    {
+        "categories":"tuna in brine",
+        "dangerosity":0.0,
+        "count":69,
+        "group":1
+    },
+    {
+        "categories":"tuna in olive oil",
+        "dangerosity":0.0,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"tuna salad",
+        "dangerosity":0.1975308642,
+        "count":27,
+        "group":1
+    },
+    {
+        "categories":"tunas",
+        "dangerosity":0.0446927374,
+        "count":179,
+        "group":1
+    },
+    {
+        "categories":"tunas in oil",
+        "dangerosity":0.0,
+        "count":51,
+        "group":1
+    },
+    {
+        "categories":"turkey and its products",
+        "dangerosity":0.6273367003,
+        "count":150,
+        "group":1
+    },
+    {
+        "categories":"turkey cutlets",
+        "dangerosity":0.0405405405,
+        "count":37,
+        "group":1
+    },
+    {
+        "categories":"turkey preparations",
+        "dangerosity":0.9404980033,
+        "count":43,
+        "group":1
+    },
+    {
+        "categories":"turkeys",
+        "dangerosity":0.5274926686,
+        "count":124,
+        "group":1
+    },
+    {
+        "categories":"uht creams",
+        "dangerosity":1.5105,
+        "count":50,
+        "group":1
+    },
+    {
+        "categories":"uht milks",
+        "dangerosity":0.1392957746,
+        "count":355,
+        "group":1
+    },
+    {
+        "categories":"uncooked pressed cheeses",
+        "dangerosity":0.6648241206,
+        "count":199,
+        "group":1
+    },
+    {
+        "categories":"unfermented creams",
+        "dangerosity":1.5392676768,
+        "count":66,
+        "group":1
+    },
+    {
+        "categories":"unpasteurised cheeses",
+        "dangerosity":0.0442477876,
+        "count":226,
+        "group":1
+    },
+    {
+        "categories":"unsalted butters",
+        "dangerosity":0.0129032258,
+        "count":62,
+        "group":1
+    },
+    {
+        "categories":"unsweetened beverages",
+        "dangerosity":0.1606599261,
+        "count":219,
+        "group":1
+    },
+    {
+        "categories":"vanilla ice cream tubs",
+        "dangerosity":0.7730769231,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"vanilla yogurt",
+        "dangerosity":0.1037362637,
+        "count":65,
+        "group":1
+    },
+    {
+        "categories":"veal meat",
+        "dangerosity":0.1839455782,
+        "count":35,
+        "group":1
+    },
+    {
+        "categories":"vegan creamy puddings",
+        "dangerosity":0.9655172414,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"vegetable based foods and beverages",
+        "dangerosity":0.0,
+        "count":68,
+        "group":1
+    },
+    {
+        "categories":"vegetable fats",
+        "dangerosity":0.0798913043,
+        "count":184,
+        "group":1
+    },
+    {
+        "categories":"vegetable oils",
+        "dangerosity":0.0460122699,
+        "count":163,
+        "group":1
+    },
+    {
+        "categories":"vegetable pickles",
+        "dangerosity":0.5707070707,
+        "count":33,
+        "group":1
+    },
+    {
+        "categories":"vegetable rods",
+        "dangerosity":0.0068965517,
+        "count":58,
+        "group":1
+    },
+    {
+        "categories":"vegetable salads",
+        "dangerosity":0.4361979167,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"vegetable soups",
+        "dangerosity":0.1814516129,
+        "count":124,
+        "group":1
+    },
+    {
+        "categories":"vegetables based foods",
+        "dangerosity":0.0552813077,
+        "count":1023,
+        "group":1
+    },
+    {
+        "categories":"vegetarian patties",
+        "dangerosity":0.2495726496,
+        "count":78,
+        "group":1
+    },
+    {
+        "categories":"viennoiseries",
+        "dangerosity":0.670133438,
+        "count":98,
+        "group":1
+    },
+    {
+        "categories":"vinegars",
+        "dangerosity":0.3857142857,
+        "count":35,
+        "group":1
+    },
+    {
+        "categories":"virgin olive oils",
+        "dangerosity":0.0,
+        "count":122,
+        "group":1
+    },
+    {
+        "categories":"waters",
+        "dangerosity":0.0938629997,
+        "count":136,
+        "group":1
+    },
+    {
+        "categories":"wheat flours",
+        "dangerosity":0.0380434783,
+        "count":46,
+        "group":1
+    },
+    {
+        "categories":"wheat semolinas",
+        "dangerosity":0.0,
+        "count":29,
+        "group":1
+    },
+    {
+        "categories":"white beans",
+        "dangerosity":0.0769230769,
+        "count":26,
+        "group":1
+    },
+    {
+        "categories":"white hams",
+        "dangerosity":1.3876259158,
+        "count":624,
+        "group":1
+    },
+    {
+        "categories":"white hams with less salt",
+        "dangerosity":1.3736263736,
+        "count":91,
+        "group":1
+    },
+    {
+        "categories":"white meat rillettes",
+        "dangerosity":0.28125,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"white rices",
+        "dangerosity":0.0,
+        "count":38,
+        "group":1
+    },
+    {
+        "categories":"white smoked hams",
+        "dangerosity":1.5,
+        "count":37,
+        "group":1
+    },
+    {
+        "categories":"whole foies gras",
+        "dangerosity":1.4101123596,
+        "count":89,
+        "group":1
+    },
+    {
+        "categories":"whole foies gras from ducks",
+        "dangerosity":1.15,
+        "count":30,
+        "group":1
+    },
+    {
+        "categories":"whole milk yogurts",
+        "dangerosity":0.1050086356,
+        "count":193,
+        "group":1
+    },
+    {
+        "categories":"whole milks",
+        "dangerosity":0.0847457627,
+        "count":177,
+        "group":1
+    },
+    {
+        "categories":"whole olives",
+        "dangerosity":0.1129032258,
+        "count":31,
+        "group":1
+    },
+    {
+        "categories":"wholemeal breads",
+        "dangerosity":0.4022875817,
+        "count":51,
+        "group":1
+    },
+    {
+        "categories":"wild salmons",
+        "dangerosity":0.0,
+        "count":47,
+        "group":1
+    },
+    {
+        "categories":"wild smoked salmons",
+        "dangerosity":0.0,
+        "count":34,
+        "group":1
+    },
+    {
+        "categories":"wines",
+        "dangerosity":0.0625,
+        "count":100,
+        "group":1
+    },
+    {
+        "categories":"wines from france",
+        "dangerosity":0.0,
+        "count":79,
+        "group":1
+    },
+    {
+        "categories":"yellowfin tunas",
+        "dangerosity":0.0,
+        "count":34,
+        "group":1
+    },
+    {
+        "categories":"yoghurts high in protein on a fruit layer",
+        "dangerosity":0.3291666667,
+        "count":32,
+        "group":1
+    },
+    {
+        "categories":"yogurts",
+        "dangerosity":0.1770991391,
+        "count":1180,
+        "group":1
+    }
+]

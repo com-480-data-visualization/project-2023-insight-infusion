@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+  </head>
+  <body>
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Environmental</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Additives</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Allergens</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Nutritional</a></li>
+          </ul>  
+        </div>
+      </div>
+    </header>
+    <!--       
+
+
+      Introduction and overview of additives
+      
+
+    -->
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col chart-container">
+          <div id="g-additives-bubble-chart"></div>
+        </div>
+        <div class="col">
+          <!-- <div class="test"></div> -->
+          <div class="definition">
+            <h2>Additives</h2>
+            <h4 class="definition-subtitle">
+              <span>noun</span>
+              <span>/ˈæ.dɪ.tɪv/</span>
+            </h4>
+            <p class="definition-content">
+              <em>
+                Definition of additives, basic introduction and explanation in order to allow a better understanding of the following analyses.
+              </em>
+              <br><br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
+              ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
+              felis sit amet dui rhoncus, et vehicula sapien placerat. 
+              <br><br>
+              Duis bibendum feugiat porta. Ut mauris tellus, fermentum et magna id, euismod 
+              euismod dolor. Nam volutpat, mi vel gravida porttitor, ligula augue molestie metus, ut gravida ipsum ex lacinia lacus. Duis cursus quam est. 
+              Nunc urna velit, molestie eu porta vitae, accumsan eu risus.
+              <br><br>
+              In tincidunt mollis purus, ac ultrices libero volutpat cursus. Sed a dui interdum, cursus urna quis, rutrum eros. Quisque gravida vestibulum 
+              odio, ac fringilla metus laoreet a. Mauris et consequat justo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--       
+
+
+      Repartition of additives by dangerosity
+      
+
+    -->
+    
+    <section>
+      <div class="section-dark-header"></div>
+      <div class="section-dark-body">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-6">
+              <h2>Repartition</h2>
+              <p>
+                <em>
+                  First analysis of the repartition of additives by dangerosity.
+                </em>
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
+                ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
+                felis sit amet dui rhoncus, et vehicula sapien placerat. 
+              </p>
+            </div>
+          </div>
+          <div class="row chart-container">
+            <div id="g-additives-bubble-chart-2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-dark-footer"></div>
+    </section>
+    
+    <!--       
+
+
+      Additives in different food categories
+      
+
+    -->
+    <section class="container">
+      <div class="row">
+        <div class="col"></div> <!-- Empty column to make space for the chart -->
+        <div class="col-6">
+          <h2>Food Categories</h2>
+          <p>
+            <em>
+              Analysis of distribution of additives in food categories (e.g. beverages, meat, ...)
+            </em>
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
+            ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
+            felis sit amet dui rhoncus, et vehicula sapien placerat. 
+          </p>
+        </div>
+      </div>
+      <div class="row chart-container">
+        <div id="g-additives-food-category-bubble-chart"></div>
+      </div>
+    </section>
+    <!--
+      
+      
+    Nutriscore
+    
+    
+    -->
+    <section>
+      <div class="section-dark-header"></div>
+      <div class="section-dark-body">
+        <div class="container">
+          <div class="row">
+            <h2>Nutriscore</h2>
+            <div class="col">
+              <p>
+                  <em>
+                    Analysis of correlation between nutriscore (nutritional index) and the presence and dangerosity of additives.
+                  </em>
+                  <br><br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
+                  ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
+                  felis sit amet dui rhoncus, et vehicula sapien placerat. 
+              </p>
+              <div class="row row-cols-2">
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-negative">
+                      +0.74
+                    </p>
+                    <p class="statistic-description">
+                      Each move to a lower nutriscore category increases the number of additives per product by an average of 0.74
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-negative">
+                      +0.45
+                    </p>
+                    <p class="statistic-description">
+                      Each move to a lower nutriscore category increases the average dangerosity of additives per product by 0.45
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-negative">
+                      x3.64
+                    </p>
+                    <p class="statistic-description">
+                      The average hazardousness of products in category E is 3.64 times higher than those in category A
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-negative">
+                      x3.59
+                    </p>
+                    <p class="statistic-description">
+                      Category E products contain on average 3.59 times more additives than Category A products
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="chart-container">
+                <div id="g-nutriscore-stacked-bar-chart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-dark-footer"></div>
+    </section>
+    <!--       
+
+
+      Vegan and Vegetarian 
+    
+
+    -->
+    <section class="container">
+      <div class="row">
+        <div class="col chart-container">
+          <div id="g-vegetarian-vegan-additives-count-bar-chart"></div>
+          <div id="g-vegetarian-vegan-average-hazards-bar-chart"></div>
+        </div>
+        <div class="col">
+          <h2>Vegetarian and Vegan</h2>
+          <p>
+              <em>
+                Analysis of the impact of the vegetarian and vegan diets on the presence and dangerosity of additives in food products.
+              </em>
+              <br><br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
+              ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
+              felis sit amet dui rhoncus, et vehicula sapien placerat. 
+          </p>
+          <div class="row row-cols-2">
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-negative">
+                  71.4%
+                </p>
+                <p class="statistic-description">
+                  Meat products represent 26.2% of the products in the database but contain 71.4% of the most dangerous additives.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-negative">
+                  x2.1
+                </p>
+                <p class="statistic-description">
+                  The average hazard of additives in meat products is 3.5 times higher than in non-meat products.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-positive">
+                  -1.30
+                </p>
+                <p class="statistic-description">
+                  Following a vegetarian diet reduce the average number of additives per product by 1.30
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-positive">
+                  -0.43
+                </p>
+                <p class="statistic-description">
+                  Following a vegetarian diet reduce the average dangerosity of additives by 0.43.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-positive">
+                  -1.11
+                </p>
+                <p class="statistic-description">
+                  Following a vegan diet reduce the average number of additives per product by 1.11.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-positive">
+                  -0.39
+                </p>
+                <p class="statistic-description">
+                  Following a vegan diet reduce the average dangerosity of additives by 0.39.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+
+    
+      NOVA Index
+
+
+    -->
+    
+    <section>
+      <div class="section-dark-header"></div>
+      <div class="section-dark-body">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>NOVA Index</h2>
+              <p>
+                  <em>
+                    Analysis of correlation between NOVA Index (how much the product is processed) and the presence and dangerosity of additives.
+                  </em>
+                  <br><br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
+                  ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
+                  felis sit amet dui rhoncus, et vehicula sapien placerat. 
+              </p>
+              <div class="row row-cols-2">
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-positive">
+                      +0.74
+                    </p>
+                    <p class="statistic-description">
+                      Each move to a lower nutriscore category increases the number of additives per product by an average of 0.74
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-negative">
+                      +0.45
+                    </p>
+                    <p class="statistic-description">
+                      Each move to a lower nutriscore category increases the average dangerosity of additives per product by 0.45
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-positive">
+                      x3.64
+                    </p>
+                    <p class="statistic-description">
+                      The average hazardousness of products in category E is 3.64 times higher than those in category A
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-negative">
+                      x3.59
+                    </p>
+                    <p class="statistic-description">
+                      Category E products contain on average 3.59 times more additives than Category A products
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col chart-container">
+              <div id="g-nova-stacked-bar-chart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-dark-footer"></div>
+    </section>
+
+    <!--
+
+
+      Organic Products
+
+
+    -->
+    <section class="container">
+      <div class="row">
+        <div class="col chart-container">
+          <div class="chart-placeholder"></div>
+        </div>
+        <div class="col">
+          <h2>Organic Products</h2>
+          <p>
+              <em>
+                Analysis of presence and dangerosity of additives in organic products
+              </em>
+              <br><br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
+              ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
+              felis sit amet dui rhoncus, et vehicula sapien placerat. 
+          </p>
+          <div class="row row-cols-2">
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-negative">
+                  71.4%
+                </p>
+                <p class="statistic-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-negative">
+                  x2.1
+                </p>
+                <p class="statistic-description">
+                  Integer mattis, metus in laoreet tristique, ante nisi semper leo, ut cursus velit ante sed nibh.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-positive">
+                  -1.11
+                </p>
+                <p class="statistic-description">
+                  In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit felis sit amet dui rhoncus.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-positive">
+                  -0.39
+                </p>
+                <p class="statistic-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
+
+
+      Palm Oil
+
+    -->
+    <section>
+      <div class="section-dark-header"></div>
+      <div class="section-dark-body">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>Palm Oil</h2>
+              <p>
+                  <em>
+                    Analysis of the impact of palm oil in additives presence and dangerosity
+                  </em>
+                  <br><br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
+                  ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
+                  felis sit amet dui rhoncus, et vehicula sapien placerat. 
+              </p>
+              <div class="row row-cols-2">
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-negative">
+                      71.4%
+                    </p>
+                    <p class="statistic-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-negative">
+                      x2.1
+                    </p>
+                    <p class="statistic-description">
+                      Integer mattis, metus in laoreet tristique, ante nisi semper leo, ut cursus velit ante sed nibh.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-positive">
+                      -1.11
+                    </p>
+                    <p class="statistic-description">
+                      In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit felis sit amet dui rhoncus.
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-positive">
+                      -0.39
+                    </p>
+                    <p class="statistic-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col chart-container">
+              <div class="chart-placeholder"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-dark-footer"></div>
+    </section>
+    <!--
+
+
+     Brands
+
+
+    -->
+    <section class="container">
+      <div class="row">
+        <div class="col chart-container">
+          <div class="chart-placeholder"></div>
+        </div>
+        <div class="col">
+          <h2>Brands comparison</h2>
+          <p>
+              <em>
+                Which brands are selling products with more additives ?
+              </em>
+              <br><br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
+              ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
+              felis sit amet dui rhoncus, et vehicula sapien placerat. 
+          </p>
+          <div class="row row-cols-2">
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-negative">
+                  71.4%
+                </p>
+                <p class="statistic-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-negative">
+                  x2.1
+                </p>
+                <p class="statistic-description">
+                  Integer mattis, metus in laoreet tristique, ante nisi semper leo, ut cursus velit ante sed nibh.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-positive">
+                  -1.11
+                </p>
+                <p class="statistic-description">
+                  In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit felis sit amet dui rhoncus.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-positive">
+                  -0.39
+                </p>
+                <p class="statistic-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-header"></div>
+      <div class="footer-body">
+        <div class="container">
+          <p>© 2023, Rein Gundersen Bentdal, Laurent Faucher, Jean Siffert</p>
+          <p>COM480 - Data Visualization</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
