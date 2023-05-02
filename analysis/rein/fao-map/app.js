@@ -42,7 +42,7 @@ const nameMapping = {
 
 // Load GeoJSON data for the world map
 d3.json(
-  "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson"
+  "./world.geojson"
 ).then((geoData) => {
   // Load the FAO dataset (replace with the actual file path)
   d3.csv("./datasets/FAO.csv").then((faoData) => {
