@@ -79,7 +79,6 @@ function createMap(geoData, faoData) {
     .precision(0.1);
   const pathGenerator = d3.geoPath().projection(projection);
 
-
   // Add the zoom behavior
   const zoomBehavior = d3.zoom()
     .scaleExtent([1, 10])
@@ -90,6 +89,8 @@ function createMap(geoData, faoData) {
 
   svg.call(zoomBehavior);
 
+  let autoRotateTimer;
+
   const dragBehavior = d3.drag()
     .on("start", dragStart)
     .on("drag", dragged);
@@ -98,6 +99,7 @@ function createMap(geoData, faoData) {
 
   function dragStart(event) {
     event.sourceEvent.preventDefault();
+    autoRotateTimer.stop();
     this.startPos = [event.x, event.y];
     this.startRotation = projection.rotate();
   }
@@ -108,6 +110,15 @@ function createMap(geoData, faoData) {
     const rotation = [this.startRotation[0] + diff[0] / 4, this.startRotation[1] - diff[1] / 4, this.startRotation[2]];
     projection.rotate(rotation);
     mapGroup.selectAll("path").attr("d", pathGenerator);
+  }
+
+  function autoRotate() {
+    autoRotateTimer = d3.timer((elapsed) => {
+      const rotationSpeed = 0.005;
+      const rotation = [elapsed * rotationSpeed, 0, 0];
+      projection.rotate(rotation);
+      mapGroup.selectAll("path").attr("d", pathGenerator);
+    });
   }
 
   let ratioData = {}
@@ -146,6 +157,7 @@ function createMap(geoData, faoData) {
   });
 
   updateMap(selectedItem);
+  autoRotate();
 
   function updateMap(selectedItem) {
     // Filter the FAO data for the selected item and calculate the feed/food ratio

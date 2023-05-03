@@ -61,12 +61,12 @@ section {
     }
     .section-dark-header {
         height: 200px;
-        background-image: url('http://localhost:8081/transition-top.svg');
+        background-image: url('./transition-top.svg');
         background-position: bottom;
     }
     .section-dark-footer {
         height: 200px;
-        background-image: url('http://localhost:8081/transition-bottom.svg');
+        background-image: url('./transition-bottom.svg');
     }
 }
 
@@ -121,7 +121,7 @@ section {
 footer {
     .footer-header {
         height: 200px;
-        background-image: url('http://localhost:8081/transition-top.svg');
+        background-image: url('./transition-top.svg');
         background-position: bottom;
     }
     .footer-body {
