@@ -24,6 +24,7 @@ let JSON_RAW_CO2 = {}
 let JSON_HIERARCHY = {}
 let GROUP_DATA = {}
 let SUBGROUP_DATA = {}
+let SCORE = 1
 whenDocumentLoaded(() => {
 	fetch(`${ENDPOINT}/co2/hierarchy_CO2.json`)
 		.then((response) => response.json())
@@ -44,12 +45,28 @@ whenDocumentLoaded(() => {
 			JSON_RAW_CO2 = raw_CO2;
 			console.log(raw_CO2)
 			const foodList = Object.keys(raw_CO2).sort((a, b) => 0.5 - Math.random());
-			
 			let container = document.getElementById('slider-container');
 			loadList(container, foodList)
 			plot_bar_chart(undefined, foodList[0])
+			const input = document.getElementById('kg-input')
+			input.addEventListener('input', (e) => updateProgressBars(SCORE, e.target.value))
 		})
 });
+function updateProgressBars(co2PerKg, numKg) {
+	const firstPB = document.getElementById("first-PB");
+	const secondPB = document.getElementById("second-PB");
+	const thirdPB = document.getElementById("third-PB");
+	const product = co2PerKg * numKg
+	const ratio = (product / 946) * 100
+	firstPB.innerHTML = `<div class="progress-bar bg-warning" role="progressbar" style="width: ${ratio}%;" aria-valuenow="${ratio}" aria-valuemin="0" aria-valuemax="100">${Math.round(product)} kg</div>`
+	secondPB.innerHTML = '<div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">600 kg</div>'
+	thirdPB.innerHTML = '<div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">946 kg</div>'
+	if (product > 946) {
+		firstPB.innerHTML = `<div class="progress-bar bg-danger" role="progressbar" style="width: ${100}%;" aria-valuenow="${100}" aria-valuemin="0" aria-valuemax="100">${Math.round(product)} kg</div>`
+		secondPB.innerHTML = `<div class="progress-bar bg-success" role="progressbar" style="width: ${(600 / product) * 100}%;" aria-valuenow="${(600 / product) * 100}" aria-valuemin="0" aria-valuemax="100">600 kg</div>`
+		thirdPB.innerHTML = `<div class="progress-bar bg-danger" role="progressbar" style="width: ${(946 / product) * 100}%;" aria-valuenow="${(946 / product) * 100}" aria-valuemin="0" aria-valuemax="100">946 kg</div>`
+	}
+}
 
 function addToDynamicInfo(group, score) {
 	const container = document.getElementById("dynamic-info");
@@ -124,11 +141,11 @@ function plot_bar_chart(event, name) {
 	const title = document.createElement('h2');
 	title.appendChild(document.createTextNode(`${id}`));
 	container.appendChild(title);
-
+	SCORE = itemInfo['total']
 	const facts = document.createElement('h3');
-	facts.appendChild(document.createTextNode(`Total: ${itemInfo['total']} Kg CO2/Kg`));
+	facts.appendChild(document.createTextNode(`Total: ${itemInfo['total']} kg CO2/kg`));
 	container.appendChild(facts);
-
+	updateProgressBars(itemInfo['total'], 43.6)
 	const BarChart = new ZoomBarChart(data, itemInfo);
 	const plot = BarChart.chart();
 	plot.className.baseVal = "bar-chart";
