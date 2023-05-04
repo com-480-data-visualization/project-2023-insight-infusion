@@ -31,7 +31,6 @@ whenDocumentLoaded(() => {
 			JSON_RAW_CO2 = raw_CO2;
 			console.log(raw_CO2)
 			const foodList = Object.keys(raw_CO2).sort((a, b) => 0.5 - Math.random());
-			
 			container = document.getElementById('slider-container');
 			loadList(container, foodList)
 			plot_bar_chart(undefined, foodList[0])
@@ -111,7 +110,7 @@ function plot_bar_chart(event, name) {
 	container.appendChild(title);
 
 	const facts = document.createElement('h3');
-	facts.appendChild(document.createTextNode(`Total: ${itemInfo['total']} Kg CO2/Kg`));
+	facts.appendChild(document.createTextNode(`Total: ${itemInfo['total']} kg CO2/kg`));
 	container.appendChild(facts);
 
 	const BarChart = new ZoomBarChart(data, itemInfo);

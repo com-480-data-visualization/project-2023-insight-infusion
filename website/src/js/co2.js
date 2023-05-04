@@ -212,8 +212,8 @@ const plotProducts = (subgroup) => {
 	data = data.sort((a, b) => a.score - b.score)
 	let container = document.getElementById("bubbles-2");
 	container.innerHTML= "";
-	const minSize = data.length / 100
-	const bubbles_CO2 = new CO2Bubbles(data, minSize, 20, false, true)
+	const offset = (1/data.length) * 400 
+	const bubbles_CO2 = new CO2Bubbles(data, 2, 20 + offset, false, true)
 	const chart_CO2 = bubbles_CO2.chart() 
 	container.appendChild(chart_CO2)
 }
