@@ -204,18 +204,15 @@ LAURENT
 }
 
 #pie-chart {
-    margin-top: 4vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    width: 100%;
 }
 
 .bar-chart {
-    height: 15vh;
+    width: 100%;
 }
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 70%;
+    margin-bottom: 2vh;
 }
 #dynamic-info {
     text-align: center;
@@ -226,14 +223,15 @@ img {
 .buttons {
     display: flex !important;
     justify-content: center;
-    color: rgb(230, 215, 0);
+    margin-bottom: 10px;
 }
 
 .btn {
     display: block;
+    background-color: #7c0000;
 }
 #bubbles-2{
-    margin-bottom: 3vh;
+    margin-bottom: 8vh;
 }
 .circles:hover{
     cursor: pointer;
@@ -243,4 +241,21 @@ html {
 }
 .a-score{
     background-color: '#1e8f4e' !important;
+}
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+  
+.button-div button {
+    margin: 0 5px;
+}
+
+#eco-score-div {
+    display: flex;
+    justify-content: center;
+}
+.police {
+    font-family: 'Nunito';
+    font-weight: 700;
 }

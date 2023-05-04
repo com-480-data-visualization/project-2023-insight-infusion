@@ -55,6 +55,7 @@ function addToDynamicInfo(group, score) {
 	const container = document.getElementById("dynamic-info");
 	container.innerHTML = "";
 	const newH3 = document.createElement('h3');
+	newH3.className = 'police'
 	newH3.appendChild(document.createTextNode(`${group}: ${score} kg CO2 / kg`))
 	container.appendChild(newH3)
 }
@@ -62,6 +63,7 @@ function removeDynamicInfo() {
 	const container = document.getElementById("dynamic-info");
 	container.innerHTML = "";
 	const newH3 = document.createElement('h3');
+	newH3.className = 'police'
 	newH3.appendChild(document.createTextNode(`Hover on a CO2 bubble to get info`));
 	container.appendChild(newH3);
 }
@@ -227,8 +229,8 @@ class ZoomBarChart {
 	// function for the chart
 	chart = () => {
 		const data = this.data;
-		const height = 200
-		const width = 430
+		const height = 250
+		const width = 500
 		const margin = ({top: 20, right: 0, bottom: 30, left: 40})
 		const x = d3.scaleBand().domain(data.map(d => d.name)).range([margin.left, width - margin.right]).padding(0.1);
 		const y = d3.scaleLinear().domain([0, d3.max(data, d => d.value)]).nice().range([height - margin.bottom, margin.top])
@@ -347,7 +349,7 @@ class CO2Bubbles {
 				if (this.isBySubgroup && !this.isByProduct) plotProducts(d.group);
 				if (this.isByProduct) {
 					plot_bar_chart(undefined, d.group)
-					window.scrollTo(0, 1000)
+					window.scrollTo(0, 1200)
 				}
 			});
 

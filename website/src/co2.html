@@ -23,28 +23,70 @@
             </div>
         </div>
         </header>
-        <div id="bubbles"></div>
-        <div class="eco-score">
-            <img src="eco_score.png" alt="eco_score_scale">
-        </div>
+
+        <section class="container">
+            <div class="row">
+                <div>
+                    <h2>CO2 Hierarchy</h2>
+                    <div id="eco-score-div">
+                        <img src="eco_score.png" alt="eco_score_scale">
+                    </div>
+                    <p>
+                    The Eco-score® is an indicator representing the environmental impact of food products. It classifies products in 5 categories (A, B, C, D, E), from the 
+                    lowest to the highest impact. The following bubbles represent the different food groups that we consume in our daily lives. They are classified from left
+                     to right. Left being the least polluting. Their color is associated with an eco score and is assigned to them according to the average CO2 they emit. 
+                     Their size is linearly proportional to the number of products in the category.  Hover and click on this visualization to get the full potential out of it!
+                    </p>
+                </div>
+            </div>
+        </section>
         
         <div class="btn-group buttons">
             <div class="button-div">
-               <button id="group-button" class="btn btn-primary btn-large">By group</button>
-                <button id="subgroup-button" class="btn btn-primary btn-large">By subgroup</button> 
+                <button id="group-button" class="btn btn-primary btn-large police">By group</button>
+                <button id="subgroup-button" class="btn btn-primary btn-large police">By subgroup</button> 
             </div>
         </div>
         <div id="dynamic-info">
-            <h3 class="title">Hover on a CO2 bubble to get more info</h3>
+            <h2 class="title police">Hover on a CO2 bubble to get more info</h2>
         </div>
         <div id="bubbles-2"></div>
         <div class="slider">
             <div id="slider-container"></div>
         </div>
-        <div id="pie-chart" class="well well-large">
+        <div id="co2-info">
+            <section class="container">
+                <div class="row">
+                    <div id="pie-chart" class="col"></div> <!-- Empty column to make space for the chart -->
+                    <div class="col-6">
+                        <h2>CO2 comparison</h2>
+                        <p>
+                        <em>
+                            The facts can be shocking
+                        </em>
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
+                        ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
+                        felis sit amet dui rhoncus, et vehicula sapien placerat. 
+                        </p>
+                    </div>
+                    </div>
+                    <div class="row chart-container">
+                    <div id="g-additives-food-category-bubble-chart"></div>
+                </div>
+            </section>
         </div>
-        <!-- <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script> -->
+                <!-- <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script> -->
 
+        <footer>
+            <div class="footer-header"></div>
+            <div class="footer-body">
+              <div class="container">
+                <p>© 2023, Rein Gundersen Bentdal, Laurent Faucher, Jean Siffert</p>
+                <p>COM480 - Data Visualization</p>
+              </div>
+            </div>
+        </footer>
         <script type="module" src="./js/co2.js"></script>
     </body>
 </html>
