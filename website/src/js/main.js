@@ -10,12 +10,17 @@ import { ENDPOINT } from './config.js'
 
 const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
 
-
 const getTextColor = color => {
     const rgbColor = d3.color(color).rgb();
     const perceivedBrightness = (0.299 * rgbColor.r + 0.587 * rgbColor.g + 0.114 * rgbColor.b) / 255;
     return perceivedBrightness > 0.5 ? "black" : "white";
 }
+
+console.log(d3.schemeOrRd[4][0])
+console.log(d3.schemeOrRd[4][1])
+console.log(d3.schemeOrRd[4][2])
+console.log(d3.schemeOrRd[4][3])
+
 
 function Swatches(color, {
     columns = null,
