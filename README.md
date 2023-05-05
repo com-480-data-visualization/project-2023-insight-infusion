@@ -18,9 +18,10 @@ Please, fill the following sections about your project.
 *(max. 2000 characters per section)*
 
 Milestone 1 report is available here : [Milestone 1](milestone1.pdf)
+Milestone 2 report is available here : [Milestone 2](milestone2.pdf)
 
 ### Dataset
-
+s
 > Find a dataset (or multiple) that you will explore. Assess the quality of the data it contains and how much preprocessing / data-cleaning it will require before tackling visualization. We recommend using a standard dataset as this course is not about scraping nor data processing.
 >
 > Hint: some good pointers for finding quality publicly available datasets ([Google dataset search](https://datasetsearch.research.google.com/), [Kaggle](https://www.kaggle.com/datasets), [OpenSwissData](https://opendata.swiss/en/), [SNAP](https://snap.stanford.edu/data/) and [FiveThirtyEight](https://data.fivethirtyeight.com/)), you could use also the DataSets proposed by the ENAC (see the Announcements section on Zulip).
