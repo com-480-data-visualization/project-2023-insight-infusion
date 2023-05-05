@@ -51,6 +51,12 @@ https://world.openfoodfacts.org
 
 **10% of the final grade**
 
+Inside `website` directory run
+```bash
+npm install
+npm run dev
+```
+The website should then run on localhost:8080
 
 ## Milestone 3 (4th June, 5pm)
 
