@@ -1,4 +1,3 @@
-import { auto } from '@popperjs/core';
 import * as d3 from 'd3'
 
 import '../../../scss/map.scss'
@@ -11,14 +10,6 @@ const json = async ressource => await d3.json(assets(ressource))
 
 const geojson = await json('map/world.geojson')
 const data = await json('test.json')
-
-console.log(d3.schemeOrRd[5][0])
-console.log(d3.schemeOrRd[5][1])
-console.log(d3.schemeOrRd[5][2])
-console.log(d3.schemeOrRd[5][3])
-console.log(d3.schemeOrRd[5][4])
-
-
 
 // const data = {
 //     'Spain': {value: 1000, origins: ['China', 'Brazil', 'Egypt']},
@@ -59,28 +50,59 @@ const getFeature = name => features.filter(d => d.properties.name === name)[0]
 
 const getCentroid = name => d3.geoCentroid(getFeature(name))
 
-const width = document.getElementById('map').parentElement.clientWidth
+const width = 800
+// const width = document.getElementById('map').parentElement.clientWidth
 const height = width
-const rotationSpeed = 0.005
+
+const baseWorldScale = 1000 / (Math.PI)
 
 const svg = d3.create("svg")
-    .attr("width", width)
+    .attr("width", '100vw')
     .attr("height", height)
     .attr("viewBox", [0, 0, width, height])
-    // .attr('preserveAspectRatio', 'xMidYMid')
-
-const map = svg.append('g');
 
 const projection = d3.geoOrthographic()
-    .scale(width / (Math.PI / 1.4))
+    .scale(baseWorldScale)
     .translate([width / 2, height / 2])
-    .precision(0.1);
+    .precision(1);
 
 const path = d3.geoPath()
     .projection(projection)
 
+/**
+ * 
+ *      Adding map elements
+ * 
+ */
+
+const graphicsCenter = svg.append('g')
+    .attr('transform', 'translate(-200, 0)');
+
+/* world outline */
+const worldOutline = graphicsCenter.append("circle")
+    .attr("class", "world-outline")
+    .attr("cx", width / 2)
+    .attr("cy", height / 2)
+    .attr("r", projection.scale());
+
+/* countries */
+const map = graphicsCenter.append('g');
+map.selectAll("path")
+    .data(features)
+    .enter()
+    .append("path")
+    .attr('class', 'map-country')
+    .attr('fill', d => d3.schemeOrRd[5][1])
+    .attr("d", path)
+    
 const graticule = d3.geoGraticule()
     .extent([[-180, -90], [180 - .1, 90 - .1]])
+
+/* flow lines */
+graphicsCenter.append("path")
+    .datum(graticule)
+    .attr("class", "back-line")
+    .attr("d", path);
 
 const handleUpdate = () => {
     map.selectAll(".map-country").attr("d", path);
@@ -88,21 +110,17 @@ const handleUpdate = () => {
     backLine.datum(graticule)
     .attr("class", "back-line")
     .attr("d", path);
-    worldOutline
-    .attr("class", "world-outline")
-    .attr("cx", width / 2)
-    .attr("cy", height / 2)
-    .attr("r", projection.scale());
 }
 
 /**
  * 
  *      Zoom feature
  * 
- */
+*/
 const handleZoom = (event) => {
     const factor = event.transform.k
-    projection.scale(factor * width / (Math.PI / 1.4));
+    projection.scale(factor * baseWorldScale);
+    worldOutline.attr("r", factor * baseWorldScale);
     handleUpdate();
 }
 
@@ -111,18 +129,6 @@ const zoomBehavior = d3.zoom()
     .on("zoom", handleZoom)
 
 svg.call(zoomBehavior)
-
-/**
- * 
- *      Auto rotate feature
- * 
- */
-const timerCallback = (elapsed) => {
-    projection.rotate([elapsed * rotationSpeed, 0, 0])
-    handleUpdate()
-}
-
-const autoRotateTimer = d3.timer(timerCallback);
 
 /**
  * 
@@ -152,46 +158,14 @@ const handleDrag = (event) => {
 }
 
 const handleDragStart = () => {
-    autoRotateTimer.stop()
     saveAndGetRotation(true)
-}
-
-const handleDragEnd = () => {
-    // autoRotateTimer.restart(timerCallback)
 }
 
 const dragBehavior = d3.drag()
     .on('start',handleDragStart)
     .on("drag", handleDrag)
-    .on('end', handleDragEnd)
 
 map.call(dragBehavior)
-
-/**
- * 
- *      Adding map elements
- * 
- */
-
-const countries = map.selectAll("path")
-    .data(features)
-    .enter()
-    .append("path")
-    .attr('class', 'map-country')
-    .attr('fill', d => d3.schemeOrRd[5][1])
-    .attr("d", path)
-
-const worldOutline = svg.append("circle")
-    .attr("class", "world-outline")
-    .attr("cx", width / 2)
-    .attr("cy", height / 2)
-    .attr("r", projection.scale());
-
-const backLine = svg.append("path")
-    .datum(graticule)
-    .attr("class", "back-line")
-    .attr("d", path);
-
 
 /**
  * 

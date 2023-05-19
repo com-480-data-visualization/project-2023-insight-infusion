@@ -164,8 +164,6 @@ REIN
 #map-container {
     width: 100%;
     background-color: #EAE6DF;
-    /* height: 800px; */
-    /* float: left; */
 }
 
 #item-list-container {
@@ -283,7 +281,7 @@ html {
 
 
 .world-outline {
-    fill: none;
+    fill: #40B8C5;
     // fill: rbga(0, 0, 0, 0.01);
     stroke: rgba(0, 0, 0, 0.1);
     stroke-width: 1.0px;

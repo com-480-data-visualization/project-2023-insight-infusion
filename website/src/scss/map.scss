@@ -1,7 +1,7 @@
 body {
     background: rgb(227,74,51);
-    background: linear-gradient(145deg, rgba(227,74,51,1) 0%, rgba(253,204,138,1) 100%);
-    min-height: 100vh;
+    background: linear-gradient(145deg, rgba(227,74,51,1) 0%, rgb(244, 206, 152) 100%);
+    min-height: 200vh;
 }
 
 .map-country {
@@ -10,8 +10,8 @@ body {
 }
 
 svg {
-    background-color: white;
-    border-radius: 500px;
+    // background-color: white;
+    // border-radius: 500px;
 }
 
 li a {

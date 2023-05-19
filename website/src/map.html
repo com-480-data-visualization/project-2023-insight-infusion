@@ -1,31 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>COM480</title>
-    </head>
-    <body>
-        <header class="p-3 text-bg-dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COM480</title>
+</head>
+<body>
+    <header class="p-3">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 text-white">
                 <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
                 <li><a href="map.html" class="nav-link px-2 text-white">Environmental Map</a></li>
-                <li><a href="co2.html" class="nav-link px-2 text-white">CO2 Analysis</a></li>
-                <li><a href="additives.html" class="nav-link px-2 text-white">Additives</a></li>
-                <li><a href="#" class="nav-link px-2 text-secondary">Allergens</a></li>
-                <li><a href="#" class="nav-link px-2 text-secondary">Nutritional</a></li>
+                <li><a href="co2.html" class="nav-link px-2">CO2 Analysis</a></li>
+                <li><a href="additives.html" class="nav-link px-2">Additives</a></li>
+                <li><a href="#" class="nav-link px-2">Allergens</a></li>
+                <li><a href="#" class="nav-link px-2">Nutritional</a></li>
             </ul>  
             </div>
         </div>
-        </header>
-    <div id="tooltip" style="position: absolute; display: none;"></div>
-    <div id="item-list-container">
-        <select id="item-select"></select>
+    </header>
+
+    <!-- kode for matprodukter scroll?? -->
+
+    <!-- Map -->
+    <div class="container">
+        <div class="d-flex justify-content-end">
+
+            <div id="map" style="position: absolute; left: 0; z-index: 1; width: 100%; height: 100%;"></div>
+
+            <div class="card mt-5" style="width:400px; z-index: 2">
+                <div class="mt-5 px-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
+                                ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
+                                felis sit amet dui rhoncus, et vehicula sapien placerat. <br><br>
+                            </p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="map-container"></div>
-    <script type="module" src="./js/map.js"></script>
+
+    <!-- Food statistics -->
+    
+    
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/charts/map-test/map.js"></script>
 </body>
 </html>
