@@ -8,6 +8,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 import * as d3 from 'd3'
+import { getColorScale } from './utilities'
 
 import 'default-passive-events'
 
@@ -67,13 +68,38 @@ function updateProgressBars(co2PerKg, numKg) {
 		thirdPB.innerHTML = `<div class="progress-bar bg-danger" role="progressbar" style="width: ${(946 / product) * 100}%;" aria-valuenow="${(946 / product) * 100}" aria-valuemin="0" aria-valuemax="100">946 kg</div>`
 	}
 }
-
+function getEmoji(score) {
+	if (score <= 0.94) { 
+		return '😁';
+	} else if (score < 1.77) { 
+		return '🙂';
+	} else if (score < 3.57) { 
+		return '😐';
+	} else if (score < 7.2) { 
+		return '☹️';
+	} else {
+		return '😡';
+	}
+}
+function getEcoScore(score) {
+	if (score <= 0.94) { 
+		return 'a-score';
+	} else if (score < 1.77) { 
+		return 'b-score';
+	} else if (score < 3.57) { 
+		return 'c-score';
+	} else if (score < 7.2) { 
+		return 'd-score';
+	} else {
+		return 'e-score';
+	}
+}
 function addToDynamicInfo(group, score) {
 	const container = document.getElementById("dynamic-info");
 	container.innerHTML = "";
 	const newH3 = document.createElement('h3');
 	newH3.className = 'police'
-	newH3.appendChild(document.createTextNode(`${group}: ${score} kg CO2 / kg`))
+	newH3.appendChild(document.createTextNode(`${group}: ${score} kg CO2 / kg ${getEmoji(score)}`))
 	container.appendChild(newH3)
 }
 function removeDynamicInfo() {
@@ -170,16 +196,17 @@ function subgroupButtonAction() {
 
 function getClassName(id) {
 	const total = JSON_RAW_CO2[id]['total']
-	if (total < 1.51) return 'badge text-bg-success slider-item';
-	else if (total < 5.1) return 'badge text-bg-warning slider-item';
-	else return 'badge text-bg-danger slider-item'
+	if (total < 1.51) return `badge slider-item ${getEcoScore(total)}`;
+	else if (total < 5.1) return `badge slider-item ${getEcoScore(total)}`;
+	else return `badge slider-item ${getEcoScore(total)}`
 }
 
 function loadList(container_element, food_array) {
 	container_element.innerHTML = "";
 	food_array.forEach(e => {
 		const newDiv = document.createElement('div');
-		const newFood = document.createTextNode(e.length > 25 ? `${e.slice(0, 25)} ...`: e);
+		//JSON_RAW_CO2[id]['total']
+		const newFood = document.createTextNode(e.length > 25 ? `${e.slice(0, 25)} ... ${getEmoji(JSON_RAW_CO2[e]['total'])}`: e + ' ' + getEmoji(JSON_RAW_CO2[e]['total']));
 		newDiv.appendChild(newFood);
 		newDiv.className = getClassName(e);
 		newDiv.id = e;
@@ -313,6 +340,9 @@ class CO2Bubbles {
 	chart = () => {
 		const data = this.data
 		const width = 900
+		const scores =  data.map(d => d.score)
+		const max = Math.max(...scores)
+		const min = Math.min(...scores)
 		const height = 375
 		const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
 		const spacing = 4
@@ -369,10 +399,11 @@ class CO2Bubbles {
 					window.scrollTo(0, 1200)
 				}
 			});
-
+		const color = getColorScale([min, max], false)
 		let circle = node.append('circle')
 			.attr('stroke', 'none')
 			.attr('fill', d => {
+				// return color(d.score)
 				if (d.score <= 0.94) { 
 					return '#1e8f4e';
 				} else if (d.score < 1.77) { 
