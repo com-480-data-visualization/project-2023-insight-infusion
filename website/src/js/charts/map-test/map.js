@@ -1,7 +1,7 @@
 import { auto } from '@popperjs/core';
 import * as d3 from 'd3'
 
-import '../../scss/map.scss'
+import '../../../scss/map.scss'
 
 const ENDPOINT = 'http://localhost:8080';
 
