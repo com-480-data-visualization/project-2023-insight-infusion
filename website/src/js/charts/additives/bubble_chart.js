@@ -34,7 +34,8 @@ export const additivesBubbleChart = async (parentWidth) => {
     const title = wrapper.append('text')
         .attr('x', 200)
         .attr('y', 15)
-        .attr('class', 'chart-title')
+        .attr('class', 'chart-label')
+        .style('font-size', '14px')
         .text('50 most populars additives in food products')
 
     const r = d3.scaleSqrt()
