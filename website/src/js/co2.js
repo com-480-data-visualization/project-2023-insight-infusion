@@ -9,6 +9,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import * as d3 from 'd3'
 import { CO2Bubbles } from './charts/co2/co2Bubbles'
 import { ZoomBarChart } from './charts/co2/zoomBarChart'
+import { getTextColor } from './utilities'
 
 import 'default-passive-events'
 
@@ -71,13 +72,17 @@ function updateProgressBars(co2PerKg, numKg) {
 	const flightKg = 946
 	const personKg = 600
 	const ratio = (product / flightKg) * 100
-	firstPB.innerHTML = `<div class="progress-bar bg-warning" role="progressbar" style="width: ${ratio}%;" aria-valuenow="${ratio}" aria-valuemin="0" aria-valuemax="100">${Math.round(product)} kg</div>`
-	secondPB.innerHTML = '<div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">600 kg</div>'
-	thirdPB.innerHTML = '<div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">946 kg</div>'
+
+	const color = d3.scaleSequential([1000, 400], d3.interpolateRdYlGn)
+
+
+	firstPB.innerHTML = `<div class="progress-bar" role="progressbar" style="color:${getTextColor(color(product))};background-color: ${color(product)};width: ${ratio}%;" aria-valuenow="${ratio}" aria-valuemin="0" aria-valuemax="100">${Math.round(product)} kg</div>`
+	secondPB.innerHTML = `<div class="progress-bar" role="progressbar" style="color:${getTextColor(color(personKg))};background-color: ${color(personKg)};width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">600 kg</div>`
+	thirdPB.innerHTML = `<div class="progress-bar" role="progressbar" style="background-color: ${color(flightKg)};width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">946 kg</div>`
 	if (product > flightKg) {
-		firstPB.innerHTML = `<div class="progress-bar bg-danger" role="progressbar" style="width: ${100}%;" aria-valuenow="${100}" aria-valuemin="0" aria-valuemax="100">${Math.round(product)} kg</div>`
-		secondPB.innerHTML = `<div class="progress-bar bg-success" role="progressbar" style="width: ${(personKg / product) * 100}%;" aria-valuenow="${(personKg / product) * 100}" aria-valuemin="0" aria-valuemax="100">600 kg</div>`
-		thirdPB.innerHTML = `<div class="progress-bar bg-danger" role="progressbar" style="width: ${(flightKg / product) * 100}%;" aria-valuenow="${(flightKg / product) * 100}" aria-valuemin="0" aria-valuemax="100">946 kg</div>`
+		firstPB.innerHTML = `<div class="progress-bar" role="progressbar" style="color:${getTextColor(color(product))};background-color: ${color(product)};width: ${100}%;" aria-valuenow="${100}" aria-valuemin="0" aria-valuemax="100">${Math.round(product)} kg</div>`
+		secondPB.innerHTML = `<div class="progress-bar" role="progressbar" style="color:${getTextColor(color(personKg))};background-color: ${color(personKg)};width: ${(personKg / product) * 100}%;" aria-valuenow="${(personKg / product) * 100}" aria-valuemin="0" aria-valuemax="100">600 kg</div>`
+		thirdPB.innerHTML = `<div class="progress-bar" role="progressbar" style="background-color: ${color(flightKg)};width: ${(flightKg / product) * 100}%;" aria-valuenow="${(flightKg / product) * 100}" aria-valuemin="0" aria-valuemax="100">946 kg</div>`
 	}
 }
 function getEmoji(score) {
@@ -213,9 +218,12 @@ function loadList(container_element, food_array) {
 	container_element.innerHTML = "";
 	food_array.forEach(e => {
 		const newDiv = document.createElement('div');
-		const newFood = document.createTextNode(e.length > 25 ? `${e.slice(0, 25)} ... ${getEmoji(JSON_RAW_CO2[e]['total'])}`: e + ' ' + getEmoji(JSON_RAW_CO2[e]['total']));
+		const score = JSON_RAW_CO2[e]['total']
+		const newFood = document.createTextNode(e.length > 25 ? `${e.slice(0, 25)} ... ${getEmoji(score)}`: e + ' ' + getEmoji(score));
 		newDiv.appendChild(newFood);
 		newDiv.className = getClassName(e);
+		const color = d3.scaleSequential([7, 0], d3.interpolateRdYlGn)
+		newDiv.style = `background-color:${color(score)};color:${getTextColor(color(score))}`
 		newDiv.id = e;
 		newDiv.addEventListener("click", plot_bar_chart, false);
 		container_element.appendChild(newDiv)

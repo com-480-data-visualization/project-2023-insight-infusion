@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 // Import all of Bootstrap's JS
 import * as d3 from 'd3'
-import { getColorScale } from '../../utilities'
+import { getTextColor } from '../../utilities'
 import { addToDynamicInfo, removeDynamicInfo, plotSubs, plotProducts, plot_bar_chart } from '../../co2'
 
 import 'default-passive-events'
@@ -39,7 +39,6 @@ export class CO2Bubbles {
 
 		const svg = d3.create('svg').attr('viewBox', [0, 0, width, height]);
   
-		const tooltip = d3.select('body').append('div').attr('class', 'tooltip');
 
 		let foodGroups = data;
 		
@@ -64,18 +63,11 @@ export class CO2Bubbles {
 					.style('stroke', '#999')
 					.style('stroke-width', 0.5)
 					.attr('stroke-dasharray', 2);
-				tooltip.transition()
-					.duration(200)
-					.style("opacity", 0.9);
 				addToDynamicInfo(d.group, d.score.toFixed(2));
 			})
 			.on("mouseout", function (d) {
 				removeDynamicInfo()
 				d3.select('.hover-circle').remove();
-				tooltip.transition()
-					.duration(500)
-					.style("opacity", 0);
-				
 			})
 			.on("click", (e, d) => {
 				if (!this.isBySubgroup && !this.isByProduct) plotSubs(d.group);
@@ -85,12 +77,13 @@ export class CO2Bubbles {
 					window.scrollTo(0, 1200)
 				}
 			});
-		const color = getColorScale([min, max], false)
-		let circle = node.append('circle')
+		const color = d3.scaleSequential([7, 0], d3.interpolateRdYlGn)
+
+		node.append('circle')
 			.attr('stroke', 'none')
 			.attr('fill', d => {
-				// return color(d.score)
-				if (d.score <= A_THRESHOLD) { 
+				return color(d.score)
+				/*if (d.score <= A_THRESHOLD) { 
 					return '#1e8f4e';
 				} else if (d.score < B_THRESHOLD) { 
 					return '#60ac0e';
@@ -100,7 +93,7 @@ export class CO2Bubbles {
 					return '#ff6f1e';
 				} else {
 					return '#df1f1f';
-				}
+				}*/
 			})
 			.attr('r', d => r(d.count))
 			.style('opacity', 1);
@@ -119,7 +112,7 @@ export class CO2Bubbles {
 			.attr('height', d => d.side)
 			.append('xhtml:p')
 				.text(d => `${d.group}: \n ${this.isByProduct ? '' : d.count}`)
-				.attr('style', d => `text-align:center;padding:2px;margin:2px;font-size:${d.r/3.5}px;`);
+				.attr('style', d => `text-align:center;padding:2px;margin:2px;font-size:${d.r/3.5}px;color:${getTextColor(color(d.score))};`);
 			
 
 		let simulation = d3.forceSimulation(data)
