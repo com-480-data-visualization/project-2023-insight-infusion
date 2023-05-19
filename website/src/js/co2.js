@@ -1,4 +1,4 @@
-import { ENDPOINT } from './config.js'
+import { ENDPOINT } from './constants'
 // Import our custom CSS
 import '../scss/styles.scss'
 import 'bootstrap-icons/font/bootstrap-icons.css'

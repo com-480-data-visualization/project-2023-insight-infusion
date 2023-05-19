@@ -3,7 +3,7 @@
 @import 'bootstrap-icons/font/bootstrap-icons';
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700;900&family=Roboto&display=swap');
 
-body, p {
+body, p, ul {
     margin: 0;
 }
 
@@ -34,17 +34,30 @@ section {
         text-align: justify;
     }
 
+    .statistic {
+        .col {
+            padding: 0 1.5rem;
+        }
+    }
+
     .section-dark-body {
         padding: 2rem 0;
         background-color: #d7301f;
-        h2, p {
+        h2, p, li {
             color: #fef0d9;
         }
 
         .chart-container {
+            padding-left: 3rem;
+        }
+
+        .chart-container > div {
             padding: 1rem;
             background-color: white;
             border-radius: 5px;
+            -webkit-box-shadow:0px 0px 39px 10px rgba(62,66,66,0.22);
+            -moz-box-shadow: 0px 0px 39px 10px rgba(62,66,66,0.22);
+            box-shadow: 0px 0px 39px 10px rgba(62,66,66,0.22);
         }
         .statistic-positive {
             background: #FDCC8A;
@@ -58,6 +71,9 @@ section {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .statistic-description {
+            color: #fcd494;
+        }
     }
     .section-dark-header {
         height: 200px;
@@ -70,6 +86,11 @@ section {
     }
 }
 
+.chart-title {
+    font-family: 'Nunito';
+    font-weight: 200;
+    font-size: 1.2em;
+}
 .chart-label, .swatches-label, .tick text {
     font-family: 'Nunito';
     font-weight: 700;
@@ -257,4 +278,26 @@ html {
 }
 .progress {
     margin-bottom: 10px;
+}
+
+
+
+.world-outline {
+    fill: none;
+    // fill: rbga(0, 0, 0, 0.01);
+    stroke: rgba(0, 0, 0, 0.1);
+    stroke-width: 1.0px;
+}
+
+.map-line {
+    fill: none;
+    // stroke: rgba(0, 0, 0, 0.25);
+    // stroke-width: 2px;
+}
+
+.back-line {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .05;
+    stroke-width: .5px;
 }

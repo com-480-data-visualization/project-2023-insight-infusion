@@ -33,7 +33,6 @@
           <div id="g-additives-bubble-chart"></div>
         </div>
         <div class="col">
-          <!-- <div class="test"></div> -->
           <div class="definition">
             <h2>Additives</h2>
             <h4 class="definition-subtitle">
@@ -41,20 +40,16 @@
               <span>/ˈæ.dɪ.tɪv/</span>
             </h4>
             <p class="definition-content">
-              <em>
-                Definition of additives, basic introduction and explanation in order to allow a better understanding of the following analyses.
-              </em>
-              <br><br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
-              ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
-              felis sit amet dui rhoncus, et vehicula sapien placerat. 
-              <br><br>
-              Duis bibendum feugiat porta. Ut mauris tellus, fermentum et magna id, euismod 
-              euismod dolor. Nam volutpat, mi vel gravida porttitor, ligula augue molestie metus, ut gravida ipsum ex lacinia lacus. Duis cursus quam est. 
-              Nunc urna velit, molestie eu porta vitae, accumsan eu risus.
-              <br><br>
-              In tincidunt mollis purus, ac ultrices libero volutpat cursus. Sed a dui interdum, cursus urna quis, rutrum eros. Quisque gravida vestibulum 
-              odio, ac fringilla metus laoreet a. Mauris et consequat justo.
+              Additives are substances that are added to food products during processing to maintain or improve certain properties such 
+              as appearance, freshness, taste or texture. <br><br>
+
+              The development of food consumption habits has required a transformation of the food industry which must produce in greater 
+              quantities. Thus, additives are sometimes necessary to ensure that processed foods remain safe and wholesome throughout their journey from 
+              factories through transportation to warehouses and stores to consumers. <br><br>
+
+              Nevertheless, many products contain non-essential additives that do not serve a necessary need but are present only to embellish 
+              the product, to make it more attractive either its taste or its appearance (artificial sweeteners, food colorings, and flavor 
+              enhancers). Other products contain preservatives to increase the shelf life of the product. <br><br>
             </p>
           </div>
         </div>
@@ -73,21 +68,75 @@
       <div class="section-dark-body">
         <div class="container">
           <div class="row mb-5">
+            <h2>Dangerousness</h2>
             <div class="col-6">
-              <h2>Repartition</h2>
               <p>
-                <em>
-                  First analysis of the repartition of additives by dangerosity.
-                </em>
-                <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
-                ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
-                felis sit amet dui rhoncus, et vehicula sapien placerat. 
+                Many additives present health risks and it is important to be aware of the products we consume. 
+                Organizations such as the World Health Organization (WHO), the Food Drug Administration (FDA) in the United States 
+                or the European Food Safety Authority (EFSA) evaluate and regulate the use of additives and put in place restrictions 
+                on quantities. <br><br>
+
+                Nevertheless, some of these substances still present risks and many scientific studies show a correlation between high 
+                consumption of certain additives and adverse health effects such as increased risk of cardiovascular disease and cancer.
+
+                For our project, we used data from the company Yuka, which reviewed numerous scientific studies [4] on the effects of 
+                additive consumption in order to assign a score to each of them according to their dangerousness : <br><br>
+                <ul>
+                  <li>0 : No risk</li>
+                  <li>1 : Limited risk</li>
+                  <li>2 : Moderate risk</li>
+                  <li>3 : Hazardous</li>
+                </ul>
               </p>
+            </div>
+            <div class="col-6 px-5">
+              <p>
+                We have analyzed several tens of thousands of products in order to analyze the presence and impact of additives 
+                on our health. Here are a few highlights. <br><br>
+              </p>
+              <div class="row row-cols-2">
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-negative">
+                      45.71%
+                    </p>
+                    <p class="statistic-description">
+                      Of products are containing at least one additive
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-negative">
+                      3.00
+                    </p>
+                    <p class="statistic-description">
+                      additives per product that contain them on average
+                    </p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="statistic-container">
+                    <p class="statistic-value statistic-negative">
+                      19.56%
+                    </p>
+                    <p class="statistic-description">
+                      Of products are containing hazardous additives
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row chart-container">
             <div id="g-additives-bubble-chart-2"></div>
+          </div>
+          <div class="row">
+              <p><br>
+                This graph shows a more detailed breakdown of the additives present in food products. 
+                It can be noticed that hazardous additives (level 3) are well represented, almost as much as safe 
+                additives and more than those of levels 1 and 2.
+              </p>
           </div>
         </div>
       </div>
@@ -107,13 +156,13 @@
         <div class="col-6">
           <h2>Food Categories</h2>
           <p>
-            <em>
-              Analysis of distribution of additives in food categories (e.g. beverages, meat, ...)
-            </em>
-            <br><br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
-            ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
-            felis sit amet dui rhoncus, et vehicula sapien placerat. 
+            The presence and the danger of additives depend strongly on the categories of products. 
+            Indeed, we find much more additives in cold cuts, sweetened drinks and ready-made meals 
+            than in vegetables, pasta and vegetable milks for example. <br><br>
+
+            The following graph shows these two variables, the presence (radius) and the dangerousness 
+            (color) by product category. We can clearly observe that the delicatessen and the sodas 
+            represent the most dangerous products.
           </p>
         </div>
       </div>
@@ -121,75 +170,79 @@
         <div id="g-additives-food-category-bubble-chart"></div>
       </div>
     </section>
-    <!--
-      
-      
-    Nutriscore
+     <!-- 
+
     
-    
+      NOVA Index
+
+
     -->
+    
     <section>
       <div class="section-dark-header"></div>
       <div class="section-dark-body">
         <div class="container">
           <div class="row">
-            <h2>Nutriscore</h2>
-            <div class="col">
+            <div class="col-6">
+              <h2>NOVA Index</h2>
               <p>
-                  <em>
-                    Analysis of correlation between nutriscore (nutritional index) and the presence and dangerosity of additives.
-                  </em>
-                  <br><br>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
-                  ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
-                  felis sit amet dui rhoncus, et vehicula sapien placerat. 
+                The NOVA index is used to indicate how processed a product is. Product processing is a broad term that can 
+                mean mixing different products to create a new one as well as several processing steps such as cooking, 
+                freezing, drying, fermenting and, of course, adding additives. <br><br>
+                <ul>
+                  <li>1 : Unprocessed or minimally processed foods</li>
+                  <li>2 : Processed culinary ingredients</li>
+                  <li>3 : Processed foods</li>
+                  <li>4 : Ultra-processed food and drink products</li>
+                </ul> <br>
               </p>
-              <div class="row row-cols-2">
-                <div class="col">
-                  <div class="statistic-container">
-                    <p class="statistic-value statistic-negative">
-                      +0.74
-                    </p>
-                    <p class="statistic-description">
-                      Each move to a lower nutriscore category increases the number of additives per product by an average of 0.74
-                    </p>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="statistic-container">
-                    <p class="statistic-value statistic-negative">
-                      +0.45
-                    </p>
-                    <p class="statistic-description">
-                      Each move to a lower nutriscore category increases the average dangerosity of additives per product by 0.45
-                    </p>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="statistic-container">
-                    <p class="statistic-value statistic-negative">
-                      x3.64
-                    </p>
-                    <p class="statistic-description">
-                      The average hazardousness of products in category E is 3.64 times higher than those in category A
-                    </p>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="statistic-container">
-                    <p class="statistic-value statistic-negative">
-                      x3.59
-                    </p>
-                    <p class="statistic-description">
-                      Category E products contain on average 3.59 times more additives than Category A products
-                    </p>
-                  </div>
-                </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex"></div>
+              <div class="chart-container">
+                <div id="g-nova-stacked-bar-chart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-4 pt-4 statistic">
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-positive">
+                  +0.74
+                </p>
+                <p class="statistic-description">
+                  Each move to a lower nutriscore category increases the number of additives per product by an average of 0.74
+                </p>
               </div>
             </div>
             <div class="col">
-              <div class="chart-container">
-                <div id="g-nutriscore-stacked-bar-chart"></div>
+              <div class="statistic-container">
+                <p class="statistic-value statistic-negative">
+                  +0.45
+                </p>
+                <p class="statistic-description">
+                  Each move to a lower nutriscore category increases the average dangerosity of additives per product by 0.45
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-positive">
+                  x3.64
+                </p>
+                <p class="statistic-description">
+                  The average hazardousness of products in category E is 3.64 times higher than those in category A
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="statistic-container">
+                <p class="statistic-value statistic-negative">
+                  x3.59
+                </p>
+                <p class="statistic-description">
+                  Category E products contain on average 3.59 times more additives than Category A products
+                </p>
               </div>
             </div>
           </div>
@@ -286,24 +339,23 @@
         </div>
       </div>
     </section>
-    <!-- 
-
+    <!--
+      
+      
+    Nutriscore
     
-      NOVA Index
-
-
+    
     -->
-    
     <section>
       <div class="section-dark-header"></div>
       <div class="section-dark-body">
         <div class="container">
           <div class="row">
+            <h2>Nutriscore</h2>
             <div class="col">
-              <h2>NOVA Index</h2>
               <p>
                   <em>
-                    Analysis of correlation between NOVA Index (how much the product is processed) and the presence and dangerosity of additives.
+                    Analysis of correlation between nutriscore (nutritional index) and the presence and dangerosity of additives.
                   </em>
                   <br><br>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
@@ -313,7 +365,7 @@
               <div class="row row-cols-2">
                 <div class="col">
                   <div class="statistic-container">
-                    <p class="statistic-value statistic-positive">
+                    <p class="statistic-value statistic-negative">
                       +0.74
                     </p>
                     <p class="statistic-description">
@@ -333,7 +385,7 @@
                 </div>
                 <div class="col">
                   <div class="statistic-container">
-                    <p class="statistic-value statistic-positive">
+                    <p class="statistic-value statistic-negative">
                       x3.64
                     </p>
                     <p class="statistic-description">
@@ -353,15 +405,16 @@
                 </div>
               </div>
             </div>
-            <div class="col chart-container">
-              <div id="g-nova-stacked-bar-chart"></div>
+            <div class="col">
+              <div class="chart-container">
+                <div id="g-nutriscore-stacked-bar-chart"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="section-dark-footer"></div>
     </section>
-
     <!--
 
 
@@ -430,148 +483,6 @@
         </div>
       </div>
     </section>
-    <!--
-
-
-      Palm Oil
-
-    -->
-    <section>
-      <div class="section-dark-header"></div>
-      <div class="section-dark-body">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Palm Oil</h2>
-              <p>
-                  <em>
-                    Analysis of the impact of palm oil in additives presence and dangerosity
-                  </em>
-                  <br><br>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
-                  ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
-                  felis sit amet dui rhoncus, et vehicula sapien placerat. 
-              </p>
-              <div class="row row-cols-2">
-                <div class="col">
-                  <div class="statistic-container">
-                    <p class="statistic-value statistic-negative">
-                      71.4%
-                    </p>
-                    <p class="statistic-description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus.
-                    </p>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="statistic-container">
-                    <p class="statistic-value statistic-negative">
-                      x2.1
-                    </p>
-                    <p class="statistic-description">
-                      Integer mattis, metus in laoreet tristique, ante nisi semper leo, ut cursus velit ante sed nibh.
-                    </p>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="statistic-container">
-                    <p class="statistic-value statistic-positive">
-                      -1.11
-                    </p>
-                    <p class="statistic-description">
-                      In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit felis sit amet dui rhoncus.
-                    </p>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="statistic-container">
-                    <p class="statistic-value statistic-positive">
-                      -0.39
-                    </p>
-                    <p class="statistic-description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col chart-container">
-              <div class="chart-placeholder"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section-dark-footer"></div>
-    </section>
-    <!--
-
-
-     Brands
-
-
-    -->
-    <section class="container">
-      <div class="row">
-        <div class="col chart-container">
-          <div class="chart-placeholder"></div>
-        </div>
-        <div class="col">
-          <h2>Brands comparison</h2>
-          <p>
-              <em>
-                Which brands are selling products with more additives ?
-              </em>
-              <br><br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
-              ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
-              felis sit amet dui rhoncus, et vehicula sapien placerat. 
-          </p>
-          <div class="row row-cols-2">
-            <div class="col">
-              <div class="statistic-container">
-                <p class="statistic-value statistic-negative">
-                  71.4%
-                </p>
-                <p class="statistic-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus.
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="statistic-container">
-                <p class="statistic-value statistic-negative">
-                  x2.1
-                </p>
-                <p class="statistic-description">
-                  Integer mattis, metus in laoreet tristique, ante nisi semper leo, ut cursus velit ante sed nibh.
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="statistic-container">
-                <p class="statistic-value statistic-positive">
-                  -1.11
-                </p>
-                <p class="statistic-description">
-                  In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit felis sit amet dui rhoncus.
-                </p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="statistic-container">
-                <p class="statistic-value statistic-positive">
-                  -0.39
-                </p>
-                <p class="statistic-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer>
       <div class="footer-header"></div>
       <div class="footer-body">
@@ -581,6 +492,6 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/additives.js"></script>
   </body>
 </html>
