@@ -43,15 +43,17 @@ export class ZoomBarChart {
 		const svg = d3.create("svg")
 			.attr("viewBox", [0, 0, width, height])
 			.call(zoom);
-	  
+			
+		const ok_limit = 0.3
+		const danger_limit = 1
 		svg.append("g")
 			.attr("class", "bars")
 		  .selectAll("rect")
 		  .data(data)
 		  .join("rect")
 		    .attr("fill", d => {
-				if (this.itemInfo[d.name] < 0.3) return 'green';
-				else if (this.itemInfo[d.name] < 1) return 'orange';
+				if (this.itemInfo[d.name] < ok_limit) return 'green';
+				else if (this.itemInfo[d.name] < danger_limit) return 'orange';
 				else return 'red'
 			})
 			.attr("x", d => x(d.name))

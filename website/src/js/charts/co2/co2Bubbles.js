@@ -9,6 +9,11 @@ import { addToDynamicInfo, removeDynamicInfo, plotSubs, plotProducts, plot_bar_c
 
 import 'default-passive-events'
 
+const A_THRESHOLD = 0.94
+const B_THRESHOLD = 1.77
+const C_THRESHOLD = 3.57
+const D_THRESHOLD = 7.2
+
 // inspired by: https://observablehq.com/@tiffylou/topics-by-gender-in-the-smithsonian-api
 export class CO2Bubbles {
 	constructor(data, rx, ry, isBySubgroup, isByProduct) {
@@ -85,13 +90,13 @@ export class CO2Bubbles {
 			.attr('stroke', 'none')
 			.attr('fill', d => {
 				// return color(d.score)
-				if (d.score <= 0.94) { 
+				if (d.score <= A_THRESHOLD) { 
 					return '#1e8f4e';
-				} else if (d.score < 1.77) { 
+				} else if (d.score < B_THRESHOLD) { 
 					return '#60ac0e';
-				} else if (d.score < 3.57) { 
+				} else if (d.score < C_THRESHOLD) { 
 					return '#eeae0e';
-				} else if (d.score < 7.2) { 
+				} else if (d.score < D_THRESHOLD) { 
 					return '#ff6f1e';
 				} else {
 					return '#df1f1f';

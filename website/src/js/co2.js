@@ -26,6 +26,16 @@ let JSON_HIERARCHY = {}
 let GROUP_DATA = {}
 let SUBGROUP_DATA = {}
 let SCORE = 1
+
+const A_THRESHOLD = 0.94
+const B_THRESHOLD = 1.77
+const C_THRESHOLD = 3.57
+const D_THRESHOLD = 7.2
+
+const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
+const xRange = [margin.left, 900 - margin.right]
+const centerY = (375 - margin.bottom + margin.top) / 2
+
 whenDocumentLoaded(() => {
 	fetch(`${ENDPOINT}/co2/hierarchy_CO2.json`)
 		.then((response) => response.json())
@@ -58,37 +68,39 @@ function updateProgressBars(co2PerKg, numKg) {
 	const secondPB = document.getElementById("second-PB");
 	const thirdPB = document.getElementById("third-PB");
 	const product = co2PerKg * numKg
-	const ratio = (product / 946) * 100
+	const flightKg = 946
+	const personKg = 600
+	const ratio = (product / flightKg) * 100
 	firstPB.innerHTML = `<div class="progress-bar bg-warning" role="progressbar" style="width: ${ratio}%;" aria-valuenow="${ratio}" aria-valuemin="0" aria-valuemax="100">${Math.round(product)} kg</div>`
 	secondPB.innerHTML = '<div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">600 kg</div>'
 	thirdPB.innerHTML = '<div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">946 kg</div>'
-	if (product > 946) {
+	if (product > flightKg) {
 		firstPB.innerHTML = `<div class="progress-bar bg-danger" role="progressbar" style="width: ${100}%;" aria-valuenow="${100}" aria-valuemin="0" aria-valuemax="100">${Math.round(product)} kg</div>`
-		secondPB.innerHTML = `<div class="progress-bar bg-success" role="progressbar" style="width: ${(600 / product) * 100}%;" aria-valuenow="${(600 / product) * 100}" aria-valuemin="0" aria-valuemax="100">600 kg</div>`
-		thirdPB.innerHTML = `<div class="progress-bar bg-danger" role="progressbar" style="width: ${(946 / product) * 100}%;" aria-valuenow="${(946 / product) * 100}" aria-valuemin="0" aria-valuemax="100">946 kg</div>`
+		secondPB.innerHTML = `<div class="progress-bar bg-success" role="progressbar" style="width: ${(personKg / product) * 100}%;" aria-valuenow="${(personKg / product) * 100}" aria-valuemin="0" aria-valuemax="100">600 kg</div>`
+		thirdPB.innerHTML = `<div class="progress-bar bg-danger" role="progressbar" style="width: ${(flightKg / product) * 100}%;" aria-valuenow="${(flightKg / product) * 100}" aria-valuemin="0" aria-valuemax="100">946 kg</div>`
 	}
 }
 function getEmoji(score) {
-	if (score <= 0.94) { 
+	if (score <= A_THRESHOLD) { 
 		return '😁';
-	} else if (score < 1.77) { 
+	} else if (score < B_THRESHOLD) { 
 		return '🙂';
-	} else if (score < 3.57) { 
+	} else if (score < C_THRESHOLD) { 
 		return '😐';
-	} else if (score < 7.2) { 
+	} else if (score < D_THRESHOLD) { 
 		return '☹️';
 	} else {
 		return '😡';
 	}
 }
 function getEcoScore(score) {
-	if (score <= 0.94) { 
+	if (score <= A_THRESHOLD) { 
 		return 'a-score';
-	} else if (score < 1.77) { 
+	} else if (score < B_THRESHOLD) { 
 		return 'b-score';
-	} else if (score < 3.57) { 
+	} else if (score < C_THRESHOLD) { 
 		return 'c-score';
-	} else if (score < 7.2) { 
+	} else if (score < D_THRESHOLD) { 
 		return 'd-score';
 	} else {
 		return 'e-score';
@@ -112,10 +124,7 @@ export function removeDynamicInfo() {
 }
 
 function hierarchy_to_group_data(d) {
-	const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
-	const xRange = [margin.left, 900 - margin.right]
 	const x = d3.scaleLinear().domain([0, 13]).range(xRange)
-	const centerY = (375 - margin.bottom + margin.top) / 2
 	const data = Object.keys(d).map((group) => {
 		return {
 			"group": group,
@@ -129,10 +138,7 @@ function hierarchy_to_group_data(d) {
 }
 
 function hierarchy_to_subgroup_data (d) {
-	const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
-	const xRange = [margin.left, 900 - margin.right]
 	const x = d3.scaleLinear().domain([0, 25]).range(xRange)
-	const centerY = (375 - margin.bottom + margin.top) / 2
 	const data = []
 	Object.keys(d).forEach((group) => {
 		Object.keys(d[group]['subgroups']).forEach((subgroup) => {
@@ -196,8 +202,10 @@ function subgroupButtonAction() {
 
 function getClassName(id) {
 	const total = JSON_RAW_CO2[id]['total']
-	if (total < 1.51) return `badge slider-item ${getEcoScore(total)}`;
-	else if (total < 5.1) return `badge slider-item ${getEcoScore(total)}`;
+	const green_limit = 1.51
+	const yellow_limit = 5.1
+	if (total < green_limit) return `badge slider-item ${getEcoScore(total)}`;
+	else if (total < yellow_limit) return `badge slider-item ${getEcoScore(total)}`;
 	else return `badge slider-item ${getEcoScore(total)}`
 }
 
@@ -215,10 +223,7 @@ function loadList(container_element, food_array) {
 }
 
 export const plotSubs = (subgroup) =>  {
-	const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
-	const xRange = [margin.left, 900 - margin.right]
 	const x = d3.scaleLinear().domain([0, 25]).range(xRange)
-	const centerY = (375 - margin.bottom + margin.top) / 2
 	let dict = JSON_HIERARCHY[subgroup].subgroups;
 	const data = Object.keys(dict).map((subgroup) => {
 		return {
@@ -237,10 +242,7 @@ export const plotSubs = (subgroup) =>  {
 }
 
 export const plotProducts = (subgroup) => {
-	const margin = ({ top: 25, right: 40, bottom: 35, left: 40 });
-	const xRange = [margin.left, 900 - margin.right]
 	const x = d3.scaleLinear().domain([0, 53]).range(xRange)
-	const centerY = (375 - margin.bottom + margin.top) / 2
 	let data = []
 	Object.keys(JSON_RAW_CO2).forEach((product) => {
 		if (JSON_RAW_CO2[product].subgroup === subgroup)
