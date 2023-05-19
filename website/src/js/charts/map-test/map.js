@@ -1,9 +1,10 @@
+
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import * as d3 from 'd3'
 
+import { ENDPOINT } from './../../constants'
 import '../../../scss/map.scss'
-
-const ENDPOINT = 'http://localhost:8080';
-
+import '../../../scss/styles.scss'
 const assets = ressource => `${ENDPOINT}/${ressource}`
 
 const json = async ressource => await d3.json(assets(ressource))
