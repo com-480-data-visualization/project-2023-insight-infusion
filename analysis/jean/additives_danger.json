@@ -1,0 +1,2254 @@
+[
+    {
+        "code": "E330",
+        "danger": 4
+    },
+    {
+        "code": "E322",
+        "danger": 4
+    },
+    {
+        "code": "E322i",
+        "danger": 4
+    },
+    {
+        "code": "E500",
+        "danger": 4
+    },
+    {
+        "code": "E415",
+        "danger": 4
+    },
+    {
+        "code": "E471",
+        "danger": 2
+    },
+    {
+        "code": "E500ii",
+        "danger": 4
+    },
+    {
+        "code": "E412",
+        "danger": 4
+    },
+    {
+        "code": "E202",
+        "danger": 2
+    },
+    {
+        "code": "E450",
+        "danger": 1
+    },
+    {
+        "code": "E407",
+        "danger": 2
+    },
+    {
+        "code": "E440",
+        "danger": 4
+    },
+    {
+        "code": "E250",
+        "danger": 1
+    },
+    {
+        "code": "E300",
+        "danger": 4
+    },
+    {
+        "code": "E331",
+        "danger": 4
+    },
+    {
+        "code": "E270",
+        "danger": 4
+    },
+    {
+        "code": "E129",
+        "danger": 1
+    },
+    {
+        "code": "E150c",
+        "danger": 1
+    },
+    {
+        "code": "E102",
+        "danger": 1
+    },
+    {
+        "code": "E133",
+        "danger": 1
+    },
+    {
+        "code": "E422",
+        "danger": 3
+    },
+    {
+        "code": "E211",
+        "danger": 1
+    },
+    {
+        "code": "E341",
+        "danger": 1
+    },
+    {
+        "code": "E428",
+        "danger": 4
+    },
+    {
+        "code": "E410",
+        "danger": 4
+    },
+    {
+        "code": "E450i",
+        "danger": 1
+    },
+    {
+        "code": "E621",
+        "danger": 1
+    },
+    {
+        "code": "E414",
+        "danger": 4
+    },
+    {
+        "code": "E160b",
+        "danger": 3
+    },
+    {
+        "code": "E110",
+        "danger": 1
+    },
+    {
+        "code": "E160a",
+        "danger": 4
+    },
+    {
+        "code": "E466",
+        "danger": 2
+    },
+    {
+        "code": "E296",
+        "danger": 4
+    },
+    {
+        "code": "E955",
+        "danger": 1
+    },
+    {
+        "code": "E341i",
+        "danger": 1
+    },
+    {
+        "code": "E503",
+        "danger": 4
+    },
+    {
+        "code": "E420",
+        "danger": 3
+    },
+    {
+        "code": "E160c",
+        "danger": 4
+    },
+    {
+        "code": "E316",
+        "danger": 4
+    },
+    {
+        "code": "E950",
+        "danger": 1
+    },
+    {
+        "code": "E301",
+        "danger": 4
+    },
+    {
+        "code": "E262",
+        "danger": 4
+    },
+    {
+        "code": "E903",
+        "danger": 4
+    },
+    {
+        "code": "E282",
+        "danger": 3
+    },
+    {
+        "code": "E171",
+        "danger": 1
+    },
+    {
+        "code": "E200",
+        "danger": 2
+    },
+    {
+        "code": "E452",
+        "danger": 1
+    },
+    {
+        "code": "E160ai",
+        "danger": 4
+    },
+    {
+        "code": "E631",
+        "danger": 4
+    },
+    {
+        "code": "E481",
+        "danger": 2
+    },
+    {
+        "code": "E460",
+        "danger": 3
+    },
+    {
+        "code": "E306",
+        "danger": 4
+    },
+    {
+        "code": "E627",
+        "danger": 3
+    },
+    {
+        "code": "E100",
+        "danger": 4
+    },
+    {
+        "code": "E503ii",
+        "danger": 4
+    },
+    {
+        "code": "E1400",
+        "danger": 4
+    },
+    {
+        "code": "E472e",
+        "danger": 2
+    },
+    {
+        "code": "E451",
+        "danger": 1
+    },
+    {
+        "code": "E340",
+        "danger": 1
+    },
+    {
+        "code": "E385",
+        "danger": 2
+    },
+    {
+        "code": "E120",
+        "danger": 2
+    },
+    {
+        "code": "E951",
+        "danger": 1
+    },
+    {
+        "code": "E401",
+        "danger": 4
+    },
+    {
+        "code": "E392",
+        "danger": 4
+    },
+    {
+        "code": "E223",
+        "danger": 2
+    },
+    {
+        "code": "E435",
+        "danger": 1
+    },
+    {
+        "code": "E260",
+        "danger": 4
+    },
+    {
+        "code": "E321",
+        "danger": 1
+    },
+    {
+        "code": "E541",
+        "danger": 1
+    },
+    {
+        "code": "E127",
+        "danger": 1
+    },
+    {
+        "code": "E339ii",
+        "danger": 1
+    },
+    {
+        "code": "E433",
+        "danger": 1
+    },
+    {
+        "code": "E262ii",
+        "danger": 4
+    },
+    {
+        "code": "E338",
+        "danger": 1
+    },
+    {
+        "code": "E476",
+        "danger": 3
+    },
+    {
+        "code": "E150a",
+        "danger": 4
+    },
+    {
+        "code": "E235",
+        "danger": 3
+    },
+    {
+        "code": "E252",
+        "danger": 1
+    },
+    {
+        "code": "E220",
+        "danger": 2
+    },
+    {
+        "code": "E406",
+        "danger": 4
+    },
+    {
+        "code": "E132",
+        "danger": 2
+    },
+    {
+        "code": "E960",
+        "danger": 3
+    },
+    {
+        "code": "E326",
+        "danger": 4
+    },
+    {
+        "code": "E965",
+        "danger": 3
+    },
+    {
+        "code": "E290",
+        "danger": 4
+    },
+    {
+        "code": "E340ii",
+        "danger": 1
+    },
+    {
+        "code": "E320",
+        "danger": 1
+    },
+    {
+        "code": "E325",
+        "danger": 4
+    },
+    {
+        "code": "E297",
+        "danger": 4
+    },
+    {
+        "code": "E160e",
+        "danger": 4
+    },
+    {
+        "code": "E334",
+        "danger": 4
+    },
+    {
+        "code": "E150d",
+        "danger": 1
+    },
+    {
+        "code": "E418",
+        "danger": 4
+    },
+    {
+        "code": "E319",
+        "danger": 1
+    },
+    {
+        "code": "E163",
+        "danger": 4
+    },
+    {
+        "code": "E339",
+        "danger": 1
+    },
+    {
+        "code": "E461",
+        "danger": 4
+    },
+    {
+        "code": "E1520",
+        "danger": 4
+    },
+    {
+        "code": "E224",
+        "danger": 2
+    },
+    {
+        "code": "E460ii",
+        "danger": 3
+    },
+    {
+        "code": "E445",
+        "danger": 4
+    },
+    {
+        "code": "E212",
+        "danger": 1
+    },
+    {
+        "code": "E281",
+        "danger": 3
+    },
+    {
+        "code": "E901",
+        "danger": 4
+    },
+    {
+        "code": "E452i",
+        "danger": 1
+    },
+    {
+        "code": "E170",
+        "danger": 3
+    },
+    {
+        "code": "E327",
+        "danger": 4
+    },
+    {
+        "code": "E570",
+        "danger": 4
+    },
+    {
+        "code": "E150",
+        "danger": 1
+    },
+    {
+        "code": "E904",
+        "danger": 4
+    },
+    {
+        "code": "E101",
+        "danger": 4
+    },
+    {
+        "code": "E491",
+        "danger": 1
+    },
+    {
+        "code": "E501",
+        "danger": 4
+    },
+    {
+        "code": "E336",
+        "danger": 4
+    },
+    {
+        "code": "E452vi",
+        "danger": 1
+    },
+    {
+        "code": "E516",
+        "danger": 3
+    },
+    {
+        "code": "E222",
+        "danger": 2
+    },
+    {
+        "code": "E262i",
+        "danger": 4
+    },
+    {
+        "code": "E968",
+        "danger": 3
+    },
+    {
+        "code": "E551",
+        "danger": 1
+    },
+    {
+        "code": "E170ii",
+        "danger": 3
+    },
+    {
+        "code": "E1200",
+        "danger": 3
+    },
+    {
+        "code": "E162",
+        "danger": 4
+    },
+    {
+        "code": "E475",
+        "danger": 1
+    },
+    {
+        "code": "E161b",
+        "danger": 4
+    },
+    {
+        "code": "E575",
+        "danger": 4
+    },
+    {
+        "code": "E304",
+        "danger": 4
+    },
+    {
+        "code": "E509",
+        "danger": 4
+    },
+    {
+        "code": "E331iii",
+        "danger": 4
+    },
+    {
+        "code": "E341ii",
+        "danger": 1
+    },
+    {
+        "code": "E517",
+        "danger": 3
+    },
+    {
+        "code": "E141",
+        "danger": 3
+    },
+    {
+        "code": "E336i",
+        "danger": 4
+    },
+    {
+        "code": "E464",
+        "danger": 2
+    },
+    {
+        "code": "E967",
+        "danger": 3
+    },
+    {
+        "code": "E1103",
+        "danger": 4
+    },
+    {
+        "code": "E905",
+        "danger": 2
+    },
+    {
+        "code": "E251",
+        "danger": 1
+    },
+    {
+        "code": "E965ii",
+        "danger": 3
+    },
+    {
+        "code": "E524",
+        "danger": 3
+    },
+    {
+        "code": "E450iii",
+        "danger": 1
+    },
+    {
+        "code": "E101i",
+        "danger": 4
+    },
+    {
+        "code": "E572",
+        "danger": 2
+    },
+    {
+        "code": "E635",
+        "danger": 3
+    },
+    {
+        "code": "E920",
+        "danger": 4
+    },
+    {
+        "code": "E460i",
+        "danger": 3
+    },
+    {
+        "code": "E153",
+        "danger": 4
+    },
+    {
+        "code": "E1105",
+        "danger": 3
+    },
+    {
+        "code": "E905a",
+        "danger": 2
+    },
+    {
+        "code": "E521",
+        "danger": 1
+    },
+    {
+        "code": "E1100",
+        "danger": 4
+    },
+    {
+        "code": "E472b",
+        "danger": 2
+    },
+    {
+        "code": "E552",
+        "danger": 3
+    },
+    {
+        "code": "E954",
+        "danger": 1
+    },
+    {
+        "code": "E579",
+        "danger": 4
+    },
+    {
+        "code": "E307",
+        "danger": 4
+    },
+    {
+        "code": "E1442",
+        "danger": 2
+    },
+    {
+        "code": "E420ii",
+        "danger": 3
+    },
+    {
+        "code": "E502",
+        "danger": 4
+    },
+    {
+        "code": "E333",
+        "danger": 4
+    },
+    {
+        "code": "E417",
+        "danger": 4
+    },
+    {
+        "code": "E501i",
+        "danger": 4
+    },
+    {
+        "code": "E304i",
+        "danger": 4
+    },
+    {
+        "code": "E953",
+        "danger": 4
+    },
+    {
+        "code": "E1422",
+        "danger": 4
+    },
+    {
+        "code": "E503i",
+        "danger": 4
+    },
+    {
+        "code": "E339iii",
+        "danger": 1
+    },
+    {
+        "code": "E900",
+        "danger": 2
+    },
+    {
+        "code": "E421",
+        "danger": 3
+    },
+    {
+        "code": "E492",
+        "danger": 1
+    },
+    {
+        "code": "E407a",
+        "danger": 2
+    },
+    {
+        "code": "E927",
+        "danger": 1
+    },
+    {
+        "code": "E442",
+        "danger": 2
+    },
+    {
+        "code": "E900a",
+        "danger": 2
+    },
+    {
+        "code": "E405",
+        "danger": 3
+    },
+    {
+        "code": "E310",
+        "danger": 1
+    },
+    {
+        "code": "E473",
+        "danger": 1
+    },
+    {
+        "code": "E930",
+        "danger": 4
+    },
+    {
+        "code": "E221",
+        "danger": 2
+    },
+    {
+        "code": "E927a",
+        "danger": 1
+    },
+    {
+        "code": "E172",
+        "danger": 3
+    },
+    {
+        "code": "E554",
+        "danger": 1
+    },
+    {
+        "code": "E340i",
+        "danger": 1
+    },
+    {
+        "code": "E263",
+        "danger": 4
+    },
+    {
+        "code": "E952",
+        "danger": 2
+    },
+    {
+        "code": "E451i",
+        "danger": 1
+    },
+    {
+        "code": "E332",
+        "danger": 4
+    },
+    {
+        "code": "E131",
+        "danger": 1
+    },
+    {
+        "code": "E355",
+        "danger": 4
+    },
+    {
+        "code": "E477",
+        "danger": 1
+    },
+    {
+        "code": "E261",
+        "danger": 4
+    },
+    {
+        "code": "E413",
+        "danger": 4
+    },
+    {
+        "code": "E210",
+        "danger": 1
+    },
+    {
+        "code": "E472c",
+        "danger": 2
+    },
+    {
+        "code": "E520",
+        "danger": 1
+    },
+    {
+        "code": "E535",
+        "danger": 3
+    },
+    {
+        "code": "E553",
+        "danger": 3
+    },
+    {
+        "code": "E501ii",
+        "danger": 4
+    },
+    {
+        "code": "E508",
+        "danger": 4
+    },
+    {
+        "code": "E510",
+        "danger": 1
+    },
+    {
+        "code": "E315",
+        "danger": 4
+    },
+    {
+        "code": "E140",
+        "danger": 4
+    },
+    {
+        "code": "E341iii",
+        "danger": 1
+    },
+    {
+        "code": "E470b",
+        "danger": 4
+    },
+    {
+        "code": "E350",
+        "danger": 4
+    },
+    {
+        "code": "E553b",
+        "danger": 3
+    },
+    {
+        "code": "E443",
+        "danger": 1
+    },
+    {
+        "code": "E363",
+        "danger": 4
+    },
+    {
+        "code": "E1104",
+        "danger": 4
+    },
+    {
+        "code": "E122",
+        "danger": 1
+    },
+    {
+        "code": "E164",
+        "danger": 4
+    },
+    {
+        "code": "E444",
+        "danger": 4
+    },
+    {
+        "code": "E1101",
+        "danger": 4
+    },
+    {
+        "code": "E124",
+        "danger": 1
+    },
+    {
+        "code": "E343",
+        "danger": 1
+    },
+    {
+        "code": "E150b",
+        "danger": 2
+    },
+    {
+        "code": "E280",
+        "danger": 3
+    },
+    {
+        "code": "E234",
+        "danger": 4
+    },
+    {
+        "code": "E1519",
+        "danger": 4
+    },
+    {
+        "code": "E340iii",
+        "danger": 1
+    },
+    {
+        "code": "E141ii",
+        "danger": 3
+    },
+    {
+        "code": "E472a",
+        "danger": 2
+    },
+    {
+        "code": "E924a",
+        "danger": 1
+    },
+    {
+        "code": "E160aii",
+        "danger": 4
+    },
+    {
+        "code": "E941",
+        "danger": 4
+    },
+    {
+        "code": "E343i",
+        "danger": 1
+    },
+    {
+        "code": "E640",
+        "danger": 3
+    },
+    {
+        "code": "E425",
+        "danger": 4
+    },
+    {
+        "code": "E141i",
+        "danger": 3
+    },
+    {
+        "code": "E916",
+        "danger": 4
+    },
+    {
+        "code": "E504",
+        "danger": 4
+    },
+    {
+        "code": "E1505",
+        "danger": 4
+    },
+    {
+        "code": "E175",
+        "danger": 3
+    },
+    {
+        "code": "E160d",
+        "danger": 4
+    },
+    {
+        "code": "E307b",
+        "danger": 4
+    },
+    {
+        "code": "E332ii",
+        "danger": 4
+    },
+    {
+        "code": "E585",
+        "danger": 4
+    },
+    {
+        "code": "E942",
+        "danger": 4
+    },
+    {
+        "code": "E487",
+        "danger": 4
+    },
+    {
+        "code": "E641",
+        "danger": 4
+    },
+    {
+        "code": "E482",
+        "danger": 2
+    },
+    {
+        "code": "E140i",
+        "danger": 4
+    },
+    {
+        "code": "E1412",
+        "danger": 2
+    },
+    {
+        "code": "E1450",
+        "danger": 3
+    },
+    {
+        "code": "E416",
+        "danger": 3
+    },
+    {
+        "code": "E331i",
+        "danger": 4
+    },
+    {
+        "code": "E472",
+        "danger": 2
+    },
+    {
+        "code": "E1414",
+        "danger": 2
+    },
+    {
+        "code": "E525",
+        "danger": 4
+    },
+    {
+        "code": "E961",
+        "danger": 1
+    },
+    {
+        "code": "E905b",
+        "danger": 2
+    },
+    {
+        "code": "E339i",
+        "danger": 1
+    },
+    {
+        "code": "E404",
+        "danger": 4
+    },
+    {
+        "code": "E104",
+        "danger": 1
+    },
+    {
+        "code": "E350ii",
+        "danger": 4
+    },
+    {
+        "code": "E218",
+        "danger": 1
+    },
+    {
+        "code": "E1420",
+        "danger": 4
+    },
+    {
+        "code": "E216",
+        "danger": 1
+    },
+    {
+        "code": "E140ii",
+        "danger": 4
+    },
+    {
+        "code": "E928",
+        "danger": 4
+    },
+    {
+        "code": "E1518",
+        "danger": 4
+    },
+    {
+        "code": "E440a",
+        "danger": 4
+    },
+    {
+        "code": "E143",
+        "danger": 4
+    },
+    {
+        "code": "E333iii",
+        "danger": 4
+    },
+    {
+        "code": "E470a",
+        "danger": 4
+    },
+    {
+        "code": "E425i",
+        "danger": 4
+    },
+    {
+        "code": "E576",
+        "danger": 4
+    },
+    {
+        "code": "E1521",
+        "danger": 3
+    },
+    {
+        "code": "E242",
+        "danger": 1
+    },
+    {
+        "code": "E142",
+        "danger": 1
+    },
+    {
+        "code": "E1503",
+        "danger": 4
+    },
+    {
+        "code": "E944",
+        "danger": 4
+    },
+    {
+        "code": "E927b",
+        "danger": 4
+    },
+    {
+        "code": "E620",
+        "danger": 1
+    },
+    {
+        "code": "E463",
+        "danger": 2
+    },
+    {
+        "code": "E432",
+        "danger": 1
+    },
+    {
+        "code": "E1404",
+        "danger": 4
+    },
+    {
+        "code": "E342",
+        "danger": 1
+    },
+    {
+        "code": "E536",
+        "danger": 3
+    },
+    {
+        "code": "E228",
+        "danger": 2
+    },
+    {
+        "code": "E329",
+        "danger": 4
+    },
+    {
+        "code": "E400",
+        "danger": 4
+    },
+    {
+        "code": "E1201",
+        "danger": 3
+    },
+    {
+        "code": "E420i",
+        "danger": 3
+    },
+    {
+        "code": "E917",
+        "danger": 4
+    },
+    {
+        "code": "E943b",
+        "danger": 4
+    },
+    {
+        "code": "E966",
+        "danger": 4
+    },
+    {
+        "code": "E151",
+        "danger": 1
+    },
+    {
+        "code": "E962",
+        "danger": 1
+    },
+    {
+        "code": "E511",
+        "danger": 4
+    },
+    {
+        "code": "E943a",
+        "danger": 4
+    },
+    {
+        "code": "E999",
+        "danger": 4
+    },
+    {
+        "code": "E450ii",
+        "danger": 1
+    },
+    {
+        "code": "E902",
+        "danger": 4
+    },
+    {
+        "code": "E331ii",
+        "danger": 4
+    },
+    {
+        "code": "E172ii",
+        "danger": 3
+    },
+    {
+        "code": "E468",
+        "danger": 2
+    },
+    {
+        "code": "E526",
+        "danger": 4
+    },
+    {
+        "code": "E123",
+        "danger": 1
+    },
+    {
+        "code": "E343ii",
+        "danger": 1
+    },
+    {
+        "code": "E450v",
+        "danger": 1
+    },
+    {
+        "code": "E504i",
+        "danger": 4
+    },
+    {
+        "code": "E155",
+        "danger": 1
+    },
+    {
+        "code": "E173",
+        "danger": 1
+    },
+    {
+        "code": "E324",
+        "danger": 4
+    },
+    {
+        "code": "E249",
+        "danger": 1
+    },
+    {
+        "code": "E1102",
+        "danger": 4
+    },
+    {
+        "code": "E914",
+        "danger": 3
+    },
+    {
+        "code": "E1202",
+        "danger": 3
+    },
+    {
+        "code": "E1440",
+        "danger": 3
+    },
+    {
+        "code": "E514",
+        "danger": 4
+    },
+    {
+        "code": "E957",
+        "danger": 3
+    },
+    {
+        "code": "E203",
+        "danger": 2
+    },
+    {
+        "code": "E959",
+        "danger": 3
+    },
+    {
+        "code": "E530",
+        "danger": 4
+    },
+    {
+        "code": "E636",
+        "danger": 1
+    },
+    {
+        "code": "E350i",
+        "danger": 4
+    },
+    {
+        "code": "E515",
+        "danger": 3
+    },
+    {
+        "code": "E436",
+        "danger": 1
+    },
+    {
+        "code": "E559",
+        "danger": 1
+    },
+    {
+        "code": "E905c",
+        "danger": 2
+    },
+    {
+        "code": "E913",
+        "danger": 1
+    },
+    {
+        "code": "E451ii",
+        "danger": 1
+    },
+    {
+        "code": "E470",
+        "danger": 4
+    },
+    {
+        "code": "E505",
+        "danger": 4
+    },
+    {
+        "code": "E555",
+        "danger": 1
+    },
+    {
+        "code": "E637",
+        "danger": 1
+    },
+    {
+        "code": "E905ci",
+        "danger": 2
+    },
+    {
+        "code": "E302",
+        "danger": 4
+    },
+    {
+        "code": "E307c",
+        "danger": 4
+    },
+    {
+        "code": "E1203",
+        "danger": 4
+    },
+    {
+        "code": "E335",
+        "danger": 4
+    },
+    {
+        "code": "E507",
+        "danger": 4
+    },
+    {
+        "code": "E265",
+        "danger": 4
+    },
+    {
+        "code": "E285",
+        "danger": 1
+    },
+    {
+        "code": "E472d",
+        "danger": 2
+    },
+    {
+        "code": "E452ii",
+        "danger": 1
+    },
+    {
+        "code": "E529",
+        "danger": 4
+    },
+    {
+        "code": "E963",
+        "danger": 4
+    },
+    {
+        "code": "E201",
+        "danger": 1
+    },
+    {
+        "code": "E243",
+        "danger": 3
+    },
+    {
+        "code": "E925",
+        "danger": 1
+    },
+    {
+        "code": "E174",
+        "danger": 2
+    },
+    {
+        "code": "E214",
+        "danger": 1
+    },
+    {
+        "code": "E160aiii",
+        "danger": 4
+    },
+    {
+        "code": "E403",
+        "danger": 4
+    },
+    {
+        "code": "E1001",
+        "danger": 4
+    },
+    {
+        "code": "E964",
+        "danger": 4
+    },
+    {
+        "code": "E1401",
+        "danger": 4
+    },
+    {
+        "code": "E365",
+        "danger": 4
+    },
+    {
+        "code": "E375",
+        "danger": 4
+    },
+    {
+        "code": "E948",
+        "danger": 4
+    },
+    {
+        "code": "E336ii",
+        "danger": 4
+    },
+    {
+        "code": "E523",
+        "danger": 1
+    },
+    {
+        "code": "E386",
+        "danger": 4
+    },
+    {
+        "code": "E514ii",
+        "danger": 4
+    },
+    {
+        "code": "E161g",
+        "danger": 1
+    },
+    {
+        "code": "E161h",
+        "danger": 4
+    },
+    {
+        "code": "E101ii",
+        "danger": 4
+    },
+    {
+        "code": "E180",
+        "danger": 2
+    },
+    {
+        "code": "E450vii",
+        "danger": 1
+    },
+    {
+        "code": "E233",
+        "danger": 1
+    },
+    {
+        "code": "E462",
+        "danger": 4
+    },
+    {
+        "code": "E266",
+        "danger": 4
+    },
+    {
+        "code": "E958",
+        "danger": 4
+    },
+    {
+        "code": "E402",
+        "danger": 4
+    },
+    {
+        "code": "E337",
+        "danger": 4
+    },
+    {
+        "code": "E949",
+        "danger": 4
+    },
+    {
+        "code": "E160aiv",
+        "danger": 4
+    },
+    {
+        "code": "E539",
+        "danger": 4
+    },
+    {
+        "code": "E558",
+        "danger": 3
+    },
+    {
+        "code": "E225",
+        "danger": 2
+    },
+    {
+        "code": "E650",
+        "danger": 4
+    },
+    {
+        "code": "E577",
+        "danger": 4
+    },
+    {
+        "code": "E514i",
+        "danger": 4
+    },
+    {
+        "code": "E630",
+        "danger": 4
+    },
+    {
+        "code": "E541i",
+        "danger": 1
+    },
+    {
+        "code": "E522",
+        "danger": 1
+    },
+    {
+        "code": "E152",
+        "danger": 1
+    },
+    {
+        "code": "E494",
+        "danger": 1
+    },
+    {
+        "code": "E639",
+        "danger": 4
+    },
+    {
+        "code": "E1204",
+        "danger": 4
+    },
+    {
+        "code": "E550",
+        "danger": 4
+    },
+    {
+        "code": "E624",
+        "danger": 1
+    },
+    {
+        "code": "E219",
+        "danger": 1
+    },
+    {
+        "code": "E391",
+        "danger": 4
+    },
+    {
+        "code": "E236",
+        "danger": 1
+    },
+    {
+        "code": "E425ii",
+        "danger": 4
+    },
+    {
+        "code": "E965i",
+        "danger": 3
+    },
+    {
+        "code": "E311",
+        "danger": 2
+    },
+    {
+        "code": "E364",
+        "danger": 4
+    },
+    {
+        "code": "E1000",
+        "danger": 4
+    },
+    {
+        "code": "E469",
+        "danger": 2
+    },
+    {
+        "code": "E1405",
+        "danger": 4
+    },
+    {
+        "code": "E622",
+        "danger": 1
+    },
+    {
+        "code": "E921",
+        "danger": 4
+    },
+    {
+        "code": "E352",
+        "danger": 4
+    },
+    {
+        "code": "E353",
+        "danger": 4
+    },
+    {
+        "code": "E181",
+        "danger": 1
+    },
+    {
+        "code": "E504ii",
+        "danger": 4
+    },
+    {
+        "code": "E528",
+        "danger": 4
+    },
+    {
+        "code": "E381",
+        "danger": 4
+    },
+    {
+        "code": "E130",
+        "danger": 1
+    },
+    {
+        "code": "E307a",
+        "danger": 4
+    },
+    {
+        "code": "E1421",
+        "danger": 4
+    },
+    {
+        "code": "E161j",
+        "danger": 4
+    },
+    {
+        "code": "E303",
+        "danger": 4
+    },
+    {
+        "code": "E409",
+        "danger": 4
+    },
+    {
+        "code": "E411",
+        "danger": 4
+    },
+    {
+        "code": "E905cii",
+        "danger": 2
+    },
+    {
+        "code": "E230",
+        "danger": 1
+    },
+    {
+        "code": "E172iii",
+        "danger": 3
+    },
+    {
+        "code": "E226",
+        "danger": 2
+    },
+    {
+        "code": "E165",
+        "danger": 4
+    },
+    {
+        "code": "E578",
+        "danger": 4
+    },
+    {
+        "code": "E457",
+        "danger": 4
+    },
+    {
+        "code": "E908",
+        "danger": 4
+    },
+    {
+        "code": "E500iii",
+        "danger": 4
+    },
+    {
+        "code": "E441",
+        "danger": 4
+    },
+    {
+        "code": "E626",
+        "danger": 3
+    },
+    {
+        "code": "E215",
+        "danger": 1
+    },
+    {
+        "code": "E172i",
+        "danger": 3
+    },
+    {
+        "code": "E370",
+        "danger": 1
+    },
+    {
+        "code": "E474",
+        "danger": 1
+    },
+    {
+        "code": "E308",
+        "danger": 4
+    },
+    {
+        "code": "E125",
+        "danger": 1
+    },
+    {
+        "code": "E217",
+        "danger": 1
+    },
+    {
+        "code": "E380",
+        "danger": 4
+    },
+    {
+        "code": "E459",
+        "danger": 4
+    },
+    {
+        "code": "E479b",
+        "danger": 1
+    },
+    {
+        "code": "E419",
+        "danger": 4
+    },
+    {
+        "code": "E111",
+        "danger": 1
+    },
+    {
+        "code": "E106",
+        "danger": 4
+    },
+    {
+        "code": "E515i",
+        "danger": 3
+    },
+    {
+        "code": "E512",
+        "danger": 3
+    },
+    {
+        "code": "E1410",
+        "danger": 2
+    },
+    {
+        "code": "E580",
+        "danger": 4
+    },
+    {
+        "code": "E518",
+        "danger": 4
+    },
+    {
+        "code": "E239",
+        "danger": 1
+    },
+    {
+        "code": "E161",
+        "danger": 4
+    },
+    {
+        "code": "E513",
+        "danger": 4
+    },
+    {
+        "code": "E493",
+        "danger": 1
+    },
+    {
+        "code": "E121",
+        "danger": 1
+    },
+    {
+        "code": "E309",
+        "danger": 4
+    },
+    {
+        "code": "E427",
+        "danger": 4
+    },
+    {
+        "code": "E231",
+        "danger": 1
+    },
+    {
+        "code": "E542",
+        "danger": 1
+    },
+    {
+        "code": "E1451",
+        "danger": 4
+    },
+    {
+        "code": "E332i",
+        "danger": 4
+    },
+    {
+        "code": "E426",
+        "danger": 4
+    },
+    {
+        "code": "E352i",
+        "danger": 4
+    },
+    {
+        "code": "E344",
+        "danger": 4
+    },
+    {
+        "code": "E283",
+        "danger": 3
+    },
+    {
+        "code": "E472g",
+        "danger": 2
+    },
+    {
+        "code": "E333ii",
+        "danger": 4
+    },
+    {
+        "code": "E166",
+        "danger": 4
+    },
+    {
+        "code": "E232",
+        "danger": 1
+    },
+    {
+        "code": "E557",
+        "danger": 4
+    },
+    {
+        "code": "E103",
+        "danger": 1
+    },
+    {
+        "code": "E424",
+        "danger": 1
+    },
+    {
+        "code": "E540",
+        "danger": 4
+    },
+    {
+        "code": "E434",
+        "danger": 1
+    },
+    {
+        "code": "E430",
+        "danger": 1
+    },
+    {
+        "code": "E160f",
+        "danger": 4
+    },
+    {
+        "code": "E128",
+        "danger": 1
+    },
+    {
+        "code": "E450vi",
+        "danger": 1
+    },
+    {
+        "code": "E1411",
+        "danger": 4
+    },
+    {
+        "code": "E465",
+        "danger": 4
+    },
+    {
+        "code": "E527",
+        "danger": 3
+    },
+    {
+        "code": "E105",
+        "danger": 1
+    },
+    {
+        "code": "E431",
+        "danger": 3
+    },
+    {
+        "code": "E318",
+        "danger": 4
+    },
+    {
+        "code": "E383",
+        "danger": 4
+    },
+    {
+        "code": "E560",
+        "danger": 4
+    },
+    {
+        "code": "E452iv",
+        "danger": 1
+    },
+    {
+        "code": "E632",
+        "danger": 4
+    },
+    {
+        "code": "E910",
+        "danger": 4
+    },
+    {
+        "code": "E284",
+        "danger": 1
+    },
+    {
+        "code": "E367",
+        "danger": 1
+    },
+    {
+        "code": "E1403",
+        "danger": 4
+    },
+    {
+        "code": "E101a",
+        "danger": 4
+    },
+    {
+        "code": "E484",
+        "danger": 4
+    },
+    {
+        "code": "E628",
+        "danger": 3
+    },
+    {
+        "code": "E574",
+        "danger": 4
+    },
+    {
+        "code": "E312",
+        "danger": 2
+    },
+    {
+        "code": "E446",
+        "danger": 4
+    },
+    {
+        "code": "E907",
+        "danger": 3
+    },
+    {
+        "code": "E399",
+        "danger": 4
+    },
+    {
+        "code": "E154",
+        "danger": 1
+    },
+    {
+        "code": "E586",
+        "danger": 3
+    },
+    {
+        "code": "E450iv",
+        "danger": 1
+    },
+    {
+        "code": "E1413",
+        "danger": 2
+    },
+    {
+        "code": "E388",
+        "danger": 1
+    },
+    {
+        "code": "E906",
+        "danger": 4
+    },
+    {
+        "code": "E366",
+        "danger": 4
+    },
+    {
+        "code": "E314",
+        "danger": 4
+    },
+    {
+        "code": "E351",
+        "danger": 4
+    },
+    {
+        "code": "E240",
+        "danger": 1
+    },
+    {
+        "code": "E354",
+        "danger": 4
+    },
+    {
+        "code": "E922",
+        "danger": 4
+    },
+    {
+        "code": "E478",
+        "danger": 4
+    },
+    {
+        "code": "E408",
+        "danger": 4
+    },
+    {
+        "code": "E429",
+        "danger": 4
+    },
+    {
+        "code": "E345",
+        "danger": 4
+    },
+    {
+        "code": "E304ii",
+        "danger": 4
+    },
+    {
+        "code": "E488",
+        "danger": 4
+    },
+    {
+        "code": "E390",
+        "danger": 4
+    },
+    {
+        "code": "E359",
+        "danger": 1
+    },
+    {
+        "code": "E126",
+        "danger": 1
+    },
+    {
+        "code": "E625",
+        "danger": 1
+    },
+    {
+        "code": "E241",
+        "danger": 1
+    },
+    {
+        "code": "E182",
+        "danger": 4
+    },
+    {
+        "code": "E642",
+        "danger": 4
+    },
+    {
+        "code": "E328",
+        "danger": 4
+    },
+    {
+        "code": "E496",
+        "danger": 4
+    },
+    {
+        "code": "E458",
+        "danger": 4
+    },
+    {
+        "code": "E929",
+        "danger": 4
+    },
+    {
+        "code": "E335ii",
+        "danger": 4
+    },
+    {
+        "code": "E623",
+        "danger": 1
+    },
+    {
+        "code": "E909",
+        "danger": 4
+    },
+    {
+        "code": "E313",
+        "danger": 4
+    },
+    {
+        "code": "E357",
+        "danger": 4
+    },
+    {
+        "code": "E486",
+        "danger": 4
+    },
+    {
+        "code": "E495",
+        "danger": 1
+    },
+    {
+        "code": "E553a",
+        "danger": 3
+    },
+    {
+        "code": "E107",
+        "danger": 1
+    },
+    {
+        "code": "E213",
+        "danger": 1
+    },
+    {
+        "code": "E553ai",
+        "danger": 3
+    },
+    {
+        "code": "E317",
+        "danger": 4
+    },
+    {
+        "code": "E912",
+        "danger": 4
+    },
+    {
+        "code": "E1205",
+        "danger": 3
+    },
+    {
+        "code": "E537",
+        "danger": 4
+    },
+    {
+        "code": "E538",
+        "danger": 3
+    },
+    {
+        "code": "E452iii",
+        "danger": 1
+    },
+    {
+        "code": "E450viii",
+        "danger": 1
+    },
+    {
+        "code": "E238",
+        "danger": 1
+    },
+    {
+        "code": "E546",
+        "danger": 4
+    },
+    {
+        "code": "E323",
+        "danger": 4
+    },
+    {
+        "code": "E161c",
+        "danger": 4
+    },
+    {
+        "code": "E1441",
+        "danger": 4
+    },
+    {
+        "code": "E946",
+        "danger": 4
+    },
+    {
+        "code": "E333i",
+        "danger": 4
+    },
+    {
+        "code": "E911",
+        "danger": 4
+    },
+    {
+        "code": "E638",
+        "danger": 1
+    },
+    {
+        "code": "E519",
+        "danger": 4
+    },
+    {
+        "code": "E629",
+        "danger": 3
+    },
+    {
+        "code": "E389",
+        "danger": 4
+    },
+    {
+        "code": "E440b",
+        "danger": 4
+    },
+    {
+        "code": "E227",
+        "danger": 2
+    },
+    {
+        "code": "E923",
+        "danger": 4
+    },
+    {
+        "code": "E515ii",
+        "danger": 3
+    },
+    {
+        "code": "E919",
+        "danger": 4
+    },
+    {
+        "code": "E368",
+        "danger": 4
+    },
+    {
+        "code": "E483",
+        "danger": 3
+    },
+    {
+        "code": "E335i",
+        "danger": 4
+    },
+    {
+        "code": "E926",
+        "danger": 1
+    },
+    {
+        "code": "E633",
+        "danger": 4
+    },
+    {
+        "code": "E1517",
+        "danger": 4
+    },
+    {
+        "code": "E938",
+        "danger": 4
+    },
+    {
+        "code": "E170i",
+        "danger": 3
+    },
+    {
+        "code": "E160e",
+        "danger": 4
+    },
+    {
+        "code": "E500",
+        "danger": 4
+    },
+    {
+        "code": "E500i",
+        "danger": 4
+    }
+]
