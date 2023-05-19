@@ -7,6 +7,23 @@ body, p, ul {
     margin: 0;
 }
 
+a {
+    color: inherit;
+}
+
+header .header-content {
+    background-color: #d7301f;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em 2em;
+    a, p { 
+        font-family: 'Nunito';
+        font-weight: bolder;
+        color: #fef0d9;
+        text-decoration: none;
+    }
+}
+
 svg {
     .bubble {
         text {
@@ -73,6 +90,9 @@ section {
         }
         .statistic-description {
             color: #fcd494;
+            span {
+                text-decoration-style: wavy;
+            }
         }
     }
     .section-dark-header {
@@ -94,7 +114,7 @@ section {
 .chart-label, .swatches-label, .tick text {
     font-family: 'Nunito';
     font-weight: 700;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .definition {
