@@ -76,19 +76,19 @@ const path = d3.geoPath()
  * 
  */
 
-const graphicsCenter = svg.append('g')
+const worldCenter = svg.append('g')
     .attr('transform', 'translate(-200, 0)');
 
-/* world outline */
-const worldOutline = graphicsCenter.append("circle")
+/* world ocean */
+const mapOcean = worldCenter.append("circle")
     .attr("class", "world-outline")
     .attr("cx", width / 2)
     .attr("cy", height / 2)
     .attr("r", projection.scale());
 
 /* countries */
-const map = graphicsCenter.append('g');
-map.selectAll("path")
+const mapCountries = worldCenter.append('g');
+mapCountries.selectAll("path")
     .data(features)
     .enter()
     .append("path")
@@ -100,17 +100,18 @@ const graticule = d3.geoGraticule()
     .extent([[-180, -90], [180 - .1, 90 - .1]])
 
 /* flow lines */
-graphicsCenter.append("path")
+const backLine = worldCenter.append("path")
     .datum(graticule)
     .attr("class", "back-line")
     .attr("d", path);
 
 const handleUpdate = () => {
-    map.selectAll(".map-country").attr("d", path);
-    map.selectAll('.map-line').attr("d", d => path(d))
+    mapCountries.selectAll(".map-country").attr("d", path)
+    mapCountries.selectAll('.map-line').attr("d", d => path(d))
+    
     backLine.datum(graticule)
-    .attr("class", "back-line")
-    .attr("d", path);
+        .attr("class", "back-line")
+        .attr("d", path);
 }
 
 /**
@@ -121,7 +122,7 @@ const handleUpdate = () => {
 const handleZoom = (event) => {
     const factor = event.transform.k
     projection.scale(factor * baseWorldScale);
-    worldOutline.attr("r", factor * baseWorldScale);
+    mapOcean.attr("r", factor * baseWorldScale);
     handleUpdate();
 }
 
@@ -129,7 +130,7 @@ const zoomBehavior = d3.zoom()
     .scaleExtent([1, 10])
     .on("zoom", handleZoom)
 
-svg.call(zoomBehavior)
+worldCenter.call(zoomBehavior)
 
 /**
  * 
@@ -166,7 +167,8 @@ const dragBehavior = d3.drag()
     .on('start',handleDragStart)
     .on("drag", handleDrag)
 
-map.call(dragBehavior)
+mapOcean.call(dragBehavior)
+mapCountries.call(dragBehavior)
 
 /**
  * 
@@ -202,7 +204,7 @@ const getFlowLine = (line) => {
     }
 }
 
-map.selectAll('.map-line')
+mapCountries.selectAll('.map-line')
     .data(getLines(lines))
     .enter()
         .append('path')
