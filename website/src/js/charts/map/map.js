@@ -9,47 +9,9 @@ const assets = ressource => `${ENDPOINT}/${ressource}`
 
 const json = async ressource => await d3.json(assets(ressource))
 
-const geojson = await json('map/world.geojson')
-const data = await json('test.json')
-
-// const data = {
-//     'Spain': {value: 1000, origins: ['China', 'Brazil', 'Egypt']},
-//     'France': {value: 800, origins: ['Angola']}
-// }
-
-// const getDataFrom = (country) => {
-//     if (country in data) return data[country]
-//     else return {}
-// }
-
-// const features = geojson.features.map(feature => ({
-//     id: feature.id,
-//     type: feature.type,
-//     properties: {...feature.properties, ...getDataFrom(feature.properties.name)},
-//     geometry: feature.geometry 
-// }))
-
-const features = geojson.features;
-
-const domain = d3.extent(d3.map(data, d => d.value))
-const scale = d3.scaleSqrt().domain(domain).range([3, 20])
-const opacity = d3.scaleSqrt().domain(domain).range([0.2, 1])
-const color = d3.scaleSequential().domain([-domain[1], domain[1]]).interpolator(d3.interpolateOrRd)
-
-const lines = data;
-// const lines = [
-//     {from: 'Spain', to: 'China'},
-//     {from: 'Spain', to: 'Brazil'},
-//     {from: 'Spain', to: 'Australia'},
-//     {from: 'Spain', to: 'Canada'},
-// ]
-
-// const domain = d3.extent(d3.map(Object.values(data), d => d.value))
-// const color = d3.scaleSequential(domain, d3.interpolateOrRd);
-
-const getFeature = name => features.filter(d => d.properties.name === name)[0]
-
-const getCentroid = name => d3.geoCentroid(getFeature(name))
+const worldGeo = await json('map/world.geojson')
+const countryCentroid = await json('map/country_centroid.json')
+const countryTransportCount = await json('map/country_count.json')
 
 const width = 800
 // const width = document.getElementById('map').parentElement.clientWidth
@@ -89,7 +51,7 @@ const mapOcean = worldCenter.append("circle")
 /* countries */
 const mapCountries = worldCenter.append('g');
 mapCountries.selectAll("path")
-    .data(features)
+    .data(worldGeo.features)
     .enter()
     .append("path")
     .attr('class', 'map-country')
@@ -170,26 +132,64 @@ const dragBehavior = d3.drag()
 mapOcean.call(dragBehavior)
 mapCountries.call(dragBehavior)
 
+/* dropdown menu for selecting country */
+let dropdownSelected = 'Canada'
+var dropdownMenu = d3.select(".country-select");
+
+
+dropdownMenu.selectAll("option")
+.data(Object.keys(countryTransportCount))
+.enter()
+.append("option")
+.text(d => d);
+
+dropdownMenu.property("value", dropdownSelected)
+
+dropdownMenu.on("change", function(d) {
+    dropdownSelected = d3.select(this).property("value");
+    drawLines()
+});
+
 /**
  * 
  *      Flow lines between locations
  * 
  */
 
-const getLines = (lines) => {
-    return lines.map(getFlowLine)
+const createLines = (countryTransportCount) => {
+    const selectedData = countryTransportCount[dropdownSelected]
+
+    const consumeCenter = countryCentroid[dropdownSelected]
+    if (consumeCenter === undefined) return {}
+
+    const lines_all = Object.keys(selectedData['manufacturing']).map(manufacture => {
+        const manufactureData = selectedData['manufacturing'][manufacture]
+        const manufactureCenter = countryCentroid[manufacture]
+        if (manufactureCenter === undefined) return []
+
+        const lines = []
+        const manScore = manufactureData['score']
+        const colorFunc = (x) => 'purple'
+        lines.push(createFlowLine(manufactureCenter, consumeCenter, manScore, colorFunc))
+        
+        Object.keys(manufactureData.origin).forEach(origin => {
+            const originCenter = countryCentroid[origin]
+            if (originCenter === undefined) return
+
+            const originScore = manufactureData.origin[origin]
+            const score = originScore*(manScore)
+            const colorFunc = (x) => 'Orange'
+            lines.push(createFlowLine(originCenter, manufactureCenter, score, colorFunc))
+        })
+        return lines
+    }).flat(1)
+
+    return lines_all
 }
 
-const getFlowLine = (line) => {
-    const from = line.from
-    const to = line.to
-    const value = line.value
-    const fromCentroid = getCentroid(from)
-    const toCentroid = getCentroid(to)
-    const interpolation = d3.geoInterpolate(
-        [fromCentroid[0], fromCentroid[1]],
-        [toCentroid[0], toCentroid[1]]
-    )
+const createFlowLine = (fromCenter, toCenter, score, colorFunc) => {
+    const interpolation = d3.geoInterpolate(fromCenter, toCenter)
+
     return {
         type: "Feature",
         geometry: {
@@ -197,26 +197,31 @@ const getFlowLine = (line) => {
             coordinates: d3.range(0, 1, 0.01).map(t => interpolation(t))
         },
         properties: {
-            color: color(value),
-            width: scale(value),
-            opacity: opacity(value)
+            score: score,
+            color: colorFunc(score),
         }
     }
 }
 
-mapCountries.selectAll('.map-line')
-    .data(getLines(lines))
-    .enter()
-        .append('path')
-        .attr('class', 'map-line')
-        // .style("fill", "none")
-        .attr("stroke", d => d.properties.color)
-        .attr("stroke-opacity", d => d.properties.opacity)
-        .attr("stroke-width", d => `${Math.round(scale(d.properties.width))}px`)
-    .merge(svg.selectAll(".map-line"))
-        .attr('d', d => path(d))
+const drawLines = () => {
 
+    mapCountries.selectAll('.map-line').remove();
+    mapCountries.selectAll('.map-line')
+        .data(createLines(countryTransportCount).filter(d => d != undefined))
+        .enter()
+            .append('path')
+            .attr('class', 'map-line')
+            .attr("stroke", d => d.properties.color)
+            .attr("stroke-width", 2)
+            .attr("opacity", d => d.properties.score*10)
+        .merge(svg.selectAll(".map-line"))
+            .attr('d', d => path(d))
+}
+
+drawLines()
+/* create dropdown menu for selecting a country */
   
+
 /**
  * 
  *      DOM manipulation
