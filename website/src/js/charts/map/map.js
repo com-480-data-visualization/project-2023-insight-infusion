@@ -22,8 +22,8 @@ const baseWorldScale = 1000 / (Math.PI)
 
 
 const countryDefaultColor = "#D6D6CE"
-const countryManufactureColor = "#E9AE2D"
-const countryOriginColor = "#85B259"
+const countryManufactureColor = "#CD8C00"
+const countryOriginColor = "#67CF00"
 const seaColor = "#9DCAC6"
 
 const svg = d3.create("svg")
@@ -67,7 +67,7 @@ mapCountries.selectAll("path")
     .attr("d", path)
     .on("click", (e, d) => {
         console.log(d.properties.name)
-        drawLines(d.properties.name)
+        drawHighlighting(d.properties.name)
     })
     
 const graticule = d3.geoGraticule()
@@ -156,8 +156,6 @@ const createLines = (countryTransportCount, selectedCountry) => {
     const consumeCenter = countryCentroid[selectedCountry]
     if (consumeCenter === undefined) return []
 
-    // console.log(selectedData)
-
     const lines_all = Object.keys(selectedData['manufacturing']).map(manufacture => {
         const manufactureData = selectedData['manufacturing'][manufacture]
         const manufactureCenter = countryCentroid[manufacture]
@@ -206,38 +204,57 @@ const createFlowLine = (fromCenter, toCenter, score, colorFunc, dash) => {
     }
 }
 
-const drawLines = (selectedCountry) => {
+const drawHighlighting = (selectedCountry) => {
     selectedCountry = capitalizeFirstLetter(selectedCountry)
+    const selectedData = countryTransportCount[selectedCountry]
     mapCountries.selectAll('.map-line').remove();
-    mapCountries.selectAll('.map-line')
+    console.log(selectedData)
+    if (selectedData != null) {
+        mapCountries.selectAll('.map-line')
         .data(createLines(countryTransportCount, selectedCountry).filter(d => d != undefined))
         .enter()
-            .append('path')
-            .attr('class', 'map-line')
-            .attr("stroke", d => d.properties.color)
-            .attr("stroke-width", 1)
-            .attr("stroke-dasharray", d => d.properties.dash)
-            .attr("opacity", d => d.properties.score*10)
+        .append('path')
+        .attr('class', 'map-line')
+        .attr("stroke", d => d.properties.color)
+        .attr("stroke-width", 1)
+        .attr("stroke-dasharray", d => d.properties.dash)
+        .attr("opacity", d => d.properties.score*10)
         .merge(svg.selectAll(".map-line"))
-            .attr('d', d => path(d))
-
+        .attr('d', d => path(d))
+    }
+    
     mapCountries.selectAll('.map-country')
-        .transition()
-        .duration(200)
-        .attr("fill", (d) => {
+    .transition()
+    .duration(200)
+    .attr("fill", (d) => {
+            if (selectedData == null) {
+                if (d.properties.name.toLowerCase() === selectedCountry.toLowerCase()) {
+                    return '#aaa'
+                } else {
+                    return countryDefaultColor
+                }
+            }
+        
+            const manufactureCountries = selectedData['manufacturing']
             const name = capitalizeFirstLetter(d.properties.name)
 
-            const selectedData = countryTransportCount[selectedCountry]
-            const manufactureCountries = selectedData['manufacturing']
-            const manufactureScore = name in manufactureCountries ? manufactureCountries[name]['score'] : 0
+            const manufactureScore = name in manufactureCountries ? Math.sqrt(manufactureCountries[name]['score']) : 0
 
             let originScore = 0
             Object.keys(manufactureCountries).forEach(manufacture => {
                 const manufactureData = manufactureCountries[manufacture]
                 if (name in manufactureData['origin']) {
-                    originScore += manufactureData['origin'][name]*manufactureData['score']
+                    originScore += Math.sqrt(manufactureData['origin'][name])*manufactureData['score']
                 }    
             })
+
+            if (originScore == 0 && manufactureScore == 0) {
+                if (name.toLowerCase() === selectedCountry.toLowerCase()) {
+                    return '#aaa'
+                } else {
+                    return countryDefaultColor
+                }
+            }
 
             const interpolateManufacturingColor = d3.interpolate(countryDefaultColor, countryManufactureColor);
             const interpolateOriginColor = d3.interpolate(countryDefaultColor, countryOriginColor);
@@ -257,7 +274,7 @@ const drawLines = (selectedCountry) => {
 
 }
 
-drawLines('Switzerland')
+drawHighlighting('Switzerland')
 /* create dropdown menu for selecting a country */
   
 
