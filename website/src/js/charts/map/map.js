@@ -169,7 +169,7 @@ const createLines = (countryTransportCount, selectedCountry) => {
         const lines = []
         const manScore = manufactureData['score']
         const colorFunc = (x) => 'black'
-        lines.push(createFlowLine(manufactureCenter, consumeCenter, manScore, colorFunc))
+        lines.push(createFlowLine(manufactureCenter, consumeCenter, manScore, colorFunc, 0))
         
         Object.keys(manufactureData.origin).forEach(origin => {
             const originCenter = countryCentroid[origin]
@@ -180,8 +180,8 @@ const createLines = (countryTransportCount, selectedCountry) => {
 
             const originScore = manufactureData.origin[origin]
             const score = originScore*(manScore)
-            const colorFunc = (x) => 'gray'
-            lines.push(createFlowLine(originCenter, manufactureCenter, score, colorFunc))
+            const colorFunc = (x) => 'black'
+            lines.push(createFlowLine(originCenter, manufactureCenter, score, colorFunc, 5))
         })
         return lines
     }).flat(1)
@@ -189,7 +189,7 @@ const createLines = (countryTransportCount, selectedCountry) => {
     return lines_all
 }
 
-const createFlowLine = (fromCenter, toCenter, score, colorFunc) => {
+const createFlowLine = (fromCenter, toCenter, score, colorFunc, dash) => {
     const interpolation = d3.geoInterpolate(fromCenter, toCenter)
 
     return {
@@ -200,6 +200,7 @@ const createFlowLine = (fromCenter, toCenter, score, colorFunc) => {
         },
         properties: {
             score: score,
+            dash: dash,
             color: colorFunc(score),
         }
     }
@@ -215,7 +216,7 @@ const drawLines = (selectedCountry) => {
             .attr('class', 'map-line')
             .attr("stroke", d => d.properties.color)
             .attr("stroke-width", 1)
-            .attr("stroke-dasharray", 5)
+            .attr("stroke-dasharray", d => d.properties.dash)
             .attr("opacity", d => d.properties.score*10)
         .merge(svg.selectAll(".map-line"))
             .attr('d', d => path(d))
@@ -234,7 +235,7 @@ const drawLines = (selectedCountry) => {
             Object.keys(manufactureCountries).forEach(manufacture => {
                 const manufactureData = manufactureCountries[manufacture]
                 if (name in manufactureData['origin']) {
-                    originScore += manufactureData['origin'][name]*manufactureScore
+                    originScore += manufactureData['origin'][name]*manufactureData['score']
                 }    
             })
 
