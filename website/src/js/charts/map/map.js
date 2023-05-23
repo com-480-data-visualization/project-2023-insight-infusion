@@ -3,7 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import * as d3 from 'd3'
 
 import { ENDPOINT } from './../../constants'
-import {capitalizeFirstLetter, lerpColor, mixColor} from './../../utilities'
+import {capitalizeFirstLetter} from './../../utilities'
 import '../../../scss/map.scss'
 import '../../../scss/styles.scss'
 const assets = ressource => `${ENDPOINT}/${ressource}`
