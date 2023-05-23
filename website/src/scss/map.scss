@@ -5,15 +5,25 @@ body {
 }
 
 .map-country {
-    stroke: white;
+    // stroke: rgba(0,0,0,0.2);
     stroke-width: 1px;
 }
 
-svg {
-    // background-color: white;
-    // border-radius: 500px;
+.map-country:hover {
+    filter: contrast(70%);
 }
 
 li a {
     color: white !important;
+}
+
+.world-outline {
+    // fill: #40B8C5;
+    // fill: rbga(0, 0, 0, 0.01);
+    stroke: rgba(0, 0, 0, 0.1);
+    stroke-width: 1.0px;
+}
+
+.map-line {
+    fill: none;
 }

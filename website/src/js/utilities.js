@@ -43,3 +43,49 @@ export const addChart = async (parentSelector, chartGenerator) => {
     }
     else parent.appendChild(chart.svg)
 }
+
+export const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.toLowerCase().slice(1);
+}
+
+function componentToHex(c) {
+    var hex = c.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(r, g, b) {
+    return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+export const mixColor = (a, b, amountA, amountB) => {
+    const hexComponents = (hex) => /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
+
+    const ah = hexComponents(a)
+    const bh = hexComponents(b)
+
+    // combine color values and saturate
+    const ar = parseInt(ah[1], 16) * amountA + parseInt(bh[1], 16) * (1 - amountB)
+    const ag = parseInt(ah[2], 16) * amountA + parseInt(bh[2], 16) * (1 - amountB)
+    const ab = parseInt(ah[3], 16) * amountA + parseInt(bh[3], 16) * (1 - amountB)
+
+    // saturate to FF
+    const rr = Math.min(Math.round(ar), 255)
+    const rg = Math.min(Math.round(ag), 255)
+    const rb = Math.min(Math.round(ab), 255)
+
+    // combina again to hex string
+    return rgbToHex(rr, rg, rb)
+}
+
+export const lerpColor = (a, b, amount) => { 
+
+    var ah = parseInt(a.replace(/#/g, ''), 16),
+        ar = ah >> 16, ag = ah >> 8 & 0xff, ab = ah & 0xff,
+        bh = parseInt(b.replace(/#/g, ''), 16),
+        br = bh >> 16, bg = bh >> 8 & 0xff, bb = bh & 0xff,
+        rr = ar + amount * (br - ar),
+        rg = ag + amount * (bg - ag),
+        rb = ab + amount * (bb - ab);
+
+    return '#' + ((1 << 24) + (rr << 16) + (rg << 8) + rb | 0).toString(16).slice(1);
+}
