@@ -160,12 +160,17 @@ const createLines = (countryTransportCount) => {
     const selectedData = countryTransportCount[dropdownSelected]
 
     const consumeCenter = countryCentroid[dropdownSelected]
-    if (consumeCenter === undefined) return {}
+    if (consumeCenter === undefined) return []
+
+    // console.log(selectedData)
 
     const lines_all = Object.keys(selectedData['manufacturing']).map(manufacture => {
         const manufactureData = selectedData['manufacturing'][manufacture]
         const manufactureCenter = countryCentroid[manufacture]
-        if (manufactureCenter === undefined) return []
+        if (manufactureCenter === undefined) {
+            console.log(manufacture)
+            return []
+        }
 
         const lines = []
         const manScore = manufactureData['score']
@@ -174,7 +179,10 @@ const createLines = (countryTransportCount) => {
         
         Object.keys(manufactureData.origin).forEach(origin => {
             const originCenter = countryCentroid[origin]
-            if (originCenter === undefined) return
+            if (originCenter === undefined) {
+                console.log(origin)
+                return
+            }
 
             const originScore = manufactureData.origin[origin]
             const score = originScore*(manScore)
