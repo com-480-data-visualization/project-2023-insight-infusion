@@ -173,38 +173,6 @@ footer {
         background-color: #d7301f;
     }
 }
-
-/*
-
-REIN
-
-
-*/
-
-#map-container {
-    width: 100%;
-    background-color: #EAE6DF;
-}
-
-#item-list-container {
-    position: fixed;
-    top: 90px;
-    left: 20px;
-}
-
-.country:hover {
-    stroke-width: 1px;
-    cursor: pointer;
-    filter: brightness(85%);
-    /* transition: all 0.3s; */
-}
-
-#tooltip {
-    background-color: white;
-    border: 1px solid rgba(0,0,0,0.7);
-    max-width: 200px;
-    color: rgba(0,0,0,0.6);
-}
   
 /*
 

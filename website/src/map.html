@@ -6,9 +6,8 @@
     <title>COM480</title>
 </head>
 <body>
-    <header class="p-3" style="background-color: black;">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    <header class="p-3 bg-dark position-absolute w-100">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 text-white">
                 <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
                 <li><a href="map.html" class="nav-link px-2 text-white">Environmental Map</a></li>
@@ -17,36 +16,16 @@
                 <li><a href="#" class="nav-link px-2">Allergens</a></li>
                 <li><a href="#" class="nav-link px-2">Nutritional</a></li>
             </ul>  
-            </div>
         </div>
     </header>
 
-    <!-- kode for matprodukter scroll?? -->
-
     <!-- Map -->
-    <div class="container">
-        <div class="d-flex justify-content-end">
-
-            <div id="map" style="position: absolute; left: 0; z-index: 1; width: 100%; height: 100%;"></div>
-
-            <!-- <div class="card mt-5" style="width:400px; z-index: 2">
-                <div class="p-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ultricies faucibus. Integer mattis, metus in laoreet tristique, 
-                                ante nisi semper leo, ut cursus velit ante sed nibh. In pharetra laoreet est in scelerisque. Aliquam sed pretium turpis. Mauris hendrerit 
-                                felis sit amet dui rhoncus, et vehicula sapien placerat. <br><br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+    <section>
+        <div id="map" style="width: 100vw; height: 100vh;"></div>
+        <div id="map-info">
+            <h3 id="map-info-name"></h3>
         </div>
-    </div>
-
-    <!-- Food statistics -->
+    </section>
     
     <script type="module" src="./js/charts/map/map.js"></script>
 </body>
