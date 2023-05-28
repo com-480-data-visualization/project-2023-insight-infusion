@@ -23,6 +23,12 @@ header .header-content {
         text-decoration: none;
     }
 }
+.nav-link {
+    opacity: 0.8;
+}
+.nav-link:hover {
+    opacity: 1;
+}
 
 svg {
     .bubble {

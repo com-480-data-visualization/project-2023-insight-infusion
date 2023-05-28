@@ -1,10 +1,11 @@
-import "bootstrap-icons/font/bootstrap-icons.css"
 import * as d3 from "d3"
 import { throttle, update } from "lodash" // Import throttle from lodash
 
 import { ENDPOINT } from "./../../constants"
 import { capitalizeFirstLetter } from "./../../utilities"
 import { viewCountryInfo } from "./map_info"
+
+/* page styles */
 import "../../../scss/map.scss"
 import "../../../scss/styles.scss"
 
@@ -24,11 +25,7 @@ const countryManufactureColor = "#CD8C00"
 const countryOriginColor = "#67CF00"
 const seaColor = "#1D4E63"
 
-
-const svg = d3
-  .create("svg")
-  .style("width", "100%")
-  .style("height", "100%")
+const svg = d3.create("svg").style("width", "100%").style("height", "100%")
 document.getElementById("map").appendChild(svg.node())
 
 const { width, height } = svg.node().getBoundingClientRect()
@@ -80,6 +77,31 @@ globeCountries
   .attr("d", path)
   .on("mouseover", (e, d) => viewCountryInfo(d.properties.name))
   .on("click", (e, d) => drawHighlighting(d.properties.name))
+
+// countries empty fill pattern
+const hashPatternLineSpacing = 6
+const pattern = svg
+  .append("defs")
+  .append("pattern")
+  .attr("id", "diagonalHatch")
+  .attr("patternUnits", "userSpaceOnUse")
+  .attr("width", hashPatternLineSpacing)
+  .attr("height", hashPatternLineSpacing)
+
+pattern
+  .append("rect")
+  .attr("width", hashPatternLineSpacing)
+  .attr("height", hashPatternLineSpacing)
+  .attr("fill", countryDefaultColor)
+
+pattern
+  .append("path")
+  .attr(
+    "d",
+    `M-1,-1 l${hashPatternLineSpacing + 1},${hashPatternLineSpacing + 1}`
+  )
+  .attr("stroke", "rgba(0,0,0,0.2)")
+  .attr("stroke-width", 1)
 
 /* flow lines */
 const redrawGlobe = () => {
@@ -213,8 +235,11 @@ const drawHighlighting = (selectedCountry) => {
     .duration(200)
     .attr("fill", (d) => {
       if (selectedData == null) {
-        if (d.properties.name.toLowerCase() === selectedCountry.toLowerCase()) {
-          return "#aaa"
+        if (
+          d.properties.name.toLowerCase() === selectedCountry.toLowerCase() ||
+          !(capitalizeFirstLetter(d.properties.name) in countryTransportCount)
+        ) {
+          return "url(#diagonalHatch)"
         } else {
           return countryDefaultColor
         }
@@ -240,7 +265,11 @@ const drawHighlighting = (selectedCountry) => {
 
       if (originScore == 0 && manufactureScore == 0) {
         if (name.toLowerCase() === selectedCountry.toLowerCase()) {
-          return "#aaa"
+          return "#ccc"
+        } else if (
+          !(capitalizeFirstLetter(d.properties.name) in countryTransportCount)
+        ) {
+          return "url(#diagonalHatch)"
         } else {
           return countryDefaultColor
         }
