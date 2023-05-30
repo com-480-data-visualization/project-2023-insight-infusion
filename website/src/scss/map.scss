@@ -1,7 +1,8 @@
-body {
+#map-section {
     background: rgb(227,74,51);
     background: linear-gradient(-45deg, black 0%, rgb(20, 17, 44) 100%);
     min-height: 100vh;
+    margin-bottom: -70px;
 }
 
 .map-country {
@@ -30,7 +31,6 @@ li a {
     opacity: 1;
     
     position: absolute;
-    top: 100px;
     right: 40px;
     width: 300px;
     background-color: rgba(28, 78, 99, 0.3);

@@ -2,11 +2,18 @@
 
 let viewTimer = null
 
-export const viewCountryInfo = (countryName, manufacturingScore = undefined, originScore = undefined) => {
+export const viewCountryInfo = (countryName, transportationLength = undefined, manufacturingScore = undefined, originScore = undefined) => {
   const infoElement = document.getElementById("map-info")
   const infoTitle = document.getElementById("map-info-name")
+  const infoLength = document.getElementById("map-info-length")
 
   infoTitle.innerHTML = countryName
+
+  if (transportationLength != undefined) {
+    infoLength.innerHTML = `Typical transportation length of ${transportationLength.toFixed(0)} km`
+  } else {
+    infoLength.innerHTML = ""
+  }
 
   // make info box visible and start timer to hide it again
   infoElement.style.opacity = 1

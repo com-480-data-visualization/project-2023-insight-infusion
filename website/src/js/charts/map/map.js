@@ -46,6 +46,7 @@ const path = d3.geoPath().projection(projection)
 
 /* Create globe */
 const globe = svg.append("g")
+    // .attr("transform", "translate(-100,0)")
 
 /* world ocean */
 const globeOcean = globe
@@ -152,7 +153,10 @@ const createLines = (countryTransportCount, selectedCountry) => {
   const selectedData = countryTransportCount[selectedCountry]
 
   const consumeCenter = countryCenter[selectedCountry]
-  if (consumeCenter === undefined) return []
+  if (consumeCenter === undefined) return {lines: [], weightedAverageLength: 0}
+
+  let totalLengthTimesScore = 0;
+  let totalScore = 0;
 
   const lines_all = Object.keys(selectedData["manufacturing"])
     .map((manufacture) => {
@@ -164,10 +168,8 @@ const createLines = (countryTransportCount, selectedCountry) => {
 
       const lines = []
       const manScore = manufactureData["score"]
-      const colorFunc = (x) => "black"
-      lines.push(
-        createFlowLine(manufactureCenter, consumeCenter, manScore, colorFunc, 0)
-      )
+      const manLine = createFlowLine(manufactureCenter, consumeCenter, manScore, false)
+      lines.push(manLine)
 
       Object.keys(manufactureData.origin).forEach((origin) => {
         const originCenter = countryCenter[origin]
@@ -177,20 +179,37 @@ const createLines = (countryTransportCount, selectedCountry) => {
 
         const originScore = manufactureData.origin[origin]
         const score = originScore * manScore
-        const colorFunc = (x) => "black"
-        lines.push(
-          createFlowLine(originCenter, manufactureCenter, score, colorFunc, 5)
-        )
+        const originLine = createFlowLine(originCenter, manufactureCenter, score, true)
+        lines.push(originLine)
+
+        const combinedLine = {
+          type: "Feature",
+          geometry: {
+            type: "LineString",
+            coordinates: originLine.geometry.coordinates.concat(manLine.geometry.coordinates)
+          },
+          properties: originLine.properties
+        };
+
+        const combinedLineLength = d3.geoLength(combinedLine) * 6371;
+        totalLengthTimesScore += combinedLineLength * score;
+        totalScore += score;
       })
+
       return lines
     })
     .flat(1)
 
-  return lines_all
+  const weightedAverageLength = totalLengthTimesScore / totalScore;
+
+  return [lines_all, weightedAverageLength];
 }
 
-const createFlowLine = (fromCenter, toCenter, score, colorFunc, dash) => {
+const createFlowLine = (fromCenter, toCenter, score, isOrigin) => {
   const interpolation = d3.geoInterpolate(fromCenter, toCenter)
+
+  const colorFunc = isOrigin ? () => 'black' : () => 'black'
+  const dash = isOrigin ? '5' : '0'
 
   return {
     type: "Feature",
@@ -199,6 +218,7 @@ const createFlowLine = (fromCenter, toCenter, score, colorFunc, dash) => {
       coordinates: d3.range(0, 1, 0.01).map((t) => interpolation(t)),
     },
     properties: {
+      isOrigin: isOrigin,
       score: score,
       dash: dash,
       color: colorFunc(score),
@@ -211,13 +231,12 @@ const drawHighlighting = (selectedCountry) => {
   const selectedData = countryTransportCount[selectedCountry]
   globeCountries.selectAll(".map-line").remove()
   if (selectedData != null) {
+    const [lines, weightedAverageLength] = createLines(countryTransportCount, selectedCountry)
+    viewCountryInfo(selectedCountry, weightedAverageLength)
+    console.log(`Typical length of ${weightedAverageLength} km}`)
     globeCountries
       .selectAll(".map-line")
-      .data(
-        createLines(countryTransportCount, selectedCountry).filter(
-          (d) => d != undefined
-        )
-      )
+      .data(lines.filter(x => x != undefined))
       .enter()
       .append("path")
       .attr("class", "map-line")
