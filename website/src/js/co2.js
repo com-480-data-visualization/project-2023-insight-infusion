@@ -182,7 +182,7 @@ export function plot_bar_chart(event, name) {
 	const facts = document.createElement('h3');
 	facts.appendChild(document.createTextNode(`Total: ${itemInfo['total']} kg CO2/kg`));
 	container.appendChild(facts);
-	updateProgressBars(itemInfo['total'], 43.6)
+	updateProgressBars(itemInfo['total'], 35.4)
 	const BarChart = new ZoomBarChart(data, itemInfo);
 	const plot = BarChart.chart();
 	plot.className.baseVal = "bar-chart";
