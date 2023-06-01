@@ -1,0 +1,1 @@
+wget -O openfoodfacts.csv https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv
