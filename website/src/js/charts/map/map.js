@@ -118,8 +118,8 @@ shadowGradient.append("stop")
     .attr("stop-color", "rgba(0,0,0,0)");
 
 shadowGradient.append("stop")
-    .attr("offset", "80%") // You can adjust this value to suit your needs
-    .attr("stop-color", "rgba(0,0,0,0.6)");
+    .attr("offset", "60%") // You can adjust this value to suit your needs
+    .attr("stop-color", "rgba(0,0,0,0)");
 
 shadowGradient.append("stop")
     .attr("offset", "100%")
