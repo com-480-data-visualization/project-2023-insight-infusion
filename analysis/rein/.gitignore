@@ -1,1 +1,5 @@
-dataset/
+dataset/*
+
+!dataset/country_centroid.json
+!dataset/country_count.json
+!dataset/world.geojson
