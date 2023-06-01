@@ -146,7 +146,7 @@ originGradient
 // Define bars
 const barWidth = 300
 const barHeight = 30
-const barX = 40
+const barX = 110
 const barY = 40
 const barYSpace = 20
 
