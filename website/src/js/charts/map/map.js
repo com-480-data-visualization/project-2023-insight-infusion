@@ -46,7 +46,7 @@ const path = d3.geoPath().projection(projection)
 
 /* Create globe */
 const globe = svg.append("g")
-    // .attr("transform", "translate(-100,0)")
+// .attr("transform", "translate(-100,0)")
 
 /* world ocean */
 const globeOcean = globe
@@ -104,6 +104,84 @@ pattern
   .attr("stroke", "rgba(0,0,0,0.2)")
   .attr("stroke-width", 1)
 
+// Define gradients
+const defs = svg.append("defs")
+
+const manufactureGradient = defs
+  .append("linearGradient")
+  .attr("id", "manufactureGradient")
+  .attr("x1", "0%")
+  .attr("x2", "100%")
+  .attr("y1", "0%")
+  .attr("y2", "0%")
+
+manufactureGradient
+  .append("stop")
+  .attr("offset", "0%")
+  .attr("style", `stop-color: ${countryDefaultColor}`)
+
+manufactureGradient
+  .append("stop")
+  .attr("offset", "100%")
+  .attr("style", `stop-color: ${countryManufactureColor}`)
+
+const originGradient = defs
+  .append("linearGradient")
+  .attr("id", "originGradient")
+  .attr("x1", "0%")
+  .attr("x2", "100%")
+  .attr("y1", "0%")
+  .attr("y2", "0%")
+
+originGradient
+  .append("stop")
+  .attr("offset", "0%")
+  .attr("style", `stop-color: ${countryDefaultColor}`)
+
+originGradient
+  .append("stop")
+  .attr("offset", "100%")
+  .attr("style", `stop-color: ${countryOriginColor}`)
+
+// Define bars
+const barWidth = 300
+const barHeight = 30
+const barX = 40
+const barY = 40
+const barYSpace = 20
+
+const manufactureBar = svg
+  .append("rect")
+  .attr("x", barX)
+  .attr("y", barY)
+  .attr("width", barWidth)
+  .attr("height", barHeight)
+  .attr("fill", "url(#manufactureGradient)")
+
+svg
+  .append("text")
+  .attr("x", barX + barWidth + 10)
+  .attr("y", barY+ barHeight / 2)
+  .attr("dominant-baseline", "middle")
+  .attr("fill", "white")
+  .text("Manufacturing")
+
+const originBar = svg
+  .append("rect")
+  .attr("x", barX)
+  .attr("y", barY+barHeight+barYSpace)
+  .attr("width", barWidth)
+  .attr("height", barHeight)
+  .attr("fill", "url(#originGradient)")
+
+svg
+  .append("text")
+  .attr("x", barX + barWidth + 10)
+  .attr("y", barY+barHeight+barYSpace + barHeight / 2)
+  .attr("dominant-baseline", "middle")
+  .attr("fill", "white")
+  .text("Raw Resources")
+
 /* flow lines */
 const redrawGlobe = () => {
   globeCountries.selectAll(".map-country").attr("d", path)
@@ -153,10 +231,11 @@ const createLines = (countryTransportCount, selectedCountry) => {
   const selectedData = countryTransportCount[selectedCountry]
 
   const consumeCenter = countryCenter[selectedCountry]
-  if (consumeCenter === undefined) return {lines: [], weightedAverageLength: 0}
+  if (consumeCenter === undefined)
+    return { lines: [], weightedAverageLength: 0 }
 
-  let totalLengthTimesScore = 0;
-  let totalScore = 0;
+  let totalLengthTimesScore = 0
+  let totalScore = 0
 
   const lines_all = Object.keys(selectedData["manufacturing"])
     .map((manufacture) => {
@@ -168,7 +247,12 @@ const createLines = (countryTransportCount, selectedCountry) => {
 
       const lines = []
       const manScore = manufactureData["score"]
-      const manLine = createFlowLine(manufactureCenter, consumeCenter, manScore, false)
+      const manLine = createFlowLine(
+        manufactureCenter,
+        consumeCenter,
+        manScore,
+        false
+      )
       lines.push(manLine)
 
       Object.keys(manufactureData.origin).forEach((origin) => {
@@ -179,37 +263,44 @@ const createLines = (countryTransportCount, selectedCountry) => {
 
         const originScore = manufactureData.origin[origin]
         const score = originScore * manScore
-        const originLine = createFlowLine(originCenter, manufactureCenter, score, true)
+        const originLine = createFlowLine(
+          originCenter,
+          manufactureCenter,
+          score,
+          true
+        )
         lines.push(originLine)
 
         const combinedLine = {
           type: "Feature",
           geometry: {
             type: "LineString",
-            coordinates: originLine.geometry.coordinates.concat(manLine.geometry.coordinates)
+            coordinates: originLine.geometry.coordinates.concat(
+              manLine.geometry.coordinates
+            ),
           },
-          properties: originLine.properties
-        };
+          properties: originLine.properties,
+        }
 
-        const combinedLineLength = d3.geoLength(combinedLine) * 6371;
-        totalLengthTimesScore += combinedLineLength * score;
-        totalScore += score;
+        const combinedLineLength = d3.geoLength(combinedLine) * 6371
+        totalLengthTimesScore += combinedLineLength * score
+        totalScore += score
       })
 
       return lines
     })
     .flat(1)
 
-  const weightedAverageLength = totalLengthTimesScore / totalScore;
+  const weightedAverageLength = totalLengthTimesScore / totalScore
 
-  return [lines_all, weightedAverageLength];
+  return [lines_all, weightedAverageLength]
 }
 
 const createFlowLine = (fromCenter, toCenter, score, isOrigin) => {
   const interpolation = d3.geoInterpolate(fromCenter, toCenter)
 
-  const colorFunc = isOrigin ? () => 'black' : () => 'black'
-  const dash = isOrigin ? '5' : '0'
+  const colorFunc = isOrigin ? () => "black" : () => "black"
+  const dash = isOrigin ? "5" : "0"
 
   return {
     type: "Feature",
@@ -231,12 +322,15 @@ const drawHighlighting = (selectedCountry) => {
   const selectedData = countryTransportCount[selectedCountry]
   globeCountries.selectAll(".map-line").remove()
   if (selectedData != null) {
-    const [lines, weightedAverageLength] = createLines(countryTransportCount, selectedCountry)
+    const [lines, weightedAverageLength] = createLines(
+      countryTransportCount,
+      selectedCountry
+    )
     viewCountryInfo(selectedCountry, weightedAverageLength)
     console.log(`Typical length of ${weightedAverageLength} km}`)
     globeCountries
       .selectAll(".map-line")
-      .data(lines.filter(x => x != undefined))
+      .data(lines.filter((x) => x != undefined))
       .enter()
       .append("path")
       .attr("class", "map-line")
