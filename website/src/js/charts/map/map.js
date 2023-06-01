@@ -63,6 +63,7 @@ window.addEventListener("resize", () => {
     .getBoundingClientRect()
   projection.translate([newWidth / 2, newHeight / 2])
   globeOcean.attr("cx", newWidth / 2).attr("cy", newHeight / 2)
+  globeShadow.attr("cx", newWidth / 2).attr("cy", newHeight / 2)
   redrawGlobe()
 })
 
@@ -107,6 +108,32 @@ pattern
 // Define gradients
 const defs = svg.append("defs")
 
+// add a small amount of shadow to the globe
+const shadowGradient = defs.append("linearGradient")
+    .attr("id", "shadowGradient")
+    .attr("gradientTransform", "rotate(95)");
+
+shadowGradient.append("stop")
+    .attr("offset", "0%")
+    .attr("stop-color", "rgba(0,0,0,0)");
+
+shadowGradient.append("stop")
+    .attr("offset", "80%") // You can adjust this value to suit your needs
+    .attr("stop-color", "rgba(0,0,0,0.6)");
+
+shadowGradient.append("stop")
+    .attr("offset", "100%")
+    .attr("stop-color", "rgba(0,0,0,1)");
+
+// Use the gradient
+const globeShadow = globe
+    .append("circle")
+    .attr("cx", width / 2)
+    .attr("cy", height / 2)
+    .attr("class", "world-shadow")
+    .attr("r", projection.scale())
+    .attr("fill", "url(#shadowGradient)");
+
 const manufactureGradient = defs
   .append("linearGradient")
   .attr("id", "manufactureGradient")
@@ -142,7 +169,7 @@ originGradient
   .append("stop")
   .attr("offset", "100%")
   .attr("style", `stop-color: ${countryOriginColor}`)
-
+  
 // Define bars
 const barWidth = 300
 const barHeight = 30
@@ -193,6 +220,7 @@ const onZoom = (event) => {
   const factor = event.transform.k
   projection.scale(factor * baseWorldScale)
   globeOcean.attr("r", factor * baseWorldScale)
+  globeShadow.attr("r", factor * baseWorldScale)
   redrawGlobe()
 }
 

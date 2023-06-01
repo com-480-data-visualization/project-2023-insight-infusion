@@ -22,6 +22,10 @@ li a {
     stroke-width: 1.0px;
 }
 
+.world-shadow {
+    pointer-events:none;
+}
+
 .map-line {
     fill: none;
 }
