@@ -73,7 +73,7 @@ function updateProgressBars(co2PerKg, numKg) {
 	const personKg = 600
 	const ratio = (product / flightKg) * 100
 
-	const color = d3.scaleSequential([1000, 400], d3.interpolateRdYlGn)
+	const color = d3.scaleSequential([800, 300], d3.interpolateRdYlGn)
 
 
 	firstPB.innerHTML = `<div class="progress-bar" role="progressbar" style="color:${getTextColor(color(product))};background-color: ${color(product)};width: ${ratio}%;" aria-valuenow="${ratio}" aria-valuemin="0" aria-valuemax="100">${Math.round(product)} kg</div>`
