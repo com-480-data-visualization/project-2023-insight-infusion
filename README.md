@@ -18,7 +18,7 @@ Milestone 2 report is available here : [Milestone 2](milestone2.pdf)
 
 ## Milestone 3
 
-- **🎨 Website :** 
+- **🎨 Website :** [Insight Infusion](https://insightinfusion.netlify.app)
 - **📑 Process book :** [Process Book](milestone3.pdf)
 - **📹 Screencast :** https://youtu.be/MmT2qwHK8sA
 
