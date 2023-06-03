@@ -2,7 +2,10 @@ import { ENDPOINT } from './constants'
 import * as d3 from 'd3'
 
 const assets = ressource => `${ENDPOINT}/${ressource}`
-export const json = async ressource => await d3.json(assets(ressource))
+export const json = async ressource => await fetch(assets(ressource), {
+    method: 'GET',
+    mode: 'same-origin'
+}).then(async response => await response.json())
 
 export const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
 

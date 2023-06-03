@@ -55,7 +55,6 @@ whenDocumentLoaded(() => {
 		.then((response) => response.json())
 		.then((raw_CO2) => {
 			JSON_RAW_CO2 = raw_CO2;
-			console.log(raw_CO2)
 			const foodList = Object.keys(raw_CO2).sort((a, b) => 0.5 - Math.random());
 			let container = document.getElementById('slider-container');
 			loadList(container, foodList)
