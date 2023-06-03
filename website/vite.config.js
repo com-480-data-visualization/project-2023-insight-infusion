@@ -16,7 +16,6 @@ export default {
     rollupOptions: {
       input: {
         index: path.resolve(__dirname, 'src/index.html'),
-        map: path.resolve(__dirname, 'src/map.html'),
         co2: path.resolve(__dirname, 'src/co2.html'),
         additives: path.resolve(__dirname, 'src/additives.html'),
       },

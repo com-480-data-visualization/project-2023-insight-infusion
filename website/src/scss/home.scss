@@ -10,23 +10,7 @@
         font-size: 3em;
     }
 }
-.statistics-value {
-    font-family: 'Nunito';
-    font-weight: 900;
-    font-size: 8em;
-    background: #FDCC8A;
-    background: linear-gradient(to right, #FDCC8A 0%, #FFFFFF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.statistics-description {
-    font-size: 0.7em;
-    font-weight: 600;
-    text-transform: uppercase;
-    a {
-        color: inherit;
-    }
-}
+
 .hero-footer {
     background-image: url('./transition-bottom.svg');
     height: 150px;
